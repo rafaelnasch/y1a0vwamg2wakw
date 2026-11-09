@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-estacao="chamado">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#181818">
+<title>Dashboard · Sistema VOID</title>
+<link rel="stylesheet" href="dashboard.css">
+<meta name="description" content="Indicadores da operação VOID, com períodos móveis, carteira e atualização verificada a cada 6 horas.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Newsreader:ital,opsz,wght@1,6..72,300&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/sistema.css">
+<script>document.documentElement.className+=' js'</script>
+</head><body data-pagina="dashboard"><a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo-barra">
+    <a class="topo-marca" href="../"><img src="../assets/void-horizontal-branco.svg" alt="The VOID Tattoo Academy, início do Sistema VOID" width="158" height="24"></a>
+    <button class="menu-botao" type="button" aria-expanded="false" aria-controls="nav-sistema"><span class="menu-icone" aria-hidden="true"></span><span class="menu-rotulo">Menu</span></button>
+    <nav class="nav-sistema" id="nav-sistema" aria-label="Páginas do Sistema VOID">
+      <ol class="nav-lista">
+        <li><a class="nav-link" href="../" data-pagina="inicio"><span class="nav-num" aria-hidden="true"></span><span class="nav-nome">Início</span><span class="nav-desc">O que é o Sistema VOID</span></a></li>
+        <li><a class="nav-link" href="../jornada/" data-pagina="jornada"><span class="nav-num">01</span><span class="nav-nome">Jornada</span><span class="nav-desc">Do anúncio à matrícula, num lugar só</span></a></li>
+        <li><a class="nav-link" href="../mapa-do-funil/" data-pagina="mapa-do-funil"><span class="nav-num">02</span><span class="nav-nome">Mapa do Funil</span><span class="nav-desc">O seu mapa, na versão GrowAI</span></a></li>
+        <li><a class="nav-link" href="../playbook/" data-pagina="playbook"><span class="nav-num">03</span><span class="nav-nome">Playbook</span><span class="nav-desc">Pipeline e rotina do atendimento</span></a></li>
+        <li><a class="nav-link" href="../growai/" data-pagina="growai"><span class="nav-num">04</span><span class="nav-nome">A VOID na GrowAI</span><span class="nav-desc">Onde entra, em que ordem e com que portões</span></a></li>
+      <li><a class="nav-link" href="./" data-pagina="dashboard" aria-current="page"><span class="nav-num">05</span><span class="nav-nome">Dashboard</span><span class="nav-desc">Indicadores da operação</span></a></li></ol>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" class="dash wrap">
+  <header class="dash-title"><div><p class="marcador">Sistema VOID · operação</p><h1>Dashboard</h1><p id="periodo-cabecalho">Indicadores até o último dia encerrado.</p></div><a class="dash-back" href="../jornada/">Ver o diagnóstico →</a></header>
+  <div id="dash-status" class="dash-status" role="status">Última versão validada. Horários e indicadores abaixo.</div>
+  <div id="dashboard-fallback"><p>Últimos 30 dias: 2026-10-09 a 2026-11-07. Vendido não é recebido.</p><div class="dash-kpis"><article class="dash-kpi"><h2>Matrículas</h2><strong>120</strong></article><article class="dash-kpi"><h2>Vendido · sem canceladas</h2><strong>R$ 307.965,00</strong></article><article class="dash-kpi"><h2>Novos negócios</h2><strong>866</strong></article><article class="dash-kpi"><h2>Investimento Meta</h2><strong>Sem cobertura</strong></article></div><p>Atualizado em 2026-11-08T23:16:09.699205-03:00. Os filtros e gráficos precisam de JavaScript.</p></div>
+  <div id="dashboard-app" hidden>
+    <div class="dash-controls"><div class="dash-periodos" role="group" aria-label="Período dos indicadores"><button data-periodo="ontem" aria-pressed="false">Ontem</button><button data-periodo="7d" aria-pressed="false">7 dias</button><button data-periodo="30d" aria-pressed="true">30 dias</button><button data-periodo="mes" aria-pressed="false">Mês atual</button></div><p id="periodo-detalhe"></p></div>
+    <section aria-label="Indicadores principais"><div id="kpis" class="dash-kpis"></div></section>
+    <section class="dash-panel" aria-labelledby="evolucao-titulo"><header class="dash-section-head"><div><h2 id="evolucao-titulo">Evolução no período</h2><p>Barras: período selecionado. Linha: período anterior de mesma duração.</p></div><label>Indicador <select id="serie"><option value="vendido">Vendido</option><option value="matriculas">Matrículas</option><option value="negocios">Novos negócios</option></select></label></header><div id="evolucao" class="dash-chart"></div><details><summary>Ver números por dia</summary><div id="evolucao-tabela" class="dash-table-wrap"></div></details></section>
+    <div class="dash-grid"><section class="dash-panel"><h2>Movimento da jornada</h2><p class="dash-caption">Contagens com bases diferentes. Não representam conversão entre etapas.</p><div id="movimento"></div></section><section class="dash-panel"><h2>Matrículas por formação</h2><p class="dash-caption">Boletas sem canceladas. Uma pessoa pode ter mais de uma compra.</p><div id="produtos"></div></section></div>
+    <div class="dash-grid"><section class="dash-panel"><h2>Origem dos novos negócios</h2><p class="dash-caption">Canal rastreado; na ausência dele, etiqueta do contato.</p><div id="canais"></div></section><section class="dash-panel"><h2>Qualidade do rastreamento</h2><p class="dash-caption">Cobertura observada. Alvos comerciais ainda precisam de validação.</p><div id="qualidade"></div></section></div>
+    <section class="dash-panel"><h2>Carteira comercial</h2><p id="carteira-nota" class="dash-caption"></p><div id="carteira-kpis" class="dash-kpis dash-kpis-small"></div><div id="carteira" class="dash-table-wrap"></div><div id="carteira-historico"></div></section>
+    <section class="dash-panel"><h2>Atualização das fontes</h2><p class="dash-caption">Verificação a cada 6 horas. As fontes carregam diariamente. Carga concluída e data do último registro são informações diferentes.</p><div id="fontes" class="dash-fontes"></div></section>
+    <details class="dash-panel dash-method"><summary>Como ler os indicadores</summary><div>
+      <p><strong>Períodos.</strong> Os filtros usam o último corte validado indicado no topo. Os movimentos terminam ontem, no horário de Brasília. A comparação usa os dias imediatamente anteriores, com a mesma duração. O mês atual fica sem resultado enquanto não houver dia encerrado.</p>
+      <p><strong>Matrículas e vendido.</strong> Uma matrícula corresponde a uma boleta do Airtable não cancelada, incluindo outros produtos. Vendido soma o valor dessas boletas; não representa recebimento ou caixa. Cancelamentos seguem a situação atual da fonte e podem revisar períodos anteriores.</p>
+      <p><strong>Leads identificados.</strong> Pessoas classificadas como lead, sem testes e com primeiro toque rastreado no período. A base importada sem sinal de interesse fica de fora. Identidade e canal seguem as regras do diagnóstico.</p>
+      <p><strong>Conversas.</strong> Negócios comerciais com a primeira resposta da pessoa depois de uma mensagem humana, dentro da janela de sete dias do primeiro atendimento. É o registro de uma troca, não prova de qualificação. Reaberturas do mesmo negócio não contam como nova conversa.</p>
+      <p><strong>Aula e encontros.</strong> Inscrições são envios ativos dos cinco formulários, sem testes. MQL é a classificação registrada no formulário. Encontro é uma entrada em etapa de presença, antes da decisão; o mesmo negócio conta uma vez por dia. A cobertura de presença é parcial e não permite taxa completa de comparecimento.</p>
+      <p><strong>Carteira.</strong> Situação observada na carga da Clint, para negócios comerciais criados até ontem. As fotografias começam com esta rotina e só são acrescentadas após uma carga validada. Dias sem fotografia ficam sem ponto.</p>
+      <p><strong>Mídia.</strong> O investimento destacado é apenas da conta Meta disponível. Google Ads permanece identificado pela cobertura da fonte. Pixel, cadastro e matrícula são medidas diferentes; custo por matrícula e retorno atribuído continuam fora desta versão.</p>
+      <p><strong>Falha de atualização.</strong> A rotina mantém a última versão validada e sinaliza o atraso. Os horários da publicação, da verificação e das cargas aparecem separadamente.</p>
+    </div></details>
+  </div>
+</main>
+<footer class="rodape"><div class="wrap"><p>Sistema VOID · indicadores da operação</p><a href="../">Voltar ao início</a></div></footer>
+<script src="dados.js?v=94ae8721baaa817e"></script><script src="estado.js"></script><script src="../assets/sistema.js"></script><script src="dashboard.js"></script>
+</body></html>
