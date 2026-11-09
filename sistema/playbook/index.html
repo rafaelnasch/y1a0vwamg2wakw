@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html data-estacao="chamado" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="#181818" name="theme-color"/>
+<title>Playbook de Atendimento VOID · Sistema VOID</title>
+<meta content="O caminho do comercial da VOID por escrito: o pipeline por momento do aluno, as regras, a cadência e a rotina de cada papel." name="description"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Newsreader:ital,opsz,wght@1,6..72,300&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/sistema.css" rel="stylesheet"/>
+<style>
+/* Só nesta página. Tokens e componentes vêm de ../assets/sistema.css. Tela sobre Coxia: 13,4:1. */
+.secao code{padding:0 4px;background:var(--coxia);color:var(--tela);font:400 .86em/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+.regua{margin:0 0 24px;padding:16px 20px;background:var(--bastidor);border-left:3px solid var(--areia)}
+.regua p{margin:0 0 8px}
+.regua .regua-frase{font:700 clamp(22px,5.6vw,30px)/1.2 var(--font-letreiro);font-variation-settings:"wdth" 100;letter-spacing:-.005em;color:var(--tela)}
+.regua > :last-child{margin-bottom:0}
+.cartoes{list-style:none;margin:24px 0;padding:0;display:grid;gap:12px}
+.cartoes > li{min-width:0;margin:0;padding:16px;background:var(--bastidor);border-top:2px solid var(--fio)}
+.cartoes ul{margin:0;padding-left:20px}
+.cartoes p{margin:0 0 8px}
+.cartoes > li > :last-child{margin-bottom:0}
+.secao .cartoes h3{margin:0 0 8px;font-size:17px}
+@media (min-width:760px){.cartoes{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+.passos{list-style:none;counter-reset:passo;margin:16px 0 24px;padding:0;border-top:1px solid var(--fio)}
+.passos > li{counter-increment:passo;position:relative;margin:0;padding:12px 0 12px 44px;border-bottom:1px solid var(--fio)}
+.passos > li::before{content:counter(passo,decimal-leading-zero);position:absolute;left:0;top:12px;font:700 15px/1.6 var(--font-letreiro);font-variant-numeric:lining-nums tabular-nums;color:var(--areia)}
+.passos .detalhe{display:block;margin-top:4px;font-size:15px;line-height:1.5;color:var(--po)}
+.citacao{margin:24px 0;padding:4px 0 4px 16px;border-left:2px solid var(--chumbo)}
+.citacao blockquote{margin:0}
+.citacao blockquote p{margin:0;font-size:19px;line-height:1.5;color:var(--tela)}
+.citacao figcaption{margin-top:6px;font-size:14px;line-height:1.45;color:var(--po)}
+.medidas{list-style:none;margin:16px 0 24px;padding:0;border-top:1px solid var(--fio)}
+.medidas > li{margin:0;padding:12px 0;border-bottom:1px solid var(--fio)}
+.medidas .medida{display:block;font-weight:600;color:var(--tela)}
+.medidas .origem-dado{display:block;margin-top:2px;font-size:15px;line-height:1.5;color:var(--po)}
+/* tabela de duas colunas: no celular o rótulo da segunda coluna repete a legenda e sai */
+@media (max-width:639.98px){.tabela-par td::before{display:none}}
+</style>
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body data-pagina="playbook">
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo">
+<div class="wrap topo-barra">
+<a class="topo-marca" href="../"><img alt="The VOID Tattoo Academy, início do Sistema VOID" height="24" src="../assets/void-horizontal-branco.svg" width="158"/></a>
+<button aria-controls="nav-sistema" aria-expanded="false" class="menu-botao" type="button"><span aria-hidden="true" class="menu-icone"></span><span class="menu-rotulo">Menu</span></button>
+<nav aria-label="Páginas do Sistema VOID" class="nav-sistema" id="nav-sistema">
+<ol class="nav-lista">
+<li><a class="nav-link" data-pagina="inicio" href="../"><span aria-hidden="true" class="nav-num"></span><span class="nav-nome">Início</span><span class="nav-desc">O que é o Sistema VOID</span></a></li>
+<li><a class="nav-link" data-pagina="jornada" href="../jornada/"><span class="nav-num">01</span><span class="nav-nome">Jornada</span><span class="nav-desc">Do anúncio à matrícula, num lugar só</span></a></li>
+<li><a class="nav-link" data-pagina="mapa-do-funil" href="../mapa-do-funil/"><span class="nav-num">02</span><span class="nav-nome">Mapa do Funil</span><span class="nav-desc">O seu mapa, na versão GrowAI</span></a></li>
+<li><a aria-current="page" class="nav-link" data-pagina="playbook" href="../playbook/"><span class="nav-num">03</span><span class="nav-nome">Playbook</span><span class="nav-desc">Pipeline e rotina do atendimento</span></a></li>
+<li><a class="nav-link" data-pagina="growai" href="../growai/"><span class="nav-num">04</span><span class="nav-nome">A VOID na GrowAI</span><span class="nav-desc">Onde entra, em que ordem e com que portões</span></a></li>
+</ol>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section aria-labelledby="titulo-pagina" class="abertura janela-luz">
+<div class="wrap">
+<p class="marcador">Página 3 de 4 · Sistema VOID</p>
+<h1 class="titulo-filme" id="titulo-pagina">Playbook de Atendimento VOID</h1>
+<p class="linha-off">O caminho do comercial, por escrito.</p>
+<div class="abertura-lede">
+<p>Esta é a versão GrowAI do Playbook que o Lucas mandou em 29/10. Ela escreve o caminho do comercial, do primeiro contato à matrícula: o pipeline por momento do aluno, as regras, a cadência e a rotina de cada papel.</p>
+<p>Uma regra organiza o resto: etapa é o momento do aluno, e follow-up é tarefa com data. O objetivo é o comercial gastar menos tempo arrumando card e planilha e mais tempo conversando com quem quer começar.</p>
+<p>Tudo aqui é proposta, a validar com Lucas e Maluf. As regras rodam primeiro na Clint, por duas semanas e medindo. Só depois a GrowAI automatiza o que funcionou.</p>
+</div>
+<dl class="ficha">
+<div><dt>Dados até</dt><dd><time datetime="2026-11-07">07/11/2026</time></dd></div>
+<div><dt>Versão</dt><dd><time datetime="2026-11-08">08/11/2026</time></dd></div>
+<div><dt>Situação</dt><dd>Proposta a validar</dd></div>
+</dl>
+</div>
+</section>
+<div class="wrap">
+<aside class="aviso aviso-reconstrucao">
+<p class="aviso-rotulo">Reconstrução</p>
+<p>Lucas, montamos esta versão a partir do que você compartilhou nas calls e no grupo. Se algum ponto do seu original ficou de fora, a gente ajusta.</p>
+<p>O pipeline desta versão nasce do funil da aula experimental que você montou e testou na Clint. A rotina tem menos material e aparece marcada como reconstrução a confirmar.</p>
+</aside>
+</div>
+<nav aria-label="Nesta página" class="wrap sumario">
+<p class="sumario-titulo">Nesta página</p>
+<ol>
+<li><a href="#pipeline"><span>01</span>Pipeline da jornada</a></li>
+<li><a href="#campos"><span>02</span>Campos por momento</a></li>
+<li><a href="#regras"><span>03</span>As regras do jogo</a></li>
+<li><a href="#cadencia"><span>04</span>Primeiro contato e cadência</a></li>
+<li><a href="#teste-ligacao"><span>05</span>Teste A/B de ligação</a></li>
+<li><a href="#encontro"><span>06</span>O encontro: aula e visita</a></li>
+<li><a href="#diagnostico"><span>07</span>Diagnóstico no encontro</a></li>
+<li><a href="#proposta"><span>08</span>Proposta e matrícula</a></li>
+<li><a href="#rotina"><span>09</span>Rotina por papel</a></li>
+<li><a href="#placar"><span>10</span>Rituais e placar</a></li>
+<li><a href="#depois"><span>11</span>Primeiro na Clint, depois na GrowAI</a></li>
+<li><a href="#treinamento"><span>12</span>Treinamento por papel</a></li>
+<li><a href="#sobre-os-dados"><span>13</span>Sobre os dados</a></li>
+<li><a href="#proximo-passo"><span>14</span>Próximo passo</a></li>
+</ol>
+</nav>
+<!-- 01 · PIPELINE -->
+<section aria-labelledby="t-pipeline" class="secao" id="pipeline">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">01</span>
+<h2 id="t-pipeline">Pipeline da jornada VOID</h2>
+<p class="secao-sub">Uma jornada só, com uma coluna por momento do aluno.</p>
+</header>
+<div class="leitura">
+<p>No teste, o funil da aula que o Lucas montou na Clint segue esta proposta:</p>
+<ul>
+<li>nenhuma etapa de follow-up;</li>
+<li>próximo passo guardado como data; no teste, a cadência pausou até ele;</li>
+<li>origem, respostas e pontuação do formulário gravadas no próprio negócio;</li>
+<li>dono desde a criação;</li>
+<li>confirmação e reconfirmação para evitar a falta.</li>
+</ul>
+<p>A proposta é levar isso para a jornada inteira. No pipeline da jornada, coluna é momento do aluno, e o negócio só muda de coluna quando há prova de que a pessoa avançou. Ligar de novo, cobrar retorno ou mandar material vira tarefa com data.</p>
+</div>
+<div class="numeros">
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">41</p>
+<p class="numero-rotulo">etapas com FUP, Follow ou Tentativa no nome, em 8 dos 15 funis; inclui 5 de FUP quente, que são sinal de intenção</p>
+<p class="numero-base">o funil da aula do Lucas tem zero</p>
+<p class="numero-nota">estado em 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">38,8%</p>
+<p class="numero-rotulo">das mudanças de etapa feitas por pessoas vão para etapas que são tarefa (FUP, follow-up, tentativa, sem retorno)</p>
+<p class="numero-base">base: 5.367 de 13.829 mudanças</p>
+<p class="numero-nota">08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<p class="leitura">O card vira lembrete do vendedor, e a conversa que aconteceu some da etapa. No Start, 77,3% dos negócios conversaram com uma pessoa do comercial (7.494 de 9.698), mas só 53,4% chegaram a uma etapa de conversa, valores ou encontro (5.176).</p>
+<p class="fonte">Família do Start · negócios criados de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+<h3>Os oito momentos</h3>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>A jornada VOID, de M1 a M8</caption>
+<thead><tr><th scope="col">Momento</th><th scope="col">O que prova</th><th scope="col">No pipeline</th></tr></thead>
+<tbody>
+<tr><th scope="row">M1 Lead</th><td>A pessoa deixou nome e WhatsApp ou e-mail, com origem e interesse registrados</td><td>Coluna</td></tr>
+<tr><th scope="row">M2 Qualificação · MQL</th><td>Tem perfil, disse o que quer e aceitou um encontro: visita, aula ou conversa</td><td>Coluna, até o encontro marcado</td></tr>
+<tr><th scope="row">M3 Encontro · SQL</th><td>Foi ao encontro, com a presença marcada no dia, e quer condições</td><td>Coluna</td></tr>
+<tr><th scope="row">M4 Proposta</th><td>Recebeu a proposta da turma: horário, valor, condição e próximo passo com data</td><td>Coluna</td></tr>
+<tr><th scope="row">M5 Matrícula</th><td>Boleta no Airtable e ganho com valor, turma e forma de pagamento</td><td>Status Ganho</td></tr>
+<tr><th scope="row">M6 Ativação</th><td>Esteve na Aula 1, com o kit entregue</td><td>Pós-venda, dono a definir</td></tr>
+<tr><th scope="row">M7 Valor</th><td>Frequência, práticas em pele humana e formatura</td><td>Pós-venda, dono a definir</td></tr>
+<tr><th scope="row">M8 Expansão</th><td>Voltou para o Master ou o Pro, ou indicou alguém</td><td>Nova oportunidade do mesmo aluno</td></tr>
+</tbody>
+</table>
+</div>
+<div class="leitura">
+<p>CS é o time que cuida do aluno depois da matrícula. Os donos e critérios de M6, M7 e M8 ainda precisam ser definidos com vocês; a expansão também envolve o comercial.</p>
+<p>MQL quer dizer lead qualificado pelo marketing, e na VOID ele chega por duas portas. Quem preenche o formulário da aula, passa nos critérios dele e escolhe o encontro já é MQL. No Start, a classificação por formulário ainda é proposta; hoje só a aula tem pontuação. Quem chama direto no WhatsApp não tem formulário. Nos dois casos, o M2 se completa na conversa com o comercial. A data do M2 é o dia em que perfil, objetivo e aceite do encontro ficaram provados.</p>
+<p>SQL quer dizer lead qualificado para vendas. O comercial marca o SQL quando o encontro aconteceu e a pessoa quer condições.</p>
+</div>
+<h3>Três status, fora das colunas</h3>
+<ul class="cartoes">
+<li><h3>Ganho</h3><p>É a matrícula (M5). Pede valor, turma, forma de pagamento e boleta no Airtable.</p></li>
+<li><h3>Perdido</h3><p>Alguém decidiu não seguir. Sempre com motivo escolhido numa lista, nunca em branco.</p></li>
+<li><h3>Abandonado</h3><p>Negócio aberto sem mensagem da pessoa e sem mudança de etapa há 45 dias. Vale só nos funis comerciais e fica fora da taxa de ganho. <span class="etiqueta etiqueta-validar">a validar</span></p></li>
+</ul>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar com Lucas e Maluf</p>
+<p>A aula experimental entra nesta mesma jornada. Ela é porta de entrada (M1), encontro (M3) e cadência de confirmação, sem funil à parte. Assim a leitura de ponta a ponta não precisa juntar dois funis.</p>
+</aside>
+<h3>O funil da aula, na jornada</h3>
+<p class="leitura">As nove etapas que o Lucas montou na Clint cabem na jornada assim:</p>
+<div class="tabela tabela-cartoes tabela-par">
+<table>
+<caption>Funil Aula Experimental → pipeline da jornada</caption>
+<thead><tr><th scope="col">Etapa no funil da aula</th><th scope="col">Na jornada</th></tr></thead>
+<tbody>
+<tr><th scope="row">Inscrito</th><td><strong>M1 Lead</strong>, ou M2 quando o formulário dá MQL. A classificação vira campo com data</td></tr>
+<tr><th scope="row">Em contato</th><td><strong>Passagem de M1 para M2</strong>, só com conversa de uma pessoa. No teste, a etapa mudava sozinha, minutos depois da entrada</td></tr>
+<tr><th scope="row">Agendado</th><td><strong>M2, com encontro marcado.</strong> Data, formato e turno da aula ficam em campos</td></tr>
+<tr><th scope="row">Confirmado</th><td><strong>M2, com encontro marcado.</strong> Vira campo de confirmação, porque confirmar ainda não prova presença</td></tr>
+<tr><th scope="row">Compareceu · proposta</th><td><strong>M3 e M4, separados:</strong> presença com data (M3) e proposta com data e valor (M4)</td></tr>
+<tr><th scope="row">Negociação</th><td><strong>M4 Proposta</strong></td></tr>
+<tr><th scope="row">Remarcar</th><td><strong>Sai das colunas.</strong> Presença "faltou", tarefa de remarcação com duas datas e contador de remarcações</td></tr>
+<tr><th scope="row">Nutrição pós-aula</th><td><strong>Sai das colunas.</strong> Perdido com motivo "Adiou", data de retomada e nutrição do marketing</td></tr>
+<tr><th scope="row">Matrícula</th><td><strong>M5 Matrícula:</strong> status Ganho, com valor, turma e forma de pagamento</td></tr>
+</tbody>
+</table>
+</div>
+<h3>O Funil Start, na jornada</h3>
+<p class="leitura">As 13 etapas do Funil Start são lidas por momento. Na Clint, o funil fica como está até a virada. Este de-para serve para medir agora e montar a jornada uma vez na GrowAI.</p>
+<div class="tabela tabela-cartoes tabela-par">
+<table>
+<caption>Funil Start → pipeline da jornada</caption>
+<thead><tr><th scope="col">Etapa no Funil Start</th><th scope="col">Na jornada</th></tr></thead>
+<tbody>
+<tr><th scope="row">Leads</th><td><strong>M1 Lead</strong></td></tr>
+<tr><th scope="row">Contato</th><td><strong>M2 Qualificação</strong>, depois da conversa com uma pessoa</td></tr>
+<tr><th scope="row">Visitas · Aulão/Workshops</th><td><strong>M2, com encontro marcado.</strong> O tipo de encontro vai num campo</td></tr>
+<tr><th scope="row">Presente no aulão</th><td><strong>M3 Encontro</strong>, com a data da presença. A visita realizada, que hoje não tem etapa no Funil Start, entra aqui</td></tr>
+<tr><th scope="row">Proposta</th><td><strong>Tarefa de M2.</strong> O envio da tabela de valores fica registrado; M4 é a proposta da turma</td></tr>
+<tr><th scope="row">FUP Contato</th><td><strong>Tentativa</strong>, como tarefa com data</td></tr>
+<tr><th scope="row">FUP Proposta · FUP Proposta 2 · FUP Proposta - Frios</th><td><strong>Follow-up</strong>, como tarefa com data</td></tr>
+<tr><th scope="row">FUP Quente</th><td><strong>Sinal de intenção</strong>, num campo que ajuda a priorizar a fila</td></tr>
+<tr><th scope="row">FUP programado</th><td><strong>Próximo passo</strong>, num campo de data. A cadência pausa até ele</td></tr>
+<tr><th scope="row">Nutrição/Futuro</th><td><strong>Sai das colunas.</strong> Perdido com motivo "Adiou", data de retomada e nutrição do marketing</td></tr>
+</tbody>
+</table>
+</div>
+<div class="leitura">
+<p>Os funis de cada vendedor do Start usam o mesmo mapa. Quem atende passa a aparecer no campo responsável, e o lead não precisa mais mudar de funil para mudar de dono.</p>
+<p>No Funil Master, pelo menos 42,8% dos negócios de 12 meses vêm de quem já tinha comprado antes (386 de 902). Esses entram como M8 Expansão, marcados como ex-aluno, para não se misturarem com quem chega pela primeira vez.</p>
+</div>
+<p class="fonte">Clint pela central de dados da VOID · funis e etapas em 07/11/2026; Master com negócios criados de 08/11/2025 a 07/11/2026 · <span class="origem o-derivado">derivado</span></p>
+</div>
+</section>
+<!-- 02 · CAMPOS -->
+<section aria-labelledby="t-campos" class="secao" id="campos">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">02</span>
+<h2 id="t-campos">Campos por momento</h2>
+<p class="secao-sub">O que registrar em cada momento, e quem registra.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Os 20 campos que o Lucas criou no funil da aula ficam como estão, com os nomes que ele deu. Entram as datas de cada momento, a presença, o valor, a turma, a forma de pagamento e o motivo de perda. UTM é a marcação no link que diz de qual campanha e anúncio a pessoa veio.</p>
+<p>A máquina grava a data de cada momento. A pessoa registra só duas: a do encontro realizado e a da proposta apresentada. O que vira taxa no placar é campo de lista; texto livre fica para a frase da própria pessoa.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Campos da jornada, por momento</caption>
+<thead><tr><th scope="col">Momento</th><th scope="col">Já existe no funil da aula</th><th scope="col">Entra agora</th><th scope="col">Quem preenche</th></tr></thead>
+<tbody>
+<tr><th scope="row">M1 Lead</th><td>As cinco UTMs (<code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>utm_content</code>, <code>utm_term</code>), a porta (<code>porta_aula</code>) e o número do envio (<code>jotform_envio</code>)</td><td>Data M1, dono desde a criação, origem escolhida numa lista, formação de interesse e consentimento para receber mensagens</td><td>Formulário, automação e marketing</td></tr>
+<tr><th scope="row">M2 Qualificação</th><td>Situação (<code>momento</code>), objetivo (<code>busca</code>), prazo (<code>considera_formacao</code>), <code>regiao</code>, <code>presencial</code>, <code>faixa_etaria</code>, pontuação de 0 a 75 (<code>lead_score</code>), classificação (<code>lead_classificacao</code>) e aprovação (<code>aula_aprovacao</code>)</td><td>Data M2, hora do primeiro contato de uma pessoa, tentativas como tarefa concluída e encontro pedido ou aceito</td><td>Formulário e comercial</td></tr>
+<tr><th scope="row">M3 Encontro</th><td>Data e hora (<code>aula_data</code>), turno (<code>aula_periodo</code>) e formato, aula em grupo ou visita guiada (<code>aula_formato</code>)</td><td>Confirmação, presença com data, quem recebeu, impacto, impedimento, quem decide e Data M3</td><td>Quem recebe na escola</td></tr>
+<tr><th scope="row">M4 Proposta</th><td>Próximo passo com data (<code>proximo_passo</code>)</td><td>Formação e turma propostas, valor, condição de pagamento, data da proposta, quem decide, objeção e Data M4</td><td>Comercial</td></tr>
+<tr><th scope="row">M5 Matrícula</th><td>Nenhum</td><td>Valor, forma de pagamento, turma, um só vendedor creditado, combinados da venda, data da Aula 1 e número da boleta no Airtable</td><td>Comercial</td></tr>
+<tr><th scope="row">Perdido</th><td>Nenhum</td><td>Motivo de lista, obrigatório, e data de retomada quando o motivo é "Adiou"</td><td>Comercial</td></tr>
+</tbody>
+</table>
+</div>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar com Lucas e Maluf</p>
+<p>Idade mínima: a Clint usa o motivo de perda "Menor que 16 anos", e nos envios observados do formulário MQL, menor de 18 saiu como não MQL. A faixa etária fica como dado no M2 até vocês decidirem qual idade vale.</p>
+</aside>
+</details></div>
+</section>
+<!-- 03 · REGRAS -->
+<section aria-labelledby="t-regras" class="secao" id="regras">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">03</span>
+<h2 id="t-regras">As regras do jogo</h2>
+<p class="secao-sub">Oito regras comuns e três provas, em linguagem simples.</p>
+</header>
+<div class="regua leitura">
+<p class="regua-frase">Etapa é o momento do aluno. Follow-up é tarefa com data.</p>
+<p>A coluna só muda quando a pessoa avança. Ligar de novo, mandar mensagem ou cobrar retorno fica numa tarefa com dia marcado, e o card continua onde está.</p>
+</div>
+<h3>As oito regras <span class="etiqueta etiqueta-validar">a validar</span></h3>
+<ol class="passos leitura">
+<li>Uma pessoa responde por cada momento, e todo negócio tem dono no campo responsável desde a criação.<span class="detalhe">Hoje a distribuição é feita mudando o negócio para o funil de cada vendedor, e o campo fica vazio: 74,9% dos negócios criados de 08/10 a 07/11/2026 estavam sem responsável no retrato de 08/11 (708 de 945).</span></li>
+<li>Um nome por momento, igual em todos os funis e para todo o comercial.</li>
+<li>Etapa é o momento do aluno. Follow-up e tentativa são tarefas registradas.</li>
+<li>Resposta automática não conta como contato. Cada tentativa feita por uma pessoa vira tarefa concluída.</li>
+<li>Proposta a validar: “Tentativas esgotadas” quando nunca respondeu, com três tentativas registradas; “Sem retorno” quando respondeu e sumiu, depois das tentativas de retomada. Antes disso, segue na cadência.</li>
+<li>Lead não se apaga. Quem não segue vira perdido com motivo ou vai para a nutrição do marketing.</li>
+<li>Matrícula ganha tem boleta, valor, turma e um só vendedor creditado, e os combinados da venda ficam no negócio.<span class="detalhe">A regra de crédito da venda é decisão de vocês.</span></li>
+<li>Nenhuma promessa de renda ou de carreira. Turma, horário e valor só como estão na condição vigente.</li>
+</ol>
+<p class="fonte">Responsável: Clint pela central de dados da VOID · negócios criados de 08/10 a 07/11/2026, retrato de 08/11/2026 · <span class="origem o-derivado">derivado</span></p>
+<h3>Três provas que mudam a contagem</h3>
+<ul class="cartoes">
+<li><h3>Agendar não é comparecer</h3><p>Só a presença marcada no dia prova o encontro (M3). Agendado, confirmado e remarcado continuam em M2.</p></li>
+<li><h3>Mensagem automática não é contato</h3><p>Boas-vindas automáticas, disparo e lista importada não provam interesse. O negócio passa para M2 depois de conversa com uma pessoa.</p></li>
+<li><h3>Tabela de preço não é proposta</h3><p>Mandar os valores é tarefa de M2. A proposta (M4) é para aquela pessoa: turma, horário, valor, condição e próximo passo com data.</p></li>
+</ul>
+</div>
+</section>
+<!-- 04 · CADÊNCIA -->
+<section aria-labelledby="t-cadencia" class="secao" id="cadencia">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">04</span>
+<h2 id="t-cadencia">Primeiro contato e cadência</h2>
+<p class="secao-sub">Ligar logo, registrar cada tentativa e só então encerrar.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="numeros">
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">4,9 min</p>
+<p class="numero-rotulo">até a primeira mensagem de uma pessoa, para quem chega escrevendo no WhatsApp em horário útil</p>
+<p class="numero-base">mediana (valor do meio) de 3.103 negócios; padrão ensinado: ligação em até 3 minutos</p>
+<p class="numero-nota">família do Start · criados de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">62,1%</p>
+<p class="numero-rotulo">dos leads que chegam escrevendo no WhatsApp entram fora do horário útil e esperam 11,0 horas pela primeira mensagem de uma pessoa (mediana)</p>
+<p class="numero-base">base: 5.088 de 8.191 leads</p>
+<p class="numero-nota">mesmo período e fonte · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">47,1%</p>
+<p class="numero-rotulo">das perdas do Start são marcadas como "Sem retorno", o motivo mais usado</p>
+<p class="numero-base">base: 4.406 de 9.361 perdidos</p>
+<p class="numero-nota">família do Start · perdidos de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor">6,8 dias</p>
+<p class="numero-rotulo">é o prazo em que saem três de cada quatro ganhos do Start, contado da criação do negócio; metade sai em até 1,8 dia</p>
+<p class="numero-base">base: 779 ganhos; inclui negócios criados à mão perto da venda</p>
+<p class="numero-nota">família do Start · criados de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<div class="leitura">
+<p>Em horário útil, a primeira mensagem de uma pessoa já sai em poucos minutos. O que falta é o resto da cadência. Em mediana, o "Sem retorno" é marcado com 2 dias de tentativa, 3,4 dias depois da criação do negócio, e só 23,3% dos negócios criados no período e perdidos por esse motivo recebem 3 dias ou mais de tentativa (994 de 4.258). Mais da metade delas (53,7%, ou 2.286) tinha respondido alguém do comercial antes de sumir. Enquanto isso, um em cada quatro ganhos só acontece depois de 6,8 dias.</p>
+<p>O prazo de 3 minutos para o primeiro contato é o padrão que a GrowAI ensina. O prazo final, o número de tentativas e a janela da cadência são decisão de vocês.</p>
+</div>
+<p class="fonte">"Sem retorno": 4.258 negócios da família do Start criados de 08/11/2025 a 07/11/2026 e perdidos por esse motivo · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+<h3>A cadência do grupo Ligação, durante o teste <span class="etiqueta etiqueta-proposta">proposta</span></h3>
+<p class="leitura">Até o teste decidir, o primeiro contato segue pelo WhatsApp, com mensagem de uma pessoa logo na entrada. Durante o teste, só o grupo Ligação usa a sequência abaixo; registros e critérios de perda são iguais nos dois grupos.</p><ol aria-label="Cadência do grupo Ligação" class="linha-tempo leitura">
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Na entrada</span>
+<span class="marco-titulo">Boas-vindas automáticas e dono na hora</span>
+<p>A mensagem automática não conta como contato. Registro: Data M1 e dono.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Até 3 minutos</span>
+<span class="marco-titulo">Ligação 1</span>
+<p>Registro: tarefa concluída, com a hora.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Não atendeu</span>
+<span class="marco-titulo">Ligação 2, logo em seguida</span>
+<p>Registro: tarefa concluída.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Não atendeu de novo</span>
+<span class="marco-titulo">Mensagem escrita por uma pessoa</span>
+<p>Ela se apresenta pelo nome, conta que acabou de ligar e pergunta o melhor horário. Registro: tarefa concluída.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">No dia seguinte, em outro horário</span>
+<span class="marco-titulo">Tentativa 3, por ligação ou WhatsApp</span>
+<p>Registro: tarefa concluída.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Sem resposta depois das tentativas</span>
+<span class="marco-titulo">Motivo "Tentativas esgotadas"</span>
+<p>A pessoa segue na nutrição do marketing, por e-mail e WhatsApp oficial, só com consentimento. Registro: motivo de perda e etiqueta de nutrição.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Conversou</span>
+<span class="marco-titulo">Situação, objetivo e convite para o encontro</span>
+<p>Perguntas de situação e objetivo (seção 07) e convite para a visita ou a aula, com duas opções de data. Registro: campos de M2 e Data M2.</p>
+</li>
+</ol>
+<p class="leitura">Na proposta da jornada, as três tentativas cabem em 48 horas. Para quem chega escrevendo no WhatsApp, metade dos ganhos sai em até 3 dias; um em cada três vem depois de 7 dias (128 de 384; três quartos em até 11,9 dias). A régua de e-mail de 7 dias é um começo, e sua continuação precisa ser medida. Base: Start, negócios criados de 08/11/2025 a 07/11/2026; Clint.</p>
+<h3>Fora do horário útil</h3>
+<p class="leitura">A mensagem automática avisa quando o comercial volta. Quem chegou à noite, no fim de semana ou num feriado abre a fila do dia seguinte, antes dos leads novos.</p>
+<h3>O preço, quando a pessoa pede</h3>
+<div class="leitura">
+<p>Como a VOID não mostra preço na página, muita gente chega só querendo saber o valor, como o Maluf lembrou. O preço continua saindo quando a pessoa pede. Junto com ele vai sempre o convite para a visita ou a aula, com duas opções de data.</p>
+<p>Hoje, no Funil Start, 66,3% das mudanças para outra etapa, sem perdas nem trocas de funil, a partir da etapa "Leads" vão direto para "Proposta" (1.965 de 2.966), em mediana 1,7 hora depois da entrada. Quem recebe só a tabela, sem encontro, vira ganho na Clint em 10,9% dos casos (465 de 4.268).</p>
+</div>
+<p class="fonte">Clint pela central de dados da VOID · Funil Start, mudanças de 08/11/2025 a 07/11/2026; família do Start, negócios criados no mesmo período · <span class="origem o-derivado">derivado</span></p>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar com Lucas e Maluf</p>
+<p>Horário útil do comercial: segunda a sexta, das 9h às 17h59, sem descontar feriados nos números desta versão. É o padrão desta versão e a régua dos números desta seção.</p>
+</aside>
+</details></div>
+</section>
+<!-- 05 · TESTE A/B -->
+<section aria-labelledby="t-teste" class="secao" id="teste-ligacao">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">05</span>
+<h2 id="t-teste">Teste A/B de ligação</h2>
+<p class="secao-sub">Ligar na qualificação, contra o WhatsApp de hoje, e decidir com número.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>No treinamento da jornada, o Felipe e o Maluf toparam testar a ligação na qualificação.</p>
+</div>
+<figure class="citacao">
+<blockquote><p>eu sou super aberto a gente tentar novamente e testar</p></blockquote>
+<figcaption>Maluf, no treinamento da jornada</figcaption>
+</figure>
+<div class="leitura">
+<p>Teste A/B quer dizer dois grupos parecidos, atendidos no mesmo período: um com a mudança e outro como hoje. A diferença entre os dois mostra o efeito da mudança.</p>
+<p>Hoje a ligação quase não deixa rastro na Clint. A telefonia integrada registrou 34 ligações, todas entre 23/04/2025 e 22/04/2026. Sem registro, não dá para saber se ligar muda alguma coisa.</p>
+</div>
+<p class="fonte">Clint pela central de dados da VOID · histórico até 07/11/2026 · <span class="origem o-medido">medido</span></p>
+<h3>Como desenhar <span class="etiqueta etiqueta-proposta">proposta</span></h3>
+<ol class="passos leitura">
+<li>Entra todo lead novo do Start que chega em horário útil, por duas semanas, com datas a confirmar.</li>
+<li>A divisão é pelo último dígito do telefone: par vai para o grupo Ligação, ímpar fica no grupo WhatsApp, com primeiro contato por mensagem. Só muda o canal da primeira abordagem; as demais regras são iguais.<span class="detalhe">Assim a divisão não depende de quem atende nem da hora em que o lead chegou.</span></li>
+<li>O grupo Ligação segue a cadência da seção 04: ligação em até 3 minutos, segunda ligação logo depois e mensagem escrita por uma pessoa.</li>
+<li>As mesmas pessoas atendem os dois grupos. O teste compara o jeito de abordar, e nunca quem atende.</li>
+<li>Cada negócio recebe a etiqueta do grupo, no padrão de prefixo que o Lucas já usa (<code>ab:ligacao</code> e <code>ab:whatsapp</code>, sem a palavra "teste", para o grupo não ser confundido com lead de teste), e cada ligação vira tarefa concluída, atendida ou não.</li>
+<li>Antes de começar, conferir na tela da Clint se a tarefa concluída chega à central de dados. Se não chegar, a ligação atendida ganha também uma etiqueta.</li>
+</ol>
+<h3>Como medir</h3>
+<p class="leitura">O que comparar entre os dois grupos:</p>
+<ul class="medidas leitura">
+<li><span class="medida">Encontro marcado em até 7 dias, a medida principal</span>É o gargalo da vez: a conversa que não vira encontro.<span class="origem-dado">Vem da etapa de encontro na Clint.</span></li>
+<li><span class="medida">Conversa real</span>Mostra se o lead respondeu depois de uma pessoa ou atendeu a ligação.<span class="origem-dado">Vem das mensagens e tarefas da Clint.</span></li>
+<li><span class="medida">Presença no encontro</span>Agendar não é comparecer.<span class="origem-dado">Vem da etapa ou do campo de presença.</span></li>
+<li><span class="medida">Tempo até o primeiro contato de uma pessoa</span>A ligação não pode atrasar o atendimento.<span class="origem-dado">Vem das mensagens e tarefas da Clint.</span></li>
+<li><span class="medida">Perdas por “Sem retorno” e “Tentativas esgotadas”, somadas</span>Mostra se a ligação recupera quem some.<span class="origem-dado">Vem do motivo de perda na Clint.</span></li>
+<li><span class="medida">Matrícula em 30 dias</span>É o que conta no fim, e fecha 30 dias depois do último lead do teste.<span class="origem-dado">Vem da boleta do Airtable.</span></li>
+</ul>
+<p class="leitura">A regra de decisão é combinada antes de começar: qual diferença na medida principal faz a ligação virar o padrão. Se, em duas semanas, a diferença ficar pequena demais para decidir, o teste segue por mais duas. <span class="etiqueta etiqueta-validar">a validar</span></p>
+</details></div>
+</section>
+<!-- 06 · ENCONTRO -->
+<section aria-labelledby="t-encontro" class="secao" id="encontro">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">06</span>
+<h2 id="t-encontro">O encontro: aula e visita</h2>
+<p class="secao-sub">Poucos negócios passam pelo encontro; entre eles, a taxa de ganho é maior.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="numeros">
+<div class="numero" data-sinal="vermelho">
+<p class="numero-sinal"><span class="sinal sinal-vermelho">Gargalo</span></p>
+<p class="numero-valor">4,4%</p>
+<p class="numero-rotulo">dos negócios do Start passaram por etapa de encontro com o negócio aberto</p>
+<p class="numero-base">base: 431 de 9.698 negócios</p>
+<p class="numero-nota">família do Start · criados de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor">35,8%</p>
+<p class="numero-rotulo">das boletas têm aula experimental como origem da venda: visita guiada, aula em grupo ou aulão pago</p>
+<p class="numero-base">base: 202 de 565 vendas</p>
+<p class="numero-nota">01/06 a 07/11/2026 · boleta do Airtable, campo "Origem da venda", pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<div class="leitura">
+<p>Um gargalo por vez: a proposta é começar pela conversa que não vira encontro. Na mesma safra do Start, 2.917 negócios tiveram conversa com alguém do comercial e ficaram sem etapa de valores nem de encontro.</p>
+</div>
+<figure class="grafico">
+<p class="grafico-mede">Taxa de ganho na Clint, por caminho · família do Start</p>
+<h3 class="grafico-titulo">Quem passa pelo encontro tem maior taxa de ganho</h3>
+<div class="grafico-area">
+<ol aria-label="Taxa de ganho por caminho do negócio, família do Start" class="funil">
+<li class="funil-etapa">
+<div class="funil-cab"><span class="funil-nome">Sem etapa de valores nem de encontro</span><span class="funil-valor">0,8%</span></div>
+<span aria-hidden="true" class="funil-trilho"><span class="funil-barra" style="--p:1%"></span></span>
+<p class="funil-taxa">41 ganhos em 4.977 negócios</p>
+</li>
+<li class="funil-etapa">
+<div class="funil-cab"><span class="funil-nome">Só a tabela de valores</span><span class="funil-valor">10,9%</span></div>
+<span aria-hidden="true" class="funil-trilho"><span class="funil-barra" style="--p:13.7%"></span></span>
+<p class="funil-taxa">465 ganhos em 4.268 negócios</p>
+</li>
+<li class="funil-etapa">
+<div class="funil-cab"><span class="funil-nome">Encontro marcado, sem presença registrada</span><span class="funil-valor">32,3%</span></div>
+<span aria-hidden="true" class="funil-trilho"><span class="funil-barra" style="--p:40.6%"></span></span>
+<p class="funil-taxa">53 ganhos em 164 negócios</p>
+</li>
+<li class="funil-etapa">
+<div class="funil-cab"><span class="funil-nome">Encontro realizado, com o negócio aberto</span><span class="funil-valor">79,5%</span></div>
+<span aria-hidden="true" class="funil-trilho"><span class="funil-barra" style="--p:100%"></span></span>
+<p class="funil-taxa">93 ganhos em 117 negócios</p>
+</li>
+<li class="funil-etapa">
+<div class="funil-cab"><span class="funil-nome">Negócio criado já numa etapa de encontro (marcado ou realizado)</span><span class="funil-valor">74,7%</span></div>
+<span aria-hidden="true" class="funil-trilho"><span class="funil-barra" style="--p:94%"></span></span>
+<p class="funil-taxa">112 ganhos em 150 negócios</p>
+</li>
+</ol>
+</div>
+<figcaption class="fonte">Família do Start · 9.698 negócios criados de 08/11/2025 a 07/11/2026 e 779 ganhos na Clint · outros 22 negócios, com 15 ganhos, só passaram por encontro depois de ganhos ou perdidos · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></figcaption>
+</figure>
+<aside class="aviso aviso-atencao">
+<p class="aviso-rotulo">Atenção</p>
+<p>O gráfico mostra associação. Quem vai à escola já é o lead mais quente, então a taxa do encontro não vale como promessa para os demais. E 59 dos 93 ganhos do encontro realizado foram marcados a menos de 1 minuto da presença, o que infla os 79,5%. Contando só contatos com um negócio, a ordem dos caminhos se mantém.</p>
+</aside>
+<h3>A aula hoje passa por fora</h3>
+<div class="leitura">
+<p>Das 186 inscrições na aula de 22/10 a 07/11, 134 (72,0%) não tinham negócio até 7 dias depois da inscrição. Dados até 07/11; para 05 a 07/11 a janela ainda estava aberta. A conversa existe: 111 dessas inscrições receberam mensagem de alguém do comercial pelo WhatsApp da Clint em até 7 dias, e em 79 o lead escreveu depois dessa mensagem (85 escreveram em algum momento do período). O agendamento e a presença ficam na planilha do comercial.</p>
+<p>Em out/2026, a Clint registrou 29 presenças (24 em "Visita Presente" e 5 em "Presente no aulão"), e a boleta do Airtable registrou 52 vendas que vieram da aula experimental.</p>
+<p>O funil da aula do Lucas está pronto e testado, mas ainda não recebe inscrição real: das 232 inscrições de 19/10 a 07/11, nenhuma entrou nele. Há dois caminhos para medir a linha de base da aula, a escolher com vocês: ligar o formulário ao funil por duas semanas ou levar a planilha do comercial para a central, só com datas e situação.</p>
+</div>
+<p class="fonte">Jotform e Clint pela central de dados da VOID, com o telefone comparado em código e sem dado pessoal · inscrições de 22/10 a 07/11/2026 (funil da aula: de 19/10 a 07/11/2026) · presenças e vendas da aula em out/2026, Clint e boleta do Airtable · <span class="origem o-medido">medido</span></p>
+<h3>Antes, no dia e depois</h3>
+<ul class="cartoes">
+<li>
+<h3>Antes</h3>
+<ul>
+<li>Hoje o formulário guarda o turno, e a data é combinada na conversa. Na GrowAI, o próprio lead escolhe o horário numa agenda com vagas.</li>
+<li>Ao agendar, sai a confirmação. O funil do Lucas já cria a tarefa "Mandar a confirmação do agendamento".</li>
+<li>Três dias antes, aquecimento. Na véspera, a mensagem "1 confirmo / 2 preciso remarcar", desenho do Lucas.</li>
+<li>Quem não confirmou na véspera ganha a etiqueta <code>aula:sem-confirmacao</code>, já automática no teste, e entra na fila de ligação do dia.</li>
+</ul>
+</li>
+<li>
+<h3>No dia</h3>
+<ul>
+<li>Quem recebe na escola marca a presença logo depois do encontro: compareceu ou faltou, com a data.</li>
+<li>No mesmo registro, os campos de diagnóstico (seção 07).</li>
+<li>Faltou: remarcação no mesmo dia, com duas opções de data.</li>
+</ul>
+</li>
+<li>
+<h3>Depois</h3>
+<ul>
+<li>Quer seguir: proposta concreta (seção 08).</li>
+<li>Ainda não decidiu: próximo passo com data, e a cadência pausa até ele, como no funil do Lucas.</li>
+<li>Não vai seguir agora: perdido com motivo, e o marketing manda material de acordo com a objeção.</li>
+</ul>
+</li>
+</ul>
+<h3>Três filas na entrada da aula <span class="etiqueta etiqueta-reconstrucao">reconstrução</span></h3>
+<div class="leitura">
+<p>No mapa de funis do Lucas, a inscrição na aula se divide em três filas. Quem chega com data escolhida tem o horário validado no WhatsApp. Quem chega sem data recebe duas opções ou o convite para a visita guiada. Quem precisa de revisão tem a intenção entendida numa conversa antes de receber a data.</p>
+<p>Nos 29 envios, só saiu MQL quem fez 75 pontos; quem marca "preciso conferir dias e horários" não chega aos 75 pontos e sai como não MQL. A proposta é mandar essa pessoa para a fila de revisão. Nos 29 envios do formulário de 22/10 a 07/11, 12 saíram como MQL, 14 como não MQL e 3 sem classificação; os 7 que marcaram "quero apenas viver a experiência" saíram como não MQL, como o critério manda.</p>
+</div>
+<p class="fonte">Formulário "Aula Experimental Start · Qualificação MQL" no Jotform, pela central de dados da VOID · envios de 22/10 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+</details></div>
+</section>
+<!-- 07 · DIAGNÓSTICO (SPICED) -->
+<section aria-labelledby="t-diagnostico" class="secao" id="diagnostico">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">07</span>
+<h2 id="t-diagnostico">Diagnóstico no encontro</h2>
+<p class="secao-sub">Perguntas que viram campos, cada uma no seu momento.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<figure class="citacao">
+<blockquote><p>o cara quer fazer um curso de tatuagem, não necessariamente ele tem uma dor latente a ser explorada no SPICED</p></blockquote>
+<figcaption>Maluf, no treinamento da jornada</figcaption>
+</figure>
+<div class="leitura">
+<p>Quem procura um curso de tatuagem nem sempre tem uma dor; pode ter um objetivo de carreira ou de expressão artística. SPICED é a sigla em inglês para situação, dor, impacto, evento crítico e decisão. Na VOID, a "dor" é o objetivo da pessoa, nas palavras dela: mudar de carreira, viver da própria arte, tatuar como hobby.</p>
+<p>Aqui o SPICED vira campos em cada momento: situação e objetivo na conversa de M2; impacto, impedimento e quem decide no encontro (M3); evento crítico na proposta (M4). O roteiro da conversa continua sendo escolha do Maluf.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Os campos de diagnóstico</caption>
+<thead><tr><th scope="col">Letra</th><th scope="col">O que registra</th><th scope="col">Pergunta que ajuda</th><th scope="col">Campo</th><th scope="col">Momento</th></tr></thead>
+<tbody>
+<tr><th scope="row">S · Situação</th><td>O que a pessoa faz hoje e se já desenha ou tatua</td><td>"Você já desenha ou já tatuou alguém?"</td><td>Situação atual, em lista e na frase da pessoa</td><td>M2</td></tr>
+<tr><th scope="row">P · Dor, que aqui é o objetivo</th><td>O que ela quer mudar ou alcançar</td><td>"O que te fez procurar a formação agora?"</td><td>Objetivo, na frase da pessoa</td><td>M2</td></tr>
+<tr><th scope="row">I · Impacto</th><td>O que muda se ela começar, ou o que acontece se adiar</td><td>A pergunta que o Maluf já usa: "quanto tempo você consegue ficar com essa dor de não fazer o curso de tatuagem?"</td><td>Consequência</td><td>M3</td></tr>
+<tr><th scope="row">CE · Evento crítico</th><td>Uma data com consequência real para a pessoa</td><td>"Até quando você quer estar tatuando, e o que acontece se passar dessa data?"</td><td>Data que importa e o motivo</td><td>M4</td></tr>
+<tr><th scope="row">D · Decisão</th><td>Quem decide, quem paga e o que falta para decidir</td><td>"Mais alguém participa dessa decisão ou do pagamento?" Para menor de idade, o responsável legal</td><td>Quem decide e o que falta</td><td>M3</td></tr>
+<tr><th scope="row">Impedimento</th><td>O que pode travar a matrícula</td><td>O que falta resolver para começar?</td><td>Confiança, método, horário, deslocamento ou investimento</td><td>M3</td></tr></tbody>
+</table>
+</div>
+<div class="leitura">
+<p>Fim de condição comercial ou Black Friday não contam como evento crítico. A data tem de ser da pessoa.</p>
+<p> Quando a pessoa decide sem visitar, as mesmas perguntas vão na ligação, e o encontro e a proposta podem ter a mesma data. No fim, o comercial marca a intenção de compra numa lista (quer proposta, explorando ou não agora); quem quer proposta é SQL.</p>
+<p>Os campos da proposta ainda precisam ser aceitos e treinados; nenhum deles foi criado nesta entrega.</p>
+</div>
+</details></div>
+</section>
+<!-- 08 · PROPOSTA E MATRÍCULA -->
+<section aria-labelledby="t-proposta" class="secao" id="proposta">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">08</span>
+<h2 id="t-proposta">Proposta e matrícula</h2>
+<p class="secao-sub">Proposta concreta, boleta no Airtable e passagem para o CS.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="numeros">
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">92,0%</p>
+<p class="numero-rotulo">de quem entra em "FUP Proposta 2" no Funil Start sai perdido</p>
+<p class="numero-base">base: 772 de 839 entradas</p>
+<p class="numero-nota">Funil Start · entradas de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero" data-sinal="verde">
+<p class="numero-sinal"><span class="sinal sinal-verde">No caminho</span></p>
+<p class="numero-valor">98,2%</p>
+<p class="numero-rotulo">dos ganhos da Clint têm venda no Airtable em até 45 dias</p>
+<p class="numero-base">base: 1.121 de 1.141 ganhos</p>
+<p class="numero-nota">nov/2025 a out/2026 · Clint e boleta do Airtable pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">0 de 92</p>
+<p class="numero-rotulo">ganhos de out/2026 têm valor preenchido na Clint</p>
+<p class="numero-base">o valor só existe na boleta</p>
+<p class="numero-nota">ganhos de out/2026 · Clint pela central de dados da VOID · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero" data-sinal="laranja">
+<p class="numero-sinal"><span class="sinal sinal-laranja">Atenção</span></p>
+<p class="numero-valor">49,6%</p>
+<p class="numero-rotulo">dos ganhos do Start nasceram de negócio criado à mão, em mediana cerca de 17 horas antes do ganho</p>
+<p class="numero-base">base: 386 de 779 ganhos</p>
+<p class="numero-nota">família do Start · criados de 08/11/2025 a 07/11/2026 · Clint pela central de dados da VOID · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<h3>A proposta (M4)</h3>
+<p class="leitura">A proposta é para aquela pessoa: formação, turma, horário, valor, condição de pagamento e próximo passo com data. Sai depois do encontro, ou na mesma conversa quando a pessoa decide sem visitar. Proposta sem próximo passo com data volta para a cadência como tarefa, em vez de descer a escada de follow-up que hoje termina em perda.</p>
+<h3>A matrícula (M5)</h3>
+<p class="leitura"><span class="etiqueta etiqueta-validar">A validar</span> O marco da matrícula (boleta, pagamento ou sinal) e quem preenche a boleta ainda são decisão de vocês. A proposta é conferir a boleta no Airtable, a fonte da verdade da matrícula, e o ganho na Clint tem valor, turma, forma de pagamento e um só vendedor creditado. A ligação entre os dois já funciona; o que falta é o valor e o caminho no negócio. Quando o negócio nasce na hora da venda, a jornada e a origem daquela matrícula ficam sem registro. Com dono e negócio desde o primeiro contato, a venda chega à boleta com o caminho inteiro.</p>
+<h3>A passagem para o CS (M6)</h3>
+<p class="leitura">No dia da matrícula, o negócio guarda os combinados da venda (como reposições), a turma e a data da Aula 1. O CS recebe o resumo do que foi conversado e o que foi prometido, com prazo, e começa a ativação: mensagem de entrada, grupo da turma e mensagem na véspera da Aula 1.</p>
+</details></div>
+</section>
+<!-- 09 · ROTINA -->
+<section aria-labelledby="t-rotina" class="secao" id="rotina">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">09</span>
+<h2 id="t-rotina">Rotina por papel</h2>
+<p class="secao-sub">Abrir o dia, durante o dia e antes de encerrar.</p>
+</header>
+<aside class="aviso aviso-reconstrucao">
+<p class="aviso-rotulo">Reconstrução a confirmar</p>
+<p>Esta rotina junta a rotina por momento da jornada, o funil de teste da aula e o que vocês contaram nas calls. Falta conferir com a parte de rotina do Playbook original.</p>
+</aside>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>A rotina de cada papel</caption>
+<thead><tr><th scope="col">Papel</th><th scope="col">Abrir o dia</th><th scope="col">Durante o dia</th><th scope="col">Antes de encerrar</th></tr></thead>
+<tbody>
+<tr><th scope="row">Marketing (M1)</th><td>Conferir os leads novos e se cada um chegou com origem e dono</td><td>Conferir as respostas dos formulários e corrigir página ou link sem UTM</td><td>Avisar o comercial de quem marcou que quer começar já</td></tr>
+<tr><th scope="row">Comercial (M2 a M5)</th><td>Começar por quem chegou fora do horário. Ver os encontros do dia e as propostas com retorno marcado para hoje</td><td>Fazer o primeiro contato pelo canal do grupo: ligação em até 3 minutos no grupo Ligação; mensagem de uma pessoa no grupo WhatsApp. Registrar cada tentativa e mover só com prova de avanço</td><td>Marcar a próxima tentativa de quem ficou sem resposta, atualizar cada proposta e conferir cada matrícula do dia na boleta e na Clint</td></tr>
+<tr><th scope="row">Quem recebe na escola (M3)</th><td>Ver os encontros do dia e ligar para quem não confirmou</td><td>Marcar a presença logo depois de cada encontro, com os campos de diagnóstico</td><td>Remarcar quem faltou, com duas opções de data</td></tr>
+<tr><th scope="row">CS (M6)</th><td>Ver as matrículas novas e a turma de cada uma</td><td>Mandar a mensagem de entrada e incluir no grupo da turma</td><td>Conferir quem começa amanhã e programar a mensagem de véspera da Aula 1</td></tr>
+</tbody>
+</table>
+</div>
+<p class="leitura">Quem ocupa cada papel é decisão de vocês. Uma pessoa pode ter mais de um papel; o que não muda é cada momento ter um dono.</p>
+</div>
+</section>
+<!-- 10 · RITUAIS E PLACAR -->
+<section aria-labelledby="t-placar" class="secao" id="placar">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">10</span>
+<h2 id="t-placar">Rituais e placar</h2>
+<p class="secao-sub">Três números por momento, olhados toda semana.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<h3>Rituais <span class="etiqueta etiqueta-validar">a validar</span></h3>
+<ul class="cartoes">
+<li><h3>Segunda</h3><p>Planejamento da semana pelo placar, entre 8h30 e 10h. Cada dono de momento diz o que vai fazer, olhando volume, conversão e tempo.</p></li>
+<li><h3>Terça a quinta</h3><p>Reunião diária de 15 minutos, cerca de um minuto e meio por pessoa: o que fez ontem, o que faz hoje e o que está travando.</p></li>
+<li><h3>Sexta</h3><p>Celebração do resultado da semana, com o time.</p></li>
+</ul>
+<p class="leitura">Os três rituais foram propostos no treinamento da jornada para vocês testarem. A sugestão é testar depois da BlackVOID, em uma frente por vez, após medir as três regras.</p>
+<h3>O placar da semana</h3>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Volume, conversão e tempo por momento</caption>
+<thead><tr><th scope="col">Momento</th><th scope="col">Volume</th><th scope="col">Conversão</th><th scope="col">Tempo</th><th scope="col">Higiene</th></tr></thead>
+<tbody>
+<tr><th scope="row">M1 Lead</th><td>Leads por origem e campanha</td><td>De M1 para M2</td><td>Até o primeiro contato de uma pessoa</td><td>% sem origem e % sem dono</td></tr>
+<tr><th scope="row">M2 Qualificação</th><td>MQL da semana e parados em M2</td><td>De M2 para M3</td><td>Tempo em M2</td><td>% com as tentativas registradas</td></tr>
+<tr><th scope="row">M3 Encontro</th><td>Agendados, confirmados, presentes e faltas</td><td>Presentes que viram proposta ou matrícula</td><td>Do agendamento ao encontro</td><td>% de encontros com presença marcada</td></tr>
+<tr><th scope="row">M4 Proposta</th><td>Propostas abertas</td><td>Da proposta à matrícula</td><td>Da proposta à decisão</td><td>% sem próximo passo com data</td></tr>
+<tr><th scope="row">M5 Matrícula</th><td>Matrículas por origem e formação</td><td>Do lead à matrícula</td><td>Do lead à matrícula</td><td>% de ganhos com valor, turma e boleta</td></tr>
+</tbody>
+</table>
+</div>
+<div class="leitura">
+<p>Cada número ganha uma cor: vermelho para o gargalo da vez, laranja para atenção e verde para o que está no caminho. Os cortes de cada cor são decisão de vocês. O placar é por momento e nunca compara pessoas.</p>
+<p>A linha de base está nas seções 04, 06 e 08. A página <a href="../jornada/">Jornada VOID</a> traz o retrato até 07/11/2026. Atualização é manual; não há sincronização contínua.</p>
+</div>
+</details></div>
+</section>
+<!-- 11 · CLINT AGORA, GROWAI DEPOIS -->
+<section aria-labelledby="t-depois" class="secao" id="depois">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">11</span>
+<h2 id="t-depois">Primeiro na Clint, depois na GrowAI</h2>
+<p class="secao-sub">Processo antes de automação: duas semanas medindo, depois o automático.</p>
+</header>
+<p class="leitura">Automatizar um processo que ainda não foi medido só leva o problema para outra ferramenta. A ordem proposta é esta, com datas a confirmar.</p>
+<ol class="linha-tempo">
+<li class="marco" data-estado="agora">
+<span class="marco-quando">Agora</span>
+<span class="marco-titulo">Aprovar o playbook</span>
+<p>Lucas e Maluf validam os momentos, as regras, a cadência e os campos. O que não fizer sentido muda aqui.</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Duas semanas · proposta, datas a confirmar</span>
+<span class="marco-titulo">Rodar na Clint, medindo</span>
+<dl class="marco-campos">
+<div><dt>Comercial</dt><dd>Só três regras, se o Maluf aceitar: dono na criação do negócio; “Sem retorno” só depois das tentativas registradas; ganho com valor e turma.</dd></div>
+<div><dt>Marketing e dados</dt><dd>Medir a linha de base da aula pelo caminho escolhido e montar o placar semanal. Nenhuma mudança de fonte ou conector está executada nesta proposta.</dd></div>
+</dl>
+<p class="marco-portao"><span><strong>Portão para seguir:</strong> todo negócio novo com dono e todo encontro com presença marcada. <span class="etiqueta etiqueta-validar">a validar</span></span></p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Depois da BlackVOID · proposta, datas a confirmar</span>
+<span class="marco-titulo">Treinamento por papel</span>
+<p>Uma frente de cada vez: primeiro o teste A/B de ligação; depois os campos de diagnóstico e os rituais; por fim o treino por papel (seção 12).</p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Depois do treinamento · proposta, datas a confirmar</span>
+<span class="marco-titulo">A GrowAI automatiza o que funcionou</span>
+<p>As automações entram em cima das regras aprovadas e medidas, uma de cada vez.</p>
+</li>
+</ol>
+<h3>O que a GrowAI automatiza depois</h3>
+<ul class="leitura">
+<li>Dono desde a criação, por distribuição automática, para o campo responsável deixar de nascer vazio.</li>
+<li>Agenda da aula e da visita com vagas, confirmação, lembretes de três dias antes e da véspera com "1 confirmo / 2 preciso remarcar", e a presença registrada no mesmo lugar da origem.</li>
+<li>Tarefas da cadência com data e aviso quando um lead novo fica sem contato de uma pessoa.</li>
+<li>Pontuação de lead e listas, para ordenar a fila por intenção e separar para disparo só quem consentiu, como o Lucas pediu.</li>
+<li>Devolução para a Meta e o Google de quem virou MQL, foi ao encontro e se matriculou, para as campanhas aprenderem com quem conversa e compra. Depende de os formulários gravarem contato e origem juntos.</li>
+</ul>
+<p class="leitura">São recursos que a GrowAI tem e que ainda vão ser montados para a VOID. A página <a href="../growai/">A VOID na GrowAI</a> mostra em que ordem e com que portões.</p>
+</div>
+</section>
+<!-- 12 · TREINAMENTO -->
+<section aria-labelledby="t-treinamento" class="secao" id="treinamento">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">12</span>
+<h2 id="t-treinamento">Treinamento por papel</h2>
+<p class="secao-sub">Um roteiro curto para cada papel, depois da BlackVOID, com datas a confirmar.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="tabela tabela-cartoes tabela-par">
+<table>
+<caption>O que cada papel treina</caption>
+<thead><tr><th scope="col">Papel</th><th scope="col">O que treinar</th></tr></thead>
+<tbody>
+<tr><th scope="row">Comercial</th><td>Caixa de entrada: quem responde cada conversa. Etapa: mudar só com prova de que a pessoa avançou. Tarefa: cada tentativa concluída. Agenda: encontro com duas opções de data e proposta com próximo passo</td></tr>
+<tr><th scope="row">Quem recebe na escola</th><td>Presença marcada no dia, os campos de diagnóstico e a remarcação de quem faltou</td></tr>
+<tr><th scope="row">Marketing</th><td>Origem e UTM em todo link, formulário com nome, telefone e consentimento, e aviso ao comercial de quem quer começar já</td></tr>
+<tr><th scope="row">CS</th><td>Passagem da matrícula com turma e combinados, mensagem de entrada e véspera da Aula 1</td></tr>
+</tbody>
+</table>
+</div>
+<p class="leitura">O treino acontece sobre o processo que rodou nas duas semanas, já com os números da Clint na mão. Novembro tem Tattoo Week e BlackVOID; o treino fica para depois das duas, com datas a confirmar. <span class="etiqueta etiqueta-proposta">proposta</span> <span class="etiqueta etiqueta-validar">datas a confirmar</span></p>
+</details></div>
+</section>
+<!-- 13 · SOBRE OS DADOS -->
+<section aria-labelledby="t-dados" class="secao" id="sobre-os-dados">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">13</span>
+<h2 id="t-dados">Sobre os dados</h2>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<details><summary>Fontes, definições e limites dos números</summary><div class="leitura">
+<p>Os números vêm da central de dados da VOID, que recebe da Clint (negócios, histórico de etapas, mensagens e conversas), do Jotform (inscrições na aula e formulário MQL) e da boleta de vendas do Airtable. Dados até 07/11/2026, às 22h35. A página usa só números agregados, sem nome, telefone ou e-mail de ninguém.</p>
+<ul>
+<li>Família do Start: o Funil Start e os funis de vendedor do Start. Os números dela são de negócios criados de 08/11/2025 a 07/11/2026, salvo outro período indicado.</li>
+<li>Horário útil: segunda a sexta, das 9h às 17h59, sem calendário de feriados (a validar; feriado em dia de semana contou como útil nas medidas). O primeiro contato conta só os negócios criados quando o lead escreveu no WhatsApp.</li>
+<li>Conversa real: o lead escreveu depois de uma mensagem de uma pessoa. Mensagem automática e disparo não contam.</li>
+<li>Ganho é o status na Clint. A matrícula é a boleta do Airtable.</li>
+<li>Encontro: etapas de visita e aulão. Encontro realizado: "Visita Presente", "Presente no aulão" e "Compareceu · proposta".</li>
+<li>Responsável: retrato de 08/11/2026. Números de retrato podem mudar depois da carga diária das fontes, por volta de meia-noite.</li>
+<li>Inscrições na aula: envios ativos dos formulários [FB], [FB - Teste], [OR], [GS/YT] e MQL, sem teste, com o telefone comparado em código dentro da central de dados.</li>
+<li>Tarefas concluídas: a central de dados mostra quase nenhuma concluída na Clint. Antes de tirar conclusão, falta conferir na tela da Clint se é registro ou limite da leitura.</li>
+</ul>
+<p>Tabelas da central de dados: <code>thevoid_clint_deals</code>, <code>thevoid_clint_deal_history</code>, <code>thevoid_clint_messages</code>, <code>thevoid_clint_chats</code>, <code>thevoid_clint_origins</code>, <code>thevoid_jotform_submissions</code> e a tabela de vendas do Airtable (<code>thevoid_airtable_planilha_de_controle_de_vendas_para_atendimento_the_void_online_presencial_c_2023_vendas_efetuadas_cadastro_inicial</code>). Estes quadros conservam a linha de base do levantamento. A página Jornada apresenta os agregados consolidados nas treze tabelas da jornada e explica os refinamentos de régua.</p>
+<p>Esta versão não partiu do texto do Playbook de 29/10, que não pôde ser lido. O pipeline parte do funil de teste da aula na Clint, e a rotina é reconstrução a confirmar. Ficaram fora desta página: meta, capacidade e previsão; dinheiro recebido; desempenho por pessoa.</p>
+<p class="fonte">Clint, Jotform e Airtable pela central de dados da VOID · 08/11/2025 a 07/11/2026, salvo outro período indicado · dados até 07/11/2026</p>
+</div></details>
+</details></div>
+</section>
+<!-- 14 · PRÓXIMO PASSO -->
+<section aria-labelledby="t-proximo" class="secao" id="proximo-passo">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">14</span>
+<h2 id="t-proximo">Próximo passo</h2>
+</header>
+<ul class="checklist">
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Validar com o Maluf o pipeline por momento, as oito regras e as três provas.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Decidir o prazo do primeiro contato, o número de tentativas e a janela da cadência.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Fechar o horário útil do comercial e a idade mínima para a formação, 16 ou 18 anos.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Escolher como medir a linha de base da aula: funil da Clint ou planilha do comercial na central de dados.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Rodar as regras na Clint por duas semanas, com o placar de volume, conversão e tempo por momento.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Depois da BlackVOID e da linha de base, começar o teste A/B de ligação, com a etiqueta de cada grupo e cada ligação registrada.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Usar os campos de diagnóstico no encontro e escolher o roteiro da conversa.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Depois do teste A/B e dos campos de diagnóstico, testar os rituais: planejamento na segunda, reunião diária de terça a quinta e celebração na sexta.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Conferir esta versão com o Playbook original e apontar o que ficou de fora.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Treinar o time por papel depois da BlackVOID e só então ligar as automações na GrowAI.</span></li>
+</ul>
+</div>
+</section>
+</main>
+<footer class="rodape">
+<div class="wrap">
+<div class="rodape-topo">
+<p class="rodape-dados">Dados até <time datetime="2026-11-07">07/11/2026</time></p>
+<ul class="rodape-links">
+<li><a href="../../">Painel de receita</a></li>
+<li><a href="../../m1/">Plano M1</a></li>
+</ul>
+</div>
+<div class="rodape-assinatura">
+<p class="rodape-void"><span class="junto">The VOID Tattoo Academy</span> · <span class="junto">Vila Madalena, São Paulo</span></p>
+<p class="rodape-growai">Preparado por <img alt="GrowAI" height="31" src="../assets/growai-logo-branco.svg" width="81"/></p>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/sistema.js"></script>
+</body>
+</html>

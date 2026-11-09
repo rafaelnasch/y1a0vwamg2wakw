@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html data-estacao="chamado" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="#181818" name="theme-color"/>
+<title>A VOID na GrowAI · Sistema VOID</title>
+<meta content="Onde a GrowAI entra na VOID, em que ordem e com que portões, sem parar a venda na Tattoo Week nem na BlackVOID." name="description"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Newsreader:ital,opsz,wght@1,6..72,300&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/sistema.css" rel="stylesheet"/>
+<script>document.documentElement.className+=' js'</script>
+<style>
+/* Página 4, A VOID na GrowAI. Estilos só desta página; a base fica em ../assets/sistema.css. */
+.lista-espacada li{margin-bottom:12px}
+.fonte+.leitura{margin-top:24px}
+@media (min-width:960px){.numeros.cinco{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (max-width:759.98px){.numeros.cinco>:last-child{grid-column:1/-1}}
+.decisoes{list-style:none;margin:24px 0 16px;padding:0;display:grid;gap:12px}
+.decisoes>li.depois>ul,.decisoes>li.depois>p{max-width:72ch}
+.decisoes>li{margin:0;min-width:0;padding:20px 16px;background:var(--bastidor);border-top:2px solid var(--areia)}
+.decisoes>li.depois{border-top-color:var(--sinal-laranja)}
+.decisoes p,.decisoes li li{font-size:16px;line-height:1.55}
+.decisoes>li>:last-child{margin-bottom:0}
+.decisao-quando{margin:0 0 8px;font:700 12px/1.3 var(--font-letreiro);font-variation-settings:"wdth" 125;letter-spacing:.16em;text-transform:uppercase;color:var(--areia)}
+.depois .decisao-quando{color:var(--sinal-laranja)}
+.secao .decisao-titulo{margin:0 0 12px;font-size:22px;line-height:1.1}
+@media (min-width:760px){
+  .decisoes{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .decisoes>li{padding:28px 24px}
+  .decisoes>li.depois{grid-column:1/-1}
+}
+.duvidas{margin:24px 0 0}
+.duvida+.duvida{margin-top:40px;padding-top:32px;border-top:1px solid var(--fio)}
+.resposta{max-width:680px}
+.fala-citada{margin:0 0 16px}
+.fala-citada blockquote{margin:0;padding:2px 0 2px 16px;border-left:2px solid var(--areia);font:600 clamp(20px,5.2vw,26px)/1.3 var(--font-letreiro);font-variation-settings:"wdth" 100;color:var(--tela)}
+.fala-citada blockquote p{margin:0}
+.fala-citada figcaption{margin:8px 0 0 18px;font:600 12px/1.4 var(--font-letreiro);font-variation-settings:"wdth" 125;letter-spacing:.16em;text-transform:uppercase;color:var(--po)}
+.principios{list-style:none;margin:24px 0 16px;padding:0;display:grid;gap:12px}
+.principios>li{margin:0;min-width:0;padding:20px 16px;background:var(--bastidor);border-top:2px solid var(--fio)}
+.principios>li[data-sinal="vermelho"]{border-top-color:var(--sinal-vermelho)}
+.secao .principio-nome{margin:0 0 10px;font-size:19px}
+.principios p{margin:0 0 10px;font-size:16px;line-height:1.55}
+.principios .fonte{font-size:14px}
+.principios>li>:last-child{margin-bottom:0}
+@media (min-width:760px){.principios{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.principios>li{padding:24px}}
+.tabelas-detalhes{margin:8px 0 16px}
+.tabelas-detalhes summary{display:inline-flex;align-items:center;min-height:44px;cursor:pointer;font:700 13px/1.2 var(--font-letreiro);font-variation-settings:"wdth" 100;letter-spacing:.12em;text-transform:uppercase;color:var(--areia)}
+.tabelas-usadas{margin:8px 0 16px;padding-left:22px}
+.tabelas-usadas code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:1.5;color:var(--cal);overflow-wrap:anywhere;word-break:break-word}
+</style>
+</head>
+<body data-pagina="growai">
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo">
+<div class="wrap topo-barra">
+<a class="topo-marca" href="../"><img alt="The VOID Tattoo Academy, início do Sistema VOID" height="24" src="../assets/void-horizontal-branco.svg" width="158"/></a>
+<button aria-controls="nav-sistema" aria-expanded="false" class="menu-botao" type="button"><span aria-hidden="true" class="menu-icone"></span><span class="menu-rotulo">Menu</span></button>
+<nav aria-label="Páginas do Sistema VOID" class="nav-sistema" id="nav-sistema">
+<ol class="nav-lista">
+<li><a class="nav-link" data-pagina="inicio" href="../"><span aria-hidden="true" class="nav-num"></span><span class="nav-nome">Início</span><span class="nav-desc">O que é o Sistema VOID</span></a></li>
+<li><a class="nav-link" data-pagina="jornada" href="../jornada/"><span class="nav-num">01</span><span class="nav-nome">Jornada</span><span class="nav-desc">Do anúncio à matrícula, num lugar só</span></a></li>
+<li><a class="nav-link" data-pagina="mapa-do-funil" href="../mapa-do-funil/"><span class="nav-num">02</span><span class="nav-nome">Mapa do Funil</span><span class="nav-desc">O seu mapa, na versão GrowAI</span></a></li>
+<li><a class="nav-link" data-pagina="playbook" href="../playbook/"><span class="nav-num">03</span><span class="nav-nome">Playbook</span><span class="nav-desc">Pipeline e rotina do atendimento</span></a></li>
+<li><a aria-current="page" class="nav-link" data-pagina="growai" href="../growai/"><span class="nav-num">04</span><span class="nav-nome">A VOID na GrowAI</span><span class="nav-desc">Onde entra, em que ordem e com que portões</span></a></li>
+</ol>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section aria-labelledby="titulo-pagina" class="abertura janela-luz">
+<div class="wrap">
+<p class="marcador">Página 4 de 4 · Para Lucas, Maluf e Felipe</p>
+<h1 class="titulo-filme" id="titulo-pagina">A VOID na GrowAI</h1>
+<p class="linha-off">Em camadas, sem parar a venda.</p>
+<div class="abertura-lede">
+<p>Para a conversa do comercial, a Clint dá conta. A GrowAI entra no que acontece antes e em volta dessa conversa: a captura com origem, o e-mail com consentimento e a agenda com presença, no mesmo cadastro do lead.</p>
+<p>A proposta é ir em três camadas: o marketing agora, a aula experimental como piloto do comercial e o Start só quando os números mostrarem que dá. Na Tattoo Week e na BlackVOID, o comercial segue na Clint como está.</p>
+<p>Cada camada só abre quando a anterior passa num portão, um critério combinado antes e medido. A palavra final sobre o CRM do comercial é do Maluf.</p>
+</div>
+<a class="botao" href="#proximo-passo">Ver o próximo passo <svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+<dl class="ficha">
+<div><dt>Dados até</dt><dd><time datetime="2026-11-07">07/11/2026</time></dd></div>
+<div><dt>Versão</dt><dd><time datetime="2026-11-08">08/11/2026</time></dd></div>
+<div><dt>Situação</dt><dd>Proposta</dd></div>
+</dl>
+</div>
+</section>
+<div class="wrap">
+<aside class="aviso aviso-proposta">
+<p class="aviso-rotulo">Proposta</p>
+<p>Tudo nesta página é proposta. As datas estão a confirmar, inclusive as da BlackVOID, e as decisões estão a validar com Lucas e Maluf. Os portões servem para decidir o passo seguinte e não prometem resultado.</p>
+</aside>
+</div>
+<nav aria-label="Nesta página" class="wrap sumario">
+<p class="sumario-titulo">Nesta página</p>
+<ol>
+<li><a href="#registros"><span>01</span>O que a GrowAI registra</a></li>
+<li><a href="#clint"><span>02</span>Onde a Clint basta</a></li>
+<li><a href="#comecar"><span>03</span>Por onde começar</a></li>
+<li><a href="#camadas"><span>04</span>Três camadas, com portões</a></li>
+<li><a href="#maluf"><span>05</span>As dúvidas do Maluf</a></li>
+<li><a href="#falta"><span>06</span>O que falta e os riscos</a></li>
+<li><a href="#metodo"><span>07</span>Como a GrowAI conduz</a></li>
+<li><a href="#sobre-os-dados"><span>08</span>Sobre os dados</a></li>
+<li><a href="#proximo-passo"><span>09</span>Próximo passo</a></li>
+</ol>
+</nav>
+<section aria-labelledby="t-registros" class="secao" id="registros">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">01</span>
+<h2 id="t-registros">O que a GrowAI registra</h2>
+<p class="secao-sub">O que a GrowAI guarda e o que pode chegar à central de dados.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A conta da VOID na GrowAI ainda está no começo. Agenda com presença, mensagens, conversas e envios de formulário têm saída pelo conector padrão, cujo formato foi conferido em 08/11/2026. A origem precisa ser gravada em campo do contato ou campo oculto do formulário; o consentimento ainda precisa ser conferido. Na VOID, a captura funciona em parte, agenda e e-mail precisam ser montados e a ligação com a central de dados ainda não existe. A <a href="#falta">seção 06</a> mostra essas dependências.</p>
+</div>
+<h3>O que muda para a VOID</h3>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Três registros que hoje estão espalhados</caption>
+<thead><tr><th scope="col">Registro</th><th scope="col">O que a GrowAI guarda</th><th scope="col">Hoje na VOID</th></tr></thead>
+<tbody>
+<tr><th scope="row">Agenda com presença</th><td>Cada agendamento com a situação: confirmado, compareceu, faltou ou cancelado.</td><td>A agenda e a presença da aula ficam numa planilha do comercial, fora da central de dados. Em out/2026, a Clint registrou 29 presenças para 52 vendas que vieram de aula experimental.</td></tr>
+<tr><th scope="row">E-mail com consentimento</th><td>Telefone, e-mail e a autorização para receber mensagens no mesmo cadastro.</td><td>O e-mail mora no ActiveCampaign, com 9.863 contatos. O telefone mora na Clint, onde só 62 dos 40.779 contatos têm e-mail.</td></tr>
+<tr><th scope="row">Captura com origem</th><td>Cada envio de formulário com a página, o formulário e, quando o link traz, a campanha e o anúncio.</td><td>Funciona em parte nas páginas: o código instalado em 22/10 captou 691 envios até 07/11, com a página de origem. Quantos trazem campanha e anúncio ainda não foi contado. Falta o principal: nenhum envio veio com nome, telefone ou e-mail.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Presença: Clint (etapas Visita Presente e Presente no aulão) e Airtable (origem da venda), out/2026; a planilha do comercial foi citada na call de 26/10 · E-mail: ActiveCampaign e Clint pela central de dados, situação em 07/11/2026 · Captura: conta da VOID na GrowAI, envios de 22/10 a 07/11/2026, lida em 08/11 · <span class="origem o-medido">medido</span></p>
+<div class="leitura">
+<p>A Clint também guarda a origem em campos do negócio, como o funil de teste do Lucas mostrou. O que falta é a origem chegar até lá: o negócio nasce quando a pessoa escreve no WhatsApp (908 das 949 criações de negócio de 08/10 a 07/11), e a origem fica, no máximo, como etiqueta no contato.</p>
+</div>
+<h3>O que permite comparar</h3>
+<div class="leitura">
+<p>Nestes três, as ferramentas de hoje já entregam o mesmo tipo de dado à central: a Clint, as mensagens e as conversas; o Jotform, os envios de formulário. O piloto só poderá ser comparado depois de ligar a conta e montar na central a leitura de mensagens, conversas e agenda da GrowAI com as mesmas definições da Clint.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Três registros para medir os dois lados do mesmo jeito</caption>
+<thead><tr><th scope="col">Registro</th><th scope="col">O que a GrowAI guarda</th><th scope="col">Para que serve</th></tr></thead>
+<tbody>
+<tr><th scope="row">Mensagens com autor e direção</th><td>Quem escreveu cada mensagem e para que lado ela foi: do lead para a escola ou da escola para o lead.</td><td>Medir o primeiro contato humano e a conversa real com a mesma definição usada na Clint.</td></tr>
+<tr><th scope="row">Conversas com não lidas</th><td>Quantas mensagens do lead ainda esperam leitura em cada conversa.</td><td>Ver caixa parada. Na Clint, 34 das 1.531 conversas de 08/10 a 07/11 (2,2%) tinham mensagem do lead não vista.</td></tr>
+<tr><th scope="row">Envios de formulário</th><td>Cada envio dos formulários da GrowAI, ligado ao mesmo contato da conversa e da agenda.</td><td>Ligar a inscrição ao que vem depois. Os envios do Jotform chegam à central de dados, mas não à Clint: das 186 inscrições na aula de 22/10 a 07/11, 134 (72,0%) não tinham negócio até 7 dias após a inscrição; para 05 a 07/11, a janela ainda estava aberta.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint e Jotform pela central de dados, nos períodos de cada linha · <span class="origem o-medido">medido</span></p>
+<aside class="aviso aviso-atencao">
+<p class="aviso-rotulo">Atenção</p>
+<p>A conta da VOID na GrowAI ainda não está ligada à central de dados. Até ligar, nada do que a GrowAI registrar aparece nos números destas páginas. Ligar a conta e montar essa leitura precisam estar prontos antes do piloto. Essa montagem depende de aprovação própria e não foi executada nesta entrega.</p>
+</aside>
+</details></div>
+</section>
+<section aria-labelledby="t-clint" class="secao" id="clint">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">02</span>
+<h2 id="t-clint">Onde a Clint basta</h2>
+<p class="secao-sub">O comercial vive na caixa de WhatsApp dela, e ela funciona.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="numeros">
+<div class="numero" data-sinal="verde">
+<p class="numero-sinal"><span class="sinal sinal-verde">No caminho</span></p>
+<p class="numero-valor">87,5%</p>
+<p class="numero-rotulo">das conversas tiveram um atendente</p>
+<p class="numero-base">base: 1.340 de 1.531 conversas</p>
+<p class="numero-nota">08/10 a 07/11/2026 · Clint pela central de dados · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero" data-sinal="verde">
+<p class="numero-sinal"><span class="sinal sinal-verde">No caminho</span></p>
+<p class="numero-valor">2,2%</p>
+<p class="numero-rotulo">das conversas ficaram com mensagem do lead não vista</p>
+<p class="numero-base">base: 34 de 1.531 conversas</p>
+<p class="numero-nota">08/10 a 07/11/2026 · Clint pela central de dados · <span class="origem o-medido">medido</span></p>
+</div>
+</div>
+<ul class="leitura lista-espacada">
+<li>Os 1.425.516 registros de mensagem do WhatsApp, de 25/10/2023 a 07/11/2026, já estão guardados na central de dados. Dentro da Clint, o vendedor vê a conversa antiga inteira; numa troca, o atendimento na GrowAI receberia só um resumo por contato.</li>
+<li>O funil da aula que o Lucas montou funciona: nos testes de 30/10 a 03/11, a Clint mandou sozinha 5 mensagens automáticas de WhatsApp e pôs o responsável na entrada. Esse desenho vira a especificação do piloto.</li>
+<li>Os problemas medidos são de processo. Na Clint, 87,5% das conversas têm atendente, mas 74,9% dos negócios criados de 08/10 a 07/11 (708 de 945) estavam sem responsável no retrato de 08/11, porque o atendimento é atribuído na conversa e não no negócio. Uma regra escrita resolve isso na Clint mesmo; trocar de ferramenta sem ela leva o problema junto.</li>
+<li>Boa parte da clareza que o Lucas pediu sai sem trocar de CRM. De onde vem a compra e quanto tempo o lead fica em cada etapa, a central de dados responde com a Clint e o Airtable, na <a href="../jornada/">página 1</a>. Quantos compareceram é a pergunta que pede registro novo: a agenda com presença.</li>
+</ul>
+<p class="fonte">Clint pela central de dados: mensagens de 25/10/2023 a 07/11/2026, negócios criados de 08/10 a 07/11/2026 e testes do funil Aula Experimental de 30/10 a 03/11/2026 · <span class="origem o-medido">medido</span></p>
+</details></div>
+</section>
+<section aria-labelledby="t-comecar" class="secao" id="comecar">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">03</span>
+<h2 id="t-comecar">Por onde começar</h2>
+<p class="secao-sub">Duas partes começam já. A conversa do Start muda por último.</p>
+</header>
+<ol class="decisoes">
+<li>
+<p class="decisao-quando">Já</p>
+<h3 class="decisao-titulo">Lead do Start nasce na GrowAI</h3>
+<p>Com o sim do Lucas, os formulários das páginas do Start passam a gravar na GrowAI o nome, o telefone, a origem e as respostas de qualificação. Essas respostas dão a nota de MQL do formulário e ordenam a fila. No Start, a qualificação se completa na conversa, com objetivo e aceite de próximo passo. Nutrição e disparo dependem de montar e testar o e-mail e o WhatsApp oficial.</p>
+<p>O caminho de hoje continua: o lead escreve no WhatsApp e chega à Clint como sempre. A origem passa para os campos que o Lucas já criou no negócio da Clint quando essa passagem for testada. É marketing, e levar o marketing para a GrowAI foi decisão do Lucas em 20/10.</p>
+</li>
+<li>
+<p class="decisao-quando">Já</p>
+<h3 class="decisao-titulo">Start novo desenhado uma vez</h3>
+<p>O redesenho do Start é a prioridade 1 do Lucas em novembro. Remontar o Start na Clint e migrar depois seria fazer o trabalho duas vezes.</p>
+<p>O desenho sai uma vez, nos momentos comerciais da jornada: M1 Lead, M2 Qualificação, M3 Encontro, M4 Proposta e M5 Matrícula. M6 Ativação, M7 Valor e M8 Expansão ficam no pós-venda. O desenho vem das páginas <a href="../mapa-do-funil/">2</a> e <a href="../playbook/">3</a> e é configurado na GrowAI sem lead real. Enquanto isso, a proposta é que as três regras do playbook passem a valer na Clint depois do aceite do Maluf.</p>
+</li>
+<li class="depois">
+<p class="decisao-quando">Depois da BlackVOID</p>
+<h3 class="decisao-titulo">Conversa do Start muda por último</h3>
+<ul>
+<li>O Start fez 984 das 1.300 vendas (75,7%) e 80,0% do valor vendido de nov/2025 a out/2026.</li>
+<li>O comercial vive na caixa de WhatsApp da Clint, onde o negócio do Start nasce. Mover o Start é mover essa caixa, e mexer no CRM agora “vai impactar o time”, como o Lucas disse em 20/10.</li>
+<li>O processo comercial “não está escrito”, nas palavras do Lucas em 06/11, e processo sem regra repete o problema em qualquer ferramenta.</li>
+<li>A conta da VOID na GrowAI ainda não tem o básico montado para o comercial: nenhum formulário, nenhum calendário, um usuário e campos feitos para outro tipo de negócio.</li>
+</ul>
+<p>Por isso o comercial começa pela aula experimental. Ela ataca o gargalo proposto para esta fase: a conversa que não vira encontro. A aula experimental está declarada como origem em 202 das 565 boletas de 01/06 a 07/11/2026 (35,8%); isso não prova comparecimento. No piloto, a agenda e a presença saem da planilha.</p>
+<p>A conversa da aula também muda de lugar. Hoje ela passa pelo WhatsApp da Clint, inclusive por um número do aulão, por onde nasceram 184 negócios de 06/05 a 06/11/2026. Qual número atende a aula no piloto fica <span class="etiqueta etiqueta-validar">a validar</span> com Lucas e Maluf.</p>
+</li>
+</ol>
+<p class="fonte">Vendas: Airtable (boletas), nov/2025 a out/2026 e 01/06 a 07/11/2026 · Negócios por número de WhatsApp: Clint pela central de dados · Conta da VOID na GrowAI: leitura de 08/11/2026 · <span class="origem o-medido">medido</span> · Falas: call de 20/10 e WhatsApp de 06/11 · <span class="origem o-dito">dito</span></p>
+</div>
+</section>
+<section aria-labelledby="t-camadas" class="secao" id="camadas">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">04</span>
+<h2 id="t-camadas">Três camadas, com portões</h2>
+<p class="secao-sub">Cada camada só abre quando a anterior passa no portão.</p>
+</header>
+<div class="leitura">
+<p>Portão é o critério que diz se dá para seguir: um número combinado antes e medido. Os números dos portões são <span class="etiqueta etiqueta-proposta">proposta</span> para validar com Lucas e Maluf.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>As três camadas</caption>
+<thead><tr><th scope="col">Camada</th><th scope="col">O que entra</th><th scope="col">Portão para seguir</th><th scope="col">O que sai de cena</th></tr></thead>
+<tbody>
+<tr><th scope="row">1 · Marketing, já</th><td>Primeiro, formulários com contato e origem e ligação da GrowAI à central de dados, em paralelo ao caminho atual. Depois de medir essa frente, tratar uma por vez: importação do ActiveCampaign com consentimento e descadastro; régua de e-mail; Direct com dono. Os disparos da BlackVOID seguem pelo caminho atual; pela GrowAI, só com base consentida e teste correto para a equipe antes da data.</td><td>7 dias seguidos com 95% dos envios de formulário com telefone ou e-mail e origem (hoje, 0 de 691). Nenhuma conversa do Instagram parada mais de 1 dia útil (hoje, 119 das 213 conversas terminam com mensagem do lead sem leitura; tempo parado ainda não medido). Todo lead do formulário do Start chegando à Clint com a origem nos campos do negócio.</td><td>ActiveCampaign, só depois de importar consentimento e descadastro e comparar envios, aberturas e cliques da régua de e-mail na GrowAI com a base anterior.</td></tr>
+<tr><th scope="row">2 · Aula experimental, piloto do comercial</th><td>Formulário da aula na GrowAI. Agenda com horários e vagas e presença marcada no dia. No piloto pequeno, confirmação manual em D-3 e D-1 com o texto do Lucas (“1 confirmo / 2 preciso remarcar”). Mensagens automáticas só depois de duas semanas com agenda e presença medidas. Usuário e treino curto para quem agenda e para quem recebe na escola.</td><td>2 a 4 semanas com agendamentos e presença medidos, e presença sobre agendamento igual ou maior que a linha de base, pelo corte combinado antes. Matrícula em até 30 dias é acompanhada depois. Comparação com a linha de base (<a href="#maluf">seção 05</a>).</td><td>Formulários de inscrição da aula no Jotform e a planilha de agenda e presença.</td></tr>
+<tr><th scope="row">3 · Start e o comercial inteiro</th><td>Pipeline com M1 a M4 como colunas e a matrícula (M5) como status Ganho, negócios da Clint levados com a etapa classificada por momento e treino curto por papel.</td><td>Processo escrito e aprovado. Responsável na criação em 95% dos negócios por 2 semanas (no retrato de 08/11, 25,1% dos negócios criados de 08/10 a 07/11 tinham responsável; na criação, ainda não medido). Ganho com valor e turma em 100% (hoje, nenhum dos 62 ganhos entre os 945 negócios do período tem valor; turma no ganho ainda não medida). Decisão do Maluf.</td><td>A Clint, 30 dias depois da virada e sem uso.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Hoje: envios de formulário da conta da VOID na GrowAI, de 22/10 a 07/11/2026; conversas do Instagram de 05/10 a 08/11/2026; responsável e valor na Clint pela central de dados, negócios criados de 08/10 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+<div class="leitura">
+<p>Se cada camada passar nos seus portões, saem: o ActiveCampaign, na camada 1; os formulários de inscrição da aula no Jotform e a planilha de agenda e presença, na camada 2. A Clint só sai se a camada 3 passar nos portões.</p>
+<p>A saída de Make, ManyChat e PlugLead depende de confirmar o uso: na central de dados, o Make só aparece no teste do funil da aula, e ManyChat e PlugLead não aparecem em nenhuma fonte. Ficam o Airtable, que é a fonte da verdade da matrícula, e o Jotform para ficha de matrícula, feedback e certificação. O custo de cada ferramenta não foi levantado, então esta página não fala em economia.</p>
+</div>
+<h3>Calendário proposto</h3>
+<div class="leitura">
+<p>Datas a confirmar. A Tattoo Week é de 20 a 22/11; as datas da BlackVOID ainda não estão fechadas.</p>
+</div>
+<ol class="linha-tempo">
+<li class="marco" data-estado="agora">
+<span class="marco-quando">09 a 15/11 · agora, datas a confirmar</span>
+<span class="marco-titulo">A camada 1 começa e o comercial fica como está</span>
+<dl class="marco-campos">
+<div><dt>Comercial</dt><dd>Nenhuma troca de ferramenta. Três regras para combinar com o Maluf e valer na Clint, se ele aceitar: dono na criação do negócio; “Sem retorno” só depois das tentativas registradas; ganho com valor e turma.</dd></div>
+<div><dt>Marketing e dados</dt><dd>Formulários das páginas gravando contato e origem na GrowAI. Disparos da BlackVOID só para quem consentiu. Direct com dono. Começa a medição da linha de base da aula.</dd></div>
+</dl>
+<p class="marco-portao"><span><strong>Portão para seguir:</strong> sim do Lucas para a camada 1 e aceite do Maluf para as três regras.</span></p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">16 a 22/11 · Tattoo Week de 20 a 22/11</span>
+<span class="marco-titulo">Montar sem lead real</span>
+<dl class="marco-campos">
+<div><dt>Comercial</dt><dd>Sem mudança.</dd></div>
+<div><dt>Marketing e dados</dt><dd>Montar na GrowAI, sem lead real, como o Lucas fez na Clint: pipeline da jornada, agenda da aula, usuários e testes, inclusive o da passagem para a Clint. Ligar a GrowAI à central de dados.</dd></div>
+</dl>
+<p class="marco-portao"><span><strong>Portão para seguir:</strong> Linha de base da aula medida por duas semanas (planilha na central ou funil da Clint); agenda e presença testadas sem lead real, sem mensagem errada; 7 dias seguidos com 95% dos formulários com contato e origem.</span></p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">01 a 07/12 · depois da BlackVOID, datas a confirmar</span>
+<span class="marco-titulo">Piloto pequeno da aula</span>
+<dl class="marco-campos">
+<div><dt>Comercial</dt><dd>Clint como hoje para o Start.</dd></div>
+<div><dt>Marketing e dados</dt><dd>Piloto só com o formulário MQL da aula, que recebeu 29 envios de 22/10 a 07/11, com a planilha em paralelo.</dd></div>
+</dl>
+<p class="marco-portao"><span><strong>Portão para seguir:</strong> nenhuma mensagem errada e presença marcada em todos os encontros do piloto.</span></p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">08/12 em diante · a confirmar</span>
+<span class="marco-titulo">Piloto com todas as inscrições da aula</span>
+<dl class="marco-campos">
+<div><dt>Comercial</dt><dd>Clint para o Start.</dd></div>
+<div><dt>Marketing e dados</dt><dd>Todas as inscrições da aula pela agenda da GrowAI, sem planilha. Leitura semanal do placar na página 1.</dd></div>
+</dl>
+<p class="marco-portao"><span><strong>Portão para seguir:</strong> 2 a 4 semanas com todos os agendamentos pela agenda e presença marcada, comparadas com a linha de base; portões de processo do Start; decisão do Maluf no fim do piloto.</span></p>
+</li>
+<li class="marco" data-estado="proposto">
+<span class="marco-quando">Fevereiro · a confirmar</span>
+<span class="marco-titulo">Virada do Start só com tudo verde</span>
+<dl class="marco-campos">
+<div><dt>Comercial</dt><dd>Start, Master e o resto do comercial vão para a GrowAI só com os portões verdes e a decisão do Maluf: em fevereiro, depois do pico de janeiro. Em janeiro, nenhuma troca: é o pico, com 1.140 negócios criados na Clint em jan/2026, contra 880 em dez/2025. O encerramento da Clint só será proposto depois de 30 dias sem uso e de conferência do atendimento e do histórico.</dd></div>
+<div><dt>Marketing e dados</dt><dd>O marketing na GrowAI capta o pico de janeiro com origem, e a central de dados mede os dois sistemas pela mesma régua.</dd></div>
+</dl>
+</li>
+</ol>
+<p class="fonte">Negócios criados por mês: Clint pela central de dados, dez/2025 e jan/2026 · Formulário MQL: Jotform pela central de dados, 22/10 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+</div>
+</section>
+<section aria-labelledby="t-maluf" class="secao" id="maluf">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">05</span>
+<h2 id="t-maluf">As dúvidas do Maluf</h2>
+<p class="secao-sub">Cada dúvida com a resposta e o número que vai decidir.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A palavra final sobre o CRM do comercial é do Maluf. Em 13/10, dissemos a ele que não íamos sair mudando o que o comercial faz. O plano mantém isso: em novembro, a única mudança para o comercial são três regras de processo, e só se ele aceitar.</p>
+</div>
+<div class="duvidas">
+<article aria-label="Dúvida 1: se funcionar, tudo certo" class="duvida">
+<figure class="fala-citada">
+<blockquote><p>Se a gente fizer um negócio que funciona, tá tudo certo.</p></blockquote>
+<figcaption>Maluf, 13/10</figcaption>
+</figure>
+<div class="resposta">
+<p>O piloto lado a lado é a prova. Antes dele, a aula é medida como roda hoje, e essa é a linha de base. Depois, o piloto na GrowAI é medido pela mesma régua, e a decisão sai da comparação.</p>
+</div>
+<h3>Linha de base da aula</h3>
+<div class="numeros cinco">
+<div class="numero">
+<p class="numero-valor">418</p>
+<p class="numero-rotulo">inscrições na aula</p>
+<p class="numero-base">formulários [FB], [OR], [FB - Teste], [GS/YT] e MQL, ativos e sem teste · 419 envios, menos 1 teste real</p>
+<p class="numero-nota">out/2026 · Jotform pela central de dados · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor">14,1%</p>
+<p class="numero-rotulo">tiveram negócio novo criado na Clint em até 7 dias</p>
+<p class="numero-base">base: 59 de 419; outras 54 já tinham negócio</p>
+<p class="numero-nota">out/2026 · Jotform e Clint pela central de dados · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor sem-dado">sem dado</p>
+<p class="numero-rotulo">agendamentos registrados</p>
+<p class="numero-base">desde out/2026 os formulários não pedem a data: 0 de 418 inscrições válidas com data; a agenda fica na planilha do comercial</p>
+<p class="numero-nota">out/2026 · Jotform pela central de dados · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor">29</p>
+<p class="numero-rotulo">presenças registradas na Clint</p>
+<p class="numero-base">para 52 vendas que vieram de aula no mesmo mês</p>
+<p class="numero-nota">out/2026 · Clint e Airtable pela central de dados · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor">5,2–10,6%</p>
+<p class="numero-rotulo">das inscrições viraram matrícula em até 30 dias</p>
+<p class="numero-base">coortes de mai a set/2026</p>
+<p class="numero-nota">Jotform e Airtable pela central de dados · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<div class="resposta">
+<p>Para fechar a linha de base antes do piloto há dois caminhos, <span class="etiqueta etiqueta-validar">a validar</span> com Lucas e Maluf. O primeiro é ligar a planilha do comercial à central de dados, só com datas e situação, sem nome de ninguém. O segundo é passar duas semanas de inscrições reais pelo funil “Aula Experimental” que o Lucas montou na Clint, que até 07/11 só recebeu os 2 testes: das 232 inscrições de 19/10 a 07/11, nenhuma entrou nele. O segundo caminho compara a Clint no melhor desenho dela com a GrowAI.</p>
+</div>
+<p class="fonte">Inscrição: envios dos formulários de aula no Jotform. Negócio novo: negócio do mesmo telefone criado na Clint até 7 dias depois da inscrição. Presença: entradas nas etapas de presença da Clint (29 em out/2026). Vendas de aula: origem da venda no Airtable. Matrícula: venda no Airtable, sem as canceladas, até 30 dias depois da inscrição.</p>
+</article>
+<article aria-label="Dúvida 2: a venda rápida" class="duvida">
+<figure class="fala-citada">
+<blockquote><p>A gente tem um formato diferente de SDR closer pela natureza da rapidez do negócio.</p></blockquote>
+<figcaption>Maluf, 13/10</figcaption>
+</figure>
+<div class="resposta">
+<p>A venda rápida continua. Os momentos podem acontecer na mesma conversa, cada um com a sua prova e a sua data. Quem decide sem visitar faz o diagnóstico na própria ligação, e o M3 Encontro e o M4 Proposta podem ter a mesma data. Ninguém precisa visitar a escola para comprar.</p>
+</div>
+</article>
+<article aria-label="Dúvida 3: o lead que só quer o preço" class="duvida">
+<figure class="fala-citada">
+<blockquote><p>Às vezes ele quer só saber o preço.</p></blockquote>
+<figcaption>Maluf, 13/10</figcaption>
+</figure>
+<div class="resposta">
+<p>O preço continua saindo quando a pessoa pede, junto com o convite para a visita ou para a aula, com duas opções de data. No Start, quem só recebeu a tabela comprou em 10,9% dos casos (465 de 4.268 negócios criados de 08/11/2025 a 07/11/2026). Quem passou por um encontro aparece comprando mais, mas quem vai à escola já é o lead mais quente, e a presença costuma ser marcada na hora da venda. O piloto mede essa diferença com a presença registrada no dia.</p>
+</div>
+<p class="fonte">Clint pela central de dados, família do Start, negócios criados de 08/11/2025 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+</article>
+<article aria-label="Dúvida 4: a dor do lead de tatuagem" class="duvida">
+<figure class="fala-citada">
+<blockquote><p>Não necessariamente ele tem uma dor latente a ser explorada.</p></blockquote>
+<figcaption>Maluf, 13/10</figcaption>
+</figure>
+<div class="resposta">
+<p>Não precisa ser o SPICED, um roteiro de perguntas de diagnóstico: o método de conversa é escolha do comercial. A jornada pede a prova de cada momento. No M2 Qualificação, o que a pessoa busca e se ela aceitou o encontro, perguntas que o formulário do Lucas já faz. No M3 Encontro, a presença. Depois dela, o comercial marca o SQL: o lead que passou pelo encontro e quer condições para começar.</p>
+</div>
+</article>
+</div>
+<p class="fonte">Falas: transcrição da call de 13/10/2026 · <span class="origem o-dito">dito</span></p>
+</details></div>
+</section>
+<section aria-labelledby="t-falta" class="secao" id="falta">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">06</span>
+<h2 id="t-falta">O que falta e os riscos</h2>
+<p class="secao-sub">O que ainda não está pronto, sem rodeio.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<h3>O que falta montar na GrowAI</h3>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Conta da VOID na GrowAI em 08/11/2026</caption>
+<thead><tr><th scope="col">Peça</th><th scope="col">Hoje</th><th scope="col">O que falta</th></tr></thead>
+<tbody>
+<tr><th scope="row">Formulários das páginas</th><td>691 envios de 22/10 a 07/11 com a página de origem e nenhum com nome, telefone ou e-mail. O consentimento nas páginas com o código de rastreamento, que grava IP e navegador, não foi conferido.</td><td>Mapear os campos dos formulários do Elementor ou trocar pelo formulário da GrowAI. Conferir o consentimento (LGPD) em todas as páginas.</td></tr>
+<tr><th scope="row">Ligação com a central de dados</th><td>A conta da VOID não está ligada. E a ligação padrão não traz a origem do contato.</td><td>Ligar a conta e gravar a origem num campo de texto do contato ou num campo oculto do formulário, para a central enxergar.</td></tr>
+<tr><th scope="row">Passagem para a Clint</th><td>Não testada. A Clint recebe lead por integração (webhook), como no funil de teste do Lucas, mas a chamada a partir da GrowAI ainda não foi feita.</td><td>Testar com lead de teste, atualizando o negócio aberto do mesmo telefone em vez de criar outro.</td></tr>
+<tr><th scope="row">Agenda da aula</th><td>Nenhum calendário criado.</td><td>Calendário com horários e vagas, confirmação em D-3 e D-1, presença e falta.</td></tr>
+<tr><th scope="row">Pipeline, campos e usuários</th><td>Um pipeline de M1 a M4, sem nenhum negócio, com campos de outro tipo de negócio (porte da empresa, site). Um usuário, o do Lucas.</td><td>Adaptar aos momentos da escola, com o funil de 9 etapas do Lucas como ponto de partida. Criar usuários para quem agenda, recebe a aula e atende o Instagram.</td></tr>
+<tr><th scope="row">Caixa do Instagram</th><td>213 conversas desde 05/10; 119 terminam com mensagem do lead sem leitura.</td><td>Dar dono e medir o tempo de resposta.</td></tr>
+<tr><th scope="row">E-mail e base</th><td>Nenhum modelo nem campanha de e-mail. A base do ActiveCampaign (9.863 contatos) não foi importada, e os 40.211 contatos que vieram da Clint em 06/11 chegaram sem registro de consentimento.</td><td>Importar o ActiveCampaign com consentimento e descadastro. Disparar só para quem consentiu.</td></tr>
+<tr><th scope="row">WhatsApp oficial</th><td>Nenhuma conversa de WhatsApp na conta até 08/11; os modelos de mensagem aprovados não foram conferidos.</td><td>Conferir a ligação e os modelos antes do primeiro disparo.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Conta da VOID na GrowAI, leitura de 08/11/2026 · Teste do funil da aula: Clint pela central de dados, 30/10 a 03/11/2026 · <span class="origem o-medido">medido</span></p>
+<aside class="aviso aviso-atencao">
+<p class="aviso-rotulo">Atenção</p>
+<p>Se o piloto parar no meio, a volta para a Clint depende de uma integração que ainda não foi testada: a mesma passagem da tabela acima. Até ela existir, o que o piloto registrar na GrowAI não volta sozinho para a Clint. Por isso o piloto começa pequeno, com a planilha em paralelo, e a Clint segue ligada e sem mudança para o Start.</p>
+</aside>
+<h3>Riscos e como tratamos</h3>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Riscos da mudança</caption>
+<thead><tr><th scope="col">Risco</th><th scope="col">Como tratamos</th></tr></thead>
+<tbody>
+<tr><th scope="row">Mexer no comercial na Tattoo Week, na BlackVOID ou no pico de janeiro</th><td>Nenhuma troca de ferramenta no comercial nessas janelas.</td></tr>
+<tr><th scope="row">Negócio duplicado ou contato sobrescrito na passagem para a Clint</th><td>No teste do funil da aula, a entrada pelo Make trocou o nome e o e-mail de um contato que já existia. A regra é atualizar o negócio aberto do mesmo telefone, e a passagem é testada antes de qualquer lead real.</td></tr>
+<tr><th scope="row">Disparo da BlackVOID sem consentimento ou sem dono para a resposta</th><td>Só para quem consentiu e sem quem já comprou, porque lista importada não prova interesse. Antes de enviar, combinar quem atende quem responder e em qual número, para a resposta não esfriar fora da caixa do comercial.</td></tr>
+<tr><th scope="row">O piloto atrapalhar a venda da aula</th><td>Primeiro um lote pequeno, com a planilha em paralelo, e um portão simples: nenhuma mensagem errada e presença marcada em todos os encontros.</td></tr>
+<tr><th scope="row">Automatizar o que ainda não está escrito</th><td>As regras vêm antes, na Clint mesmo. Automação na GrowAI só depois de duas semanas com o processo rodando e medido.</td></tr>
+</tbody>
+</table>
+</div>
+</details></div>
+</section>
+<section aria-labelledby="t-metodo" class="secao" id="metodo">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">07</span>
+<h2 id="t-metodo">Como a GrowAI conduz</h2>
+<p class="secao-sub">Toda receita tem um gargalo. Os dados dizem qual.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A GrowAI é método, sistema e gente. A plataforma é a parte de sistema. O método, que chamamos de RevOps AI Native, trata marketing, comercial e pós-venda como um só time, com um dado só. Nesta decisão, as quatro regras dele ficam assim:</p>
+</div>
+<ul class="principios">
+<li>
+<h3 class="principio-nome">Dado antes de opinião</h3>
+<p>O piloto da aula é comparado com a linha de base medida antes. O Maluf decide em cima desse número.</p>
+</li>
+<li data-sinal="vermelho">
+<h3 class="principio-nome">Um gargalo por vez</h3>
+<p><span class="sinal sinal-vermelho">Gargalo</span></p>
+<p>A conversa que não vira encontro. No Start, só 431 dos 9.698 negócios criados de 08/11/2025 a 07/11/2026 (4,4%) passaram por uma etapa de encontro. A aula é onde esse encontro acontece, e por isso o comercial começa por ela.</p>
+<p class="fonte">Clint pela central de dados, família do Start · <span class="origem o-medido">medido</span></p>
+</li>
+<li>
+<h3 class="principio-nome">Processo antes de automação</h3>
+<p>Primeiro as três regras e o playbook, na Clint mesmo. Automação na GrowAI só com o processo escrito e medido.</p>
+</li>
+<li>
+<h3 class="principio-nome">Sem distração</h3>
+<p>Uma camada por vez, e nenhuma troca no comercial na Tattoo Week, na BlackVOID ou em janeiro.</p>
+</li>
+</ul>
+</details></div>
+</section>
+<section aria-labelledby="t-dados" class="secao" id="sobre-os-dados">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">08</span>
+<h2 id="t-dados">Sobre os dados</h2>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Os números da Clint, do Airtable, do Jotform e do ActiveCampaign vêm da central de dados da VOID, com dados até 07/11/2026, às 22h35. Os da GrowAI vêm de uma leitura da conta da VOID em 08/11/2026, só com contagens e sem copiar dado de ninguém. O formato que a GrowAI entrega à central de dados (agenda com a situação de presença, mensagens, conversas e envios de formulário) foi conferido em 08/11/2026, também sem ler dado de pessoa.</p>
+<ul class="lista-espacada">
+<li>Inscrição na aula: envios dos formulários [FB], [OR] e [FB - Teste] e do formulário de qualificação MQL, no Jotform.</li>
+<li>Família do Start: o Funil Start e as três cadeiras de vendedor da Clint. Os negócios contam pela data de criação.</li>
+<li>Venda: boleta do Airtable, com o valor vendido. O valor recebido e a inadimplência não existem em nenhuma fonte.</li>
+<li>Responsável: campo do negócio no retrato de 08/11. O responsável no momento da criação ainda não foi medido.</li>
+<li>Números de retrato, como responsável e conversas não lidas, podem mudar depois da carga diária das fontes, por volta da meia-noite.</li>
+<li>Falas: transcrições das calls de 13/10 e 20/10/2026 e mensagens de WhatsApp de 06/11/2026.</li>
+</ul>
+<details class="tabelas-detalhes">
+<summary>Ver as tabelas da central de dados</summary>
+<ul class="tabelas-usadas">
+<li><code>thevoid_clint_chats</code>, <code>thevoid_clint_messages</code>, <code>thevoid_clint_deals</code>, <code>thevoid_clint_deal_history</code>, <code>thevoid_clint_contacts</code> e <code>thevoid_clint_origins</code> (Clint)</li>
+<li><code>thevoid_airtable_planilha_de_controle_de_vendas_para_atendimento_the_void_online_presencial_c_2023_vendas_efetuadas_cadastro_inicial</code> (Airtable, vendas)</li>
+<li><code>thevoid_jotform_submissions</code> e <code>thevoid_jotform_forms</code> (Jotform)</li>
+<li><code>thevoid_active_campaign_contacts</code> e <code>thevoid_active_campaign_campaigns</code> (ActiveCampaign)</li>
+<li><code>thevoid_contaazul_despesas</code> (Conta Azul, na busca pelas ferramentas)</li>
+</ul>
+</details>
+<p class="fonte">Origem dos números: <span class="origem o-medido">medido</span> é contagem direta da fonte; <span class="origem o-derivado">derivado</span> é conta feita sobre números medidos; <span class="origem o-dito">dito</span> é fala, não auditada.</p>
+</div>
+</details></div>
+</section>
+<section aria-labelledby="t-proximo" class="secao" id="proximo-passo">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">09</span>
+<h2 id="t-proximo">Próximo passo</h2>
+</header>
+<ul class="checklist">
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Dizer sim ou não para a camada 1: o marketing e o lead do Start nascendo na GrowAI.<span class="tarefa-meta">Decisão do Lucas</span></span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Combinar as três regras que valem na Clint desde já: dono na criação do negócio, “Sem retorno” só depois das tentativas registradas e ganho com valor e turma.<span class="tarefa-meta">A validar com Lucas e Maluf</span></span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Escolher como medir a linha de base da aula: a planilha do comercial na central de dados ou duas semanas de inscrições reais no funil “Aula Experimental” da Clint.<span class="tarefa-meta">A validar com Lucas e Maluf</span></span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Fazer os formulários das páginas gravarem nome, telefone e origem na GrowAI, com o consentimento conferido.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Ligar a conta da VOID na GrowAI à central de dados, com a origem num campo que a central lê.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Testar a passagem do lead da GrowAI para a Clint sem duplicar negócio, antes de qualquer lead real.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Importar a base do ActiveCampaign com consentimento e descadastro antes do primeiro e-mail.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Confirmar as datas da BlackVOID e do piloto da aula, quem atende a resposta dos disparos e qual número de WhatsApp atende a aula no piloto.<span class="tarefa-meta">A confirmar com Lucas e Maluf</span></span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Confirmar se Make, ManyChat e PlugLead estão em uso hoje.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Combinar como o Felipe acompanha o piloto. A proposta é o placar da <a href="../jornada/">página 1, Jornada</a>.</span></li>
+</ul>
+</div>
+</section>
+</main>
+<footer class="rodape">
+<div class="wrap">
+<div class="rodape-topo">
+<p class="rodape-dados">Dados até <time datetime="2026-11-07">07/11/2026</time></p>
+<ul class="rodape-links">
+<li><a href="../../">Painel de receita</a></li>
+<li><a href="../../m1/">Plano M1</a></li>
+</ul>
+</div>
+<div class="rodape-assinatura">
+<p class="rodape-void"><span class="junto">The VOID Tattoo Academy</span> · <span class="junto">Vila Madalena, São Paulo</span></p>
+<p class="rodape-growai">Preparado por <img alt="GrowAI" height="31" src="../assets/growai-logo-branco.svg" width="81"/></p>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/sistema.js"></script>
+</body>
+</html>

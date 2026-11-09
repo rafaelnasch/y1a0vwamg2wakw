@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+
+<html data-estacao="chamado" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="#181818" name="theme-color"/>
+<title>Jornada VOID · Sistema VOID</title>
+<meta content="A jornada da VOID do anúncio à matrícula, com os dados: placar do mês, os oito momentos, onde a jornada perde gente, canal, campanha, aula experimental, rastreamento e higiene do CRM." name="description"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Newsreader:ital,opsz,wght@1,6..72,300&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/sistema.css" rel="stylesheet"/>
+<script>document.documentElement.className+=' js'</script>
+<script>
+/* Números da página Jornada VOID, num objeto só. O contrato de cada chave está em paginas/dados/CONTRATO.md (interno).
+   Os quadros principais recebem agregados conferidos das tabelas da jornada; os contextos históricos mantêm as fontes identificadas.
+   Taxas são frações (0,251 = 25,1%); dinheiro em reais; datas em AAAA-MM-DD; mês em AAAA-MM; null = sem dado. */
+window.VOID_DADOS = {
+  "meta": {
+    "fonte": "tvd_jornada_* e levantamento de 08/11/2026",
+    "fonte_rotulo": "tabelas da jornada conferidas e contexto histórico de 08/11/2026",
+    "dados_ate": "2026-11-07",
+    "corte": "2026-11-07 22:35",
+    "versao": "2026-11-08",
+    "versao_regra": "v1 2026-11-08",
+    "janela_12m": {
+      "de": "2025-11-08",
+      "ate": "2026-11-07"
+    },
+    "periodos": {
+      "safra_12m": "08/11/2025 a 07/11/2026",
+      "ano_fechado": "nov/2025 a out/2026",
+      "carga": "madrugada de 08/11/2026",
+      "corte": "07/11/2026 às 22h35"
+    },
+    "semaforo_corte_pontos": 20
+  },
+  "placar": {
+    "mes": "2026-10",
+    "start_negocios": 783,
+    "start_conversa_real": 612,
+    "start_conversa_real_taxa": 0.781609,
+    "aula_inscricoes": 418,
+    "aula_envios": 419,
+    "aula_testes": 1,
+    "encontros_registrados": 29,
+    "vendas_via_aula": 52,
+    "matriculas": 120,
+    "matriculas_start": 80,
+    "matriculas_master": 19,
+    "matriculas_pro": 20,
+    "matriculas_outras": 1,
+    "matriculas_canceladas": 1,
+    "valor_vendido": 314378
+  },
+  "jornada": {
+    "atracao": {
+      "meta_investimento": 576415.88,
+      "meta_leads_pixel": 10117,
+      "meta_cadastros_aula": 2068,
+      "meta_conversas": 1428,
+      "google_investimento": 235099.860739,
+      "google_de": "2025-11-01",
+      "google_ate": "2026-10-22"
+    },
+    "m1": {
+      "start_negocios": 9698,
+      "aula_inscricoes_mes": 418,
+      "planilha_leads_mes": 992,
+      "mes": "2026-10"
+    },
+    "m2": {
+      "conversa_real": 7494,
+      "conversa_real_taxa": 0.772737,
+      "saiu_entrada": 5159,
+      "saiu_entrada_taxa": 0.531965,
+      "mql_envios": 29,
+      "mql_sim": 12,
+      "mql_nao": 14,
+      "mql_sem": 3,
+      "mql_com_negocio": 1,
+      "mql_desde": "2026-10-22",
+      "mql_ate": "2026-11-07"
+    },
+    "m3": {
+      "encontro": 430,
+      "encontro_taxa": 0.044339,
+      "presencas_mes": 29,
+      "vendas_aula_mes": 52,
+      "mes": "2026-10"
+    },
+    "m4": {
+      "valores": 4388,
+      "valores_taxa": 0.452464,
+      "valores_horas": 10.625
+    },
+    "m5": {
+      "periodo": "nov/2025 a out/2026",
+      "vendas": 1300,
+      "valor_vendido": 3651902,
+      "valor_sem_canceladas": 3471950,
+      "canceladas": 65,
+      "start_vendas": 984,
+      "start_valor": 2921161,
+      "vendas_com_negocio": 1285,
+      "vendas_com_negocio_taxa": 0.988462,
+      "start_ganhos": 779,
+      "start_ganhos_taxa": 0.080326
+    },
+    "m6": {
+      "aulas_praticas": 215,
+      "aulas_periodo": "05/08 a 02/10/2026",
+      "jotform_periodo": "nov/2025 a out/2026",
+      "feedback_start": 464,
+      "avaliacao_aula": 154,
+      "feedback_master": 95
+    },
+    "m7": {
+      "formatura_jul": 92,
+      "formatura_jul_data": "28/07",
+      "formatura_out": 72,
+      "formatura_out_data": "27/10",
+      "avaliacoes_google": 397,
+      "nota_google": 4.92,
+      "avaliacoes_desde_nov": 147,
+      "avaliacoes_desde": "2025-11"
+    },
+    "m8": {
+      "periodo": "jan/2024 a 07/11/2026",
+      "ex_aluno_desde": "2026-06",
+      "start_alunos": 2494,
+      "start_para_master": 259,
+      "start_para_master_taxa": 0.103849,
+      "vendas_desde_jun": 565,
+      "vendas_ex_aluno": 123,
+      "vendas_ex_aluno_taxa": 0.217699
+    }
+  },
+  "tempos": {
+    "humano_util_min": 4.883333333333334,
+    "humano_util_base": 3125,
+    "humano_util_15min_taxa": 0.7808,
+    "fora_horario_taxa": 0.620384,
+    "fora_horario_n": 5107,
+    "fora_horario_base": 8232,
+    "humano_fora_h": 11.020833333333334,
+    "valores_h": 10.625,
+    "valores_base": 4388,
+    "ganho_dias": 1.75625,
+    "ganho_p75_dias": 6.807291666666666,
+    "ganho_base": 779,
+    "encontro_ganho_min": 6,
+    "encontro_ganho_base": 141,
+    "velocidade_periodo": "08/11/2025 a 07/10/2026",
+    "ganho_ate15_de": 0.057,
+    "ganho_ate15_ate": 0.06,
+    "ganho_depois_de": 0.034,
+    "ganho_depois_ate": 0.036
+  },
+  "caminhos": {
+    "base": 9698,
+    "ganhos": 779,
+    "lista": [
+      {
+        "id": "nada",
+        "rotulo": "Nem tabela de valores nem encontro",
+        "negocios": 4985,
+        "ganhos": 45
+      },
+      {
+        "id": "valores",
+        "rotulo": "Só a tabela de valores",
+        "negocios": 4261,
+        "ganhos": 462
+      },
+      {
+        "id": "agendado",
+        "rotulo": "Encontro agendado, sem presença registrada",
+        "negocios": 163,
+        "ganhos": 52
+      },
+      {
+        "id": "nasceu_no_encontro",
+        "rotulo": "Criado numa etapa de encontro, marcado ou realizado",
+        "negocios": 150,
+        "ganhos": 112
+      },
+      {
+        "id": "realizado",
+        "rotulo": "Encontro realizado com o negócio aberto",
+        "negocios": 117,
+        "ganhos": 93
+      },
+      {
+        "id": "depois_da_decisao",
+        "rotulo": "Encontro só depois da decisão",
+        "negocios": 22,
+        "ganhos": 15
+      }
+    ],
+    "nada_taxa": 0.514024,
+    "nada_conversaram": 2925,
+    "nada_ganhos_taxa": 0.009027,
+    "realizado_marcado_na_venda": 59
+  },
+  "vazamentos": {
+    "perdas": 9361,
+    "sem_retorno": 4406,
+    "sem_retorno_taxa": 0.470676,
+    "tentativa_mediana_dias": 2,
+    "tentativa_3d_taxa": 0.233443,
+    "perdido_7d_ultima_safra": 0.833972,
+    "perdido_7d_safra_antiga": 0.427397,
+    "ultima_safra": "2026-10",
+    "safra_antiga": "2025-01",
+    "leads_para_proposta": 1965,
+    "saidas_leads": 2966,
+    "leads_para_proposta_taxa": 0.662508,
+    "leads_para_proposta_h": 1.7,
+    "so_valores": 4261,
+    "so_valores_ganhos": 462,
+    "so_valores_taxa": 0.108425,
+    "perdas_em_valores": 3832,
+    "perdas_em_valores_taxa": 0.409358,
+    "fup2_start_taxa": 0.920143,
+    "fup2_master_taxa": 0.961905,
+    "perfil": 2732,
+    "perfil_taxa": 0.291849,
+    "perfil_financeiro": 1005,
+    "curioso": 886,
+    "distancia": 560,
+    "rotina": 176,
+    "menor_16": 105,
+    "meta_perfil": 1635,
+    "meta_negocios": 6087,
+    "meta_perfil_taxa": 0.268605,
+    "ganhos_a_mao": 390,
+    "ganhos_a_mao_taxa": 0.500642,
+    "ganhos_a_mao_dias": 0.69,
+    "ganhos_a_mao_avancada": 267,
+    "ganhos_sem_canal": 270,
+    "ganhos_sem_canal_taxa": 0.346598,
+    "aula_periodo": "22/10 a 07/11/2026",
+    "aula_inscricoes": 186,
+    "aula_sem_negocio": 134,
+    "aula_sem_negocio_taxa": 0.72043,
+    "aula_msg_pessoa": 111,
+    "aula_responderam": 79
+  },
+  "canal": {
+    "base": 9698,
+    "cobertura": 0.907919,
+    "ganhos": 779,
+    "ganhos_sem_origem": 270,
+    "ganhos_sem_origem_taxa": 0.346598,
+    "volume": [
+      {
+        "nome": "Meta pago",
+        "negocios": 6098,
+        "parcela": 0.628789,
+        "ganhos": 214
+      },
+      {
+        "nome": "Google pago",
+        "negocios": 1233,
+        "parcela": 0.12714,
+        "ganhos": 100
+      },
+      {
+        "nome": "Sem origem",
+        "negocios": 893,
+        "parcela": 0.092081,
+        "ganhos": 270
+      },
+      {
+        "nome": "Instagram orgânico",
+        "negocios": 850,
+        "parcela": 0.087647,
+        "ganhos": 85
+      },
+      {
+        "nome": "Google orgânico",
+        "negocios": 552,
+        "parcela": 0.056919,
+        "ganhos": 60
+      },
+      {
+        "nome": "Outros",
+        "negocios": 72,
+        "parcela": 0.007424,
+        "ganhos": 50
+      }
+    ],
+    "boleta": {
+      "base": 565,
+      "de": "2026-06-01",
+      "com_origem_taxa": 0.966372,
+      "lista": [
+        {
+          "nome": "Inscrição na aula experimental",
+          "vendas": 147
+        },
+        {
+          "nome": "Ex-aluno",
+          "vendas": 123
+        },
+        {
+          "nome": "Formulário Google",
+          "vendas": 75
+        },
+        {
+          "nome": "Formulário Meta",
+          "vendas": 75
+        },
+        {
+          "nome": "Instagram orgânico",
+          "vendas": 63
+        },
+        {
+          "nome": "Google orgânico",
+          "vendas": 48
+        },
+        {
+          "nome": "Sem origem definida",
+          "vendas": 19
+        },
+        {
+          "nome": "Facebook",
+          "vendas": 11
+        },
+        {
+          "nome": "Indicação",
+          "vendas": 3
+        },
+        {
+          "nome": "Campanha Meta Master",
+          "vendas": 1
+        }
+      ]
+    },
+    "declarado": {
+      "base": 264,
+      "de": "2026-08-01",
+      "ate": "2026-11-07",
+      "lista": [
+        {
+          "nome": "Anúncios do Instagram ou Facebook",
+          "fichas": 144
+        },
+        {
+          "nome": "Indicação de amigos",
+          "fichas": 47
+        },
+        {
+          "nome": "Anúncios do Google",
+          "fichas": 33
+        },
+        {
+          "nome": "Já seguia no Instagram",
+          "fichas": 31
+        },
+        {
+          "nome": "Parceiros",
+          "fichas": 6
+        },
+        {
+          "nome": "Outros",
+          "fichas": 3
+        }
+      ]
+    },
+    "sinal_utm": {
+      "de": "2026-09-01",
+      "ate": "2026-11-08",
+      "contatos": 1520,
+      "casam": 1281,
+      "ganhos": 39,
+      "lista": [
+        {
+          "nome": "Meta, campanhas do Start",
+          "contatos": 1029,
+          "ganhos": 14,
+          "taxa": 0.013605
+        },
+        {
+          "nome": "Instagram orgânico (link da bio)",
+          "contatos": 188,
+          "ganhos": 13,
+          "taxa": 0.069149
+        },
+        {
+          "nome": "Google Ads",
+          "contatos": 168,
+          "ganhos": 10,
+          "taxa": 0.059524
+        }
+      ]
+    }
+  },
+  "campanha": {
+    "meta_12m": 576415.88,
+    "meta_12m_anterior": 318286.79,
+    "meta_variacao": 0.810995,
+    "google_recorte": 235099.860739,
+    "google_recorte_anterior": 411557.39,
+    "google_queda": 0.428756,
+    "google_de": "2025-11-01",
+    "google_autorizacao_vencida": "2026-10-23",
+    "google_ate": "2026-10-22",
+    "mes_inicio": "2025-11",
+    "mes_fim": "2026-10",
+    "start_cpl_inicio": 18.3,
+    "start_cpl_fim": 37.55,
+    "aula_custo_inicio": 135.89,
+    "aula_custo_fim": 71.64,
+    "aula_verba_inicio": 4620.28,
+    "aula_verba_fim": 20989.79,
+    "custos_mensais": {
+      "rotulos": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ],
+      "series": [
+        {
+          "nome": "Custo por lead do Start",
+          "papel": "principal",
+          "valores": [
+            18.3,
+            33.03,
+            25.69,
+            29.87,
+            39.0,
+            35.84,
+            46.2,
+            45.1,
+            30.05,
+            37.37,
+            46.04,
+            37.55
+          ]
+        },
+        {
+          "nome": "Custo por cadastro da aula",
+          "papel": "comparacao",
+          "valores": [
+            135.89,
+            78.43,
+            56.52,
+            152.45,
+            62.01,
+            59.85,
+            98.63,
+            129.79,
+            82.37,
+            73.49,
+            73.87,
+            71.64
+          ]
+        }
+      ]
+    },
+    "produtos": [
+      {
+        "nome": "Start, captação",
+        "investimento": 301290.38,
+        "parcela": 0.522696,
+        "resultado": 9007,
+        "resultado_nome": "leads",
+        "custo": 33.45069168424559
+      },
+      {
+        "nome": "Aula experimental",
+        "investimento": 157679.34,
+        "parcela": 0.273551,
+        "resultado": 1932,
+        "resultado_nome": "cadastros",
+        "custo": 81.6145652173913
+      },
+      {
+        "nome": "Start, vídeo de aquecimento",
+        "investimento": 63267.6,
+        "parcela": 0.10976,
+        "resultado": null,
+        "resultado_nome": null,
+        "custo": null
+      },
+      {
+        "nome": "Outros (institucional, Master, Pro, lives, Projeto Tatuador, Combo)",
+        "investimento": 54178.56,
+        "parcela": 0.093992,
+        "resultado": null,
+        "resultado_nome": null,
+        "custo": null
+      }
+    ],
+    "mql": {
+      "de": "2026-10-22",
+      "ate": "2026-11-04",
+      "start_investimento": 10512,
+      "start_leads": 281,
+      "start_mql": 9,
+      "aula_investimento": 8554,
+      "aula_cadastros": 91,
+      "aula_mql": 6,
+      "aula_nao_mql": 14
+    },
+    "aula_ganhos": 20,
+    "aula_ganhos_com_campanha": 10,
+    "utm_start_desde": "2026-09",
+    "utm_aula_desde": "2026-10-05",
+    "campanhas_mes": "2026-10",
+    "out_total": 53709.66,
+    "out_campanhas": 28,
+    "campanhas_out": [
+      {
+        "nome": "AULÃO_CAPTAÇÃO_CONVERSÃO_RMKT_START_[LPA]",
+        "investimento": 4654.75,
+        "leads": 2,
+        "cadastros": 70,
+        "mql": 0
+      },
+      {
+        "nome": "AULÃO_CAPTAÇÃO_CONVERSÃO_ADV_TESTE_NOVOS_ADS_JUNHO_[LPA]_[1]",
+        "investimento": 4638.55,
+        "leads": 8,
+        "cadastros": 64,
+        "mql": 0
+      },
+      {
+        "nome": "START_ENGAJAMENTO_VIDEOVIEW_ETAPA_C3",
+        "investimento": 4329.21,
+        "leads": 4,
+        "cadastros": 3,
+        "mql": 0
+      },
+      {
+        "nome": "START_ENGAJAMENTO_VIDEOVIEW_ETAPA_C2",
+        "investimento": 4235.16,
+        "leads": 9,
+        "cadastros": 2,
+        "mql": 0
+      },
+      {
+        "nome": "START_CAPTAÇÃO_CONVERSÃO_QUENTE_2026_[FORMULÁRIO]_[LPA]_NOVOS_ADS_AGOSTO",
+        "investimento": 4007.06,
+        "leads": 102,
+        "cadastros": 2,
+        "mql": 0
+      },
+      {
+        "nome": "AULÃO_CAPTAÇÃO_CONVERSÃO_RMKT_START_[LPD]",
+        "investimento": 3089.5,
+        "leads": 3,
+        "cadastros": 53,
+        "mql": 0
+      },
+      {
+        "nome": "START_CAPTAÇÃO_CONVERSÃO_QUENTE_2026_[FORMULÁRIO]_[LPC]",
+        "investimento": 3065.94,
+        "leads": 63,
+        "cadastros": 0,
+        "mql": 0
+      },
+      {
+        "nome": "START_CAPTAÇÃO_CONVERSÃO_REMARKETING_NOVOS_ADS_[LP_RMKT]",
+        "investimento": 3059.03,
+        "leads": 77,
+        "cadastros": 2,
+        "mql": 0
+      },
+      {
+        "nome": "START_CAPTAÇÃO_CONVERSÃO_QUENTE+_2026_[FORMULÁRIO]_[LPC]",
+        "investimento": 3044.81,
+        "leads": 155,
+        "cadastros": 0,
+        "mql": 0
+      },
+      {
+        "nome": "AULÃO_CAPTAÇÃO_CONVERSÃO_ADV_TESTE_NOVOS_ADS_JUNHO_[LPD]_[2]",
+        "investimento": 3039.0,
+        "leads": 6,
+        "cadastros": 54,
+        "mql": 0
+      },
+      {
+        "nome": "START_CAPTAÇÃO_CONVERSÃO_QUENTE_2026_[FORMULÁRIO]_[LPA]_VAR_CAMPEOES",
+        "investimento": 2248.01,
+        "leads": 50,
+        "cadastros": 0,
+        "mql": 0
+      },
+      {
+        "nome": "START_CAPTAÇÃO_CONVERSÃO_QUENTE+_2026_[FORMULÁRIO]_[LPA]_ADS_SETEMBRO",
+        "investimento": 1929.04,
+        "leads": 81,
+        "cadastros": 0,
+        "mql": 0
+      }
+    ],
+    "nomes_repetidos": 5,
+    "nomes_repetidos_periodo": "01/11/2025 a 04/11/2026",
+    "campanhas_com_nome_repetido": 10,
+    "verba_nome_repetido": 96011
+  },
+  "aula": {
+    "mes": "2026-10",
+    "inscricoes": 418,
+    "envios": 419,
+    "testes": 1,
+    "envios_tres_formularios": 401,
+    "por_formulario": {
+      "fb": 292,
+      "or": 60,
+      "fb_teste": 49,
+      "mql": 18
+    },
+    "funil_de": "2026-10-01",
+    "funil_ate": "2026-11-07",
+    "funil": [
+      {
+        "nome": "Inscrições nos formulários [FB] e [OR]",
+        "valor": 422
+      },
+      {
+        "nome": "Viraram contato na Clint",
+        "valor": 395
+      },
+      {
+        "nome": "Têm negócio na Clint",
+        "valor": 129
+      },
+      {
+        "nome": "Negócio criado depois da inscrição",
+        "valor": 76
+      },
+      {
+        "nome": "Negócio ganho na Clint",
+        "valor": 20
+      }
+    ],
+    "negocios_novos": 77,
+    "negocios_em_lista": 47,
+    "negocio_7d": 59,
+    "negocio_7d_taxa": 0.141148,
+    "negocio_antes": 56,
+    "negocio_7d_base": 418,
+    "conversa_sem_negocio": 134,
+    "conversa_msg_pessoa": 111,
+    "conversa_responderam": 79,
+    "formularios": [
+      {
+        "nome": "[FB], vindo da Meta",
+        "inscricoes": 350,
+        "ganhos": 11,
+        "taxa": 0.031429
+      },
+      {
+        "nome": "[OR], orgânico e link da bio",
+        "inscricoes": 72,
+        "ganhos": 9,
+        "taxa": 0.125
+      }
+    ],
+    "or_parcela_inscricoes": 0.170616,
+    "or_parcela_ganhos": 0.45,
+    "or_ganhos_com_campanha": 3,
+    "coortes_30d": {
+      "rotulos": [
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ],
+      "valores": [
+        16.1,
+        6.8,
+        9.1,
+        10.6,
+        5.2,
+        7.5,
+        8.2,
+        5.7
+      ],
+      "inscricoes": [
+        155,
+        366,
+        287,
+        208,
+        343,
+        347,
+        379,
+        418
+      ],
+      "matriculas": [
+        25,
+        25,
+        26,
+        22,
+        18,
+        26,
+        31,
+        24
+      ],
+      "parcial": true
+    },
+    "mat30_periodo": "mai a set/2026",
+    "mat60_periodo": "mai a ago/2026",
+    "coortes_periodo": "mar a out/2026",
+    "mat30_de": 0.052,
+    "mat30_ate": 0.106,
+    "mat60_de": 0.055,
+    "mat60_ate": 0.106,
+    "funil_clint_teste": 2,
+    "formulario_sem_data_desde": "2026-10"
+  },
+  "rastreamento": {
+    "planilha_mes": "2026-10",
+    "aula_utm_mes": "2026-10",
+    "aula_utm_nov_periodo": "01 a 07/11/2026",
+    "aula_contatos_periodo": "01/10 a 07/11/2026",
+    "criacoes_periodo": "08/10 a 07/11/2026",
+    "growai_periodo": "22/10 a 07/11/2026",
+    "vendas_com_negocio": 1285,
+    "vendas": 1300,
+    "vendas_com_negocio_taxa": 0.988462,
+    "ganhos_com_venda": 1121,
+    "ganhos": 1141,
+    "ganhos_com_venda_taxa": 0.982472,
+    "planilha_leads": 992,
+    "planilha_utm": 891,
+    "planilha_utm_taxa": 0.898185,
+    "planilha_negocio": 765,
+    "planilha_negocio_taxa": 0.771169,
+    "planilha_negocio_7d": 691,
+    "clique_id_leads": 3226,
+    "clique_id_de": "2026-06-09",
+    "aula_utm_taxa": 0.600478,
+    "aula_utm": 251,
+    "aula_utm_base": 418,
+    "aula_utm_nov_taxa": 0.7375,
+    "aula_utm_nov": 59,
+    "aula_utm_nov_base": 80,
+    "aula_macro_vazia": 13,
+    "aula_sem_etiqueta": 336,
+    "aula_contatos": 395,
+    "aula_sem_etiqueta_taxa": 0.850633,
+    "criacoes": 949,
+    "criacoes_conversa": 908,
+    "growai_envios": 691,
+    "growai_com_contato": 0,
+    "growai_desde": "2026-10-22"
+  },
+  "frescor": [
+    {
+      "fonte": "Clint",
+      "ate": "2026-11-07",
+      "nota": "carga diária, a última em 08/11",
+      "estado": "verde",
+      "rotulo": "Em dia"
+    },
+    {
+      "fonte": "Tabela de vendas do Airtable",
+      "ate": "2026-11-07",
+      "nota": "carga diária completa",
+      "estado": "verde",
+      "rotulo": "Em dia"
+    },
+    {
+      "fonte": "Jotform",
+      "ate": "2026-11-07",
+      "nota": "carga diária",
+      "estado": "verde",
+      "rotulo": "Em dia"
+    },
+    {
+      "fonte": "ActiveCampaign",
+      "ate": "2026-11-07",
+      "nota": "sem listas, etiquetas e automações",
+      "estado": "verde",
+      "rotulo": "Em dia"
+    },
+    {
+      "fonte": "Instagram",
+      "ate": "2026-11-07",
+      "nota": "seguidores só desde 01/09/2026",
+      "estado": "verde",
+      "rotulo": "Em dia"
+    },
+    {
+      "fonte": "YouTube",
+      "ate": "2026-11-05",
+      "nota": "carga diária",
+      "estado": "verde",
+      "rotulo": "Em dia"
+    },
+    {
+      "fonte": "Meta Ads",
+      "ate": "2026-11-07",
+      "nota": "por campanha até 04/11; traz 1 das 10 contas cadastradas",
+      "estado": "laranja",
+      "rotulo": "Parcial"
+    },
+    {
+      "fonte": "GA4",
+      "ate": "2026-11-07",
+      "nota": "sem campanha, página de entrada nem conversão",
+      "estado": "laranja",
+      "rotulo": "Parcial"
+    },
+    {
+      "fonte": "Conta Azul",
+      "ate": "2026-11-06",
+      "nota": "só despesas; a receita parou em 2024",
+      "estado": "laranja",
+      "rotulo": "Parcial"
+    },
+    {
+      "fonte": "Google Ads",
+      "ate": "2026-10-22",
+      "nota": "a autorização venceu em 23/10",
+      "estado": "vermelho",
+      "rotulo": "Parada"
+    },
+    {
+      "fonte": "Search Console",
+      "ate": "2026-10-19",
+      "nota": "mede o domínio antigo e zerou em out/2026",
+      "estado": "vermelho",
+      "rotulo": "Parada"
+    },
+    {
+      "fonte": "Google Meu Negócio",
+      "ate": "2026-10-02",
+      "nota": "tudo zerado desde 03/10",
+      "estado": "vermelho",
+      "rotulo": "Parada"
+    },
+    {
+      "fonte": "TikTok Ads",
+      "ate": null,
+      "nota": "nunca carregou",
+      "estado": "vermelho",
+      "rotulo": "Parada"
+    },
+    {
+      "fonte": "Planilha do comercial (agenda e presença da aula)",
+      "ate": null,
+      "nota": "não está ligada à central",
+      "estado": "cinza",
+      "rotulo": "Fora da central"
+    }
+  ],
+  "qualidade": {
+    "aula_utm": {
+      "periodo_rotulo": "out/2026",
+      "valor": 0.6004784688995215,
+      "num": 251,
+      "den": 418,
+      "alvo": 0.95,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "contatos_etiqueta": {
+      "periodo_rotulo": "out/2026",
+      "valor": 0.5949470252648736,
+      "num": 730,
+      "den": 1227,
+      "alvo": 0.95,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "ganhos_canal": {
+      "periodo_rotulo": "12 meses",
+      "valor": 0.596919,
+      "num": 465,
+      "den": 779,
+      "alvo": 0.9,
+      "sentido": "maior",
+      "periodo": "12m",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "growai_contato": {
+      "periodo_rotulo": "22/10 a 08/11/2026",
+      "valor": 0,
+      "num": 0,
+      "den": 697,
+      "alvo": 0.95,
+      "sentido": "maior",
+      "periodo": "2026-10-22 a 2026-11-08",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "aula_negocio_7d": {
+      "periodo_rotulo": "out/2026",
+      "valor": 0.14114832535885166,
+      "num": 59,
+      "den": 418,
+      "alvo": 1,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "presenca_por_venda": {
+      "periodo_rotulo": "out/2026",
+      "valor": 0.5576923076923077,
+      "num": 29,
+      "den": 52,
+      "alvo": 1,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "contatos_email": {
+      "periodo_rotulo": "desde 01/10/2026",
+      "valor": 0.00066,
+      "num": 1,
+      "den": 1516,
+      "alvo": null,
+      "sentido": "maior",
+      "periodo": "2026-10-01 a 2026-11-07",
+      "sinal": "cinza",
+      "sinal_texto": "Alvo a definir"
+    },
+    "responsavel": {
+      "periodo_rotulo": "criados em out/2026",
+      "valor": 0.18329466357308585,
+      "num": 158,
+      "den": 862,
+      "alvo": 0.95,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "ganhos_valor": {
+      "periodo_rotulo": "criados em out/2026",
+      "valor": 0,
+      "num": 0,
+      "den": 66,
+      "alvo": 1,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "etapas_followup": {
+      "periodo_rotulo": "out/2026",
+      "valor": 0.3010033444816054,
+      "num": 270,
+      "den": 897,
+      "alvo": 0,
+      "sentido": "menor",
+      "periodo": "2026-10",
+      "sinal": "vermelho",
+      "sinal_texto": "Longe do alvo"
+    },
+    "perdidos_motivo": {
+      "periodo_rotulo": "criados em out/2026",
+      "valor": 1,
+      "num": 748,
+      "den": 748,
+      "alvo": 1,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "verde",
+      "sinal_texto": "No alvo"
+    },
+    "mudancas_decidido": {
+      "periodo_rotulo": "12 meses",
+      "valor": 0.076366,
+      "num": 1486,
+      "den": 19459,
+      "alvo": 0,
+      "sentido": "menor",
+      "periodo": "12m",
+      "sinal": "laranja",
+      "sinal_texto": "Perto do alvo"
+    },
+    "ganhos_com_venda": {
+      "periodo_rotulo": "criados em out/2026",
+      "valor": 1,
+      "num": 66,
+      "den": 66,
+      "alvo": 1,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "verde",
+      "sinal_texto": "No alvo"
+    },
+    "vendas_com_negocio": {
+      "periodo_rotulo": "out/2026",
+      "valor": 1,
+      "num": 120,
+      "den": 120,
+      "alvo": 1,
+      "sentido": "maior",
+      "periodo": "2026-10",
+      "sinal": "verde",
+      "sinal_texto": "No alvo"
+    },
+    "sem_retorno_cadencia": {
+      "periodo_rotulo": "Start, 12 meses",
+      "valor": 0.233443,
+      "num": 994,
+      "den": 4258,
+      "alvo": null,
+      "sentido": "maior",
+      "periodo": "12m",
+      "sinal": "cinza",
+      "sinal_texto": "Alvo a definir"
+    },
+    "parados_30d": {
+      "periodo_rotulo": "em 07/11/2026",
+      "valor": 0.221519,
+      "num": 35,
+      "den": 158,
+      "alvo": null,
+      "sentido": "menor",
+      "periodo": "2026-11-07",
+      "sinal": "cinza",
+      "sinal_texto": "Alvo a definir"
+    },
+    "atividades_concluidas": {
+      "periodo_rotulo": "geradas de 08/10 a 07/11/2026",
+      "valor": 0.000601,
+      "num": 1,
+      "den": 1664,
+      "alvo": null,
+      "sentido": "maior",
+      "periodo": "2026-10-08 a 2026-11-07",
+      "sinal": "cinza",
+      "sinal_texto": "A conferir"
+    },
+    "turma_a_definir": {
+      "periodo_rotulo": "out/2026",
+      "valor": 0.24166666666666667,
+      "num": 29,
+      "den": 120,
+      "alvo": null,
+      "sentido": "menor",
+      "periodo": "2026-10",
+      "sinal": "cinza",
+      "sinal_texto": "Sem alvo"
+    }
+  },
+  "higiene": {
+    "parados_45d": 288,
+    "abertos_comerciais": 438
+  },
+  "conferencia": {
+    "corte": "2026-11-07 22:35:00",
+    "categorias": [
+      {
+        "categoria": "criacao",
+        "eventos": 24935
+      },
+      {
+        "categoria": "disparo",
+        "eventos": 1834
+      },
+      {
+        "categoria": "etapa",
+        "eventos": 52424
+      },
+      {
+        "categoria": "etiqueta",
+        "eventos": 3580
+      },
+      {
+        "categoria": "exclusao",
+        "eventos": 291
+      },
+      {
+        "categoria": "motivo",
+        "eventos": 35280
+      },
+      {
+        "categoria": "responsavel",
+        "eventos": 891
+      },
+      {
+        "categoria": "status",
+        "eventos": 30629
+      },
+      {
+        "categoria": "troca_funil",
+        "eventos": 10379
+      }
+    ],
+    "origem_por_bloco": {
+      "placar": "tvd_jornada_negocio, aula, matricula e transicao",
+      "caminhos": "tvd_jornada_negocio; atribuição refinada de eventos",
+      "canal": "etiquetas de contato em tvd_jornada_negocio; não confundir com toque rastreado",
+      "aula": "tvd_jornada_aula, definição única de cinco formulários, ativos e sem teste",
+      "demais_contextos": "levantamento de 08/11/2026, com fontes e períodos já identificados"
+    },
+    "limites": "Atualização manual. A GrowAI ainda não está conectada à central. Presença da planilha, recebido, capacidade e previsão continuam fora."
+  }
+};
+
+/* Derivados para os gráficos e o semáforo. Só reorganizam o que está acima; nenhum número novo nasce aqui. */
+(function (D) {
+  var n0 = new Intl.NumberFormat('pt-BR');
+  var n1 = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  function pct(v) { return n1.format(v * 100) + '%'; }
+  D.graficos = {
+    caminhos: {
+      etapas: D.caminhos.lista.map(function (c) {
+        return { nome: c.rotulo, valor: c.negocios, nota: n0.format(c.ganhos) + ' compraram (' + pct(c.ganhos / c.negocios) + ')' };
+      })
+    },
+    canal: {
+      etapas: D.canal.volume.map(function (c) {
+        return { nome: c.nome, valor: c.negocios, nota: pct(c.negocios / D.canal.base) + ' do volume' };
+      })
+    },
+    aula_funil: { etapas: D.aula.funil.map(function (e) { return { nome: e.nome, valor: e.valor }; }) }
+  };
+  /* regra proposta do semáforo (a validar): verde no alvo, laranja até 20 pontos abaixo, vermelho abaixo disso */
+  var PALAVRA = { verde: 'No alvo', laranja: 'Perto do alvo', vermelho: 'Longe do alvo' };
+  var corte = (D.meta.semaforo_corte_pontos == null ? 20 : D.meta.semaforo_corte_pontos) / 100;
+  Object.keys(D.qualidade).forEach(function (k) {
+    var q = D.qualidade[k];
+    if (q.sinal) { q.sinal_texto = q.sinal_texto || PALAVRA[q.sinal] || 'Sem dado'; return; }
+    if (q.valor == null || q.alvo == null) { q.sinal = 'cinza'; q.sinal_texto = 'Alvo a definir'; return; }
+    var falta = q.sentido === 'menor' ? q.valor - q.alvo : q.alvo - q.valor;
+    q.sinal = falta <= 1e-9 ? 'verde' : (falta <= corte + 1e-9 ? 'laranja' : 'vermelho');
+    q.sinal_texto = PALAVRA[q.sinal];
+  });
+})(window.VOID_DADOS);
+</script>
+<style>
+/* Só desta página: nomes longos de campanha quebram dentro da célula; caixas "ver mais" no mesmo desenho do "Ver os números". */
+.quebra{overflow-wrap:anywhere}
+.mais{margin:16px 0 0}
+.mais > summary{display:inline-flex;align-items:center;min-height:44px;cursor:pointer;font:700 13px/1.2 var(--font-letreiro);font-variation-settings:"wdth" 100;letter-spacing:.12em;text-transform:uppercase;color:var(--areia)}
+.mais[open] > summary{margin-bottom:8px}
+.momento-sub{display:block;margin-top:2px;font-size:14px;font-weight:400;line-height:1.4;color:var(--po)}
+.tabela td .sinal,.tabela th .sinal{margin:0 0 6px}
+.tabela td p,.tabela th p{margin:0 0 8px}
+.tabela td p:last-child,.tabela th p:last-child{margin-bottom:0}
+.lista-curta{margin:8px 0 0;padding-left:20px}
+.lista-curta li{margin:0 0 6px}
+.secao h3{margin-top:40px}
+.secao .grafico h3{margin-top:0}
+</style>
+</head>
+<body data-pagina="jornada">
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo">
+<div class="wrap topo-barra">
+<a class="topo-marca" href="../"><img alt="The VOID Tattoo Academy, início do Sistema VOID" height="24" src="../assets/void-horizontal-branco.svg" width="158"/></a>
+<button aria-controls="nav-sistema" aria-expanded="false" class="menu-botao" type="button"><span aria-hidden="true" class="menu-icone"></span><span class="menu-rotulo">Menu</span></button>
+<nav aria-label="Páginas do Sistema VOID" class="nav-sistema" id="nav-sistema">
+<ol class="nav-lista">
+<li><a class="nav-link" data-pagina="inicio" href="../"><span aria-hidden="true" class="nav-num"></span><span class="nav-nome">Início</span><span class="nav-desc">O que é o Sistema VOID</span></a></li>
+<li><a aria-current="page" class="nav-link" data-pagina="jornada" href="../jornada/"><span class="nav-num">01</span><span class="nav-nome">Jornada</span><span class="nav-desc">Do anúncio à matrícula, num lugar só</span></a></li>
+<li><a class="nav-link" data-pagina="mapa-do-funil" href="../mapa-do-funil/"><span class="nav-num">02</span><span class="nav-nome">Mapa do Funil</span><span class="nav-desc">O seu mapa, na versão GrowAI</span></a></li>
+<li><a class="nav-link" data-pagina="playbook" href="../playbook/"><span class="nav-num">03</span><span class="nav-nome">Playbook</span><span class="nav-desc">Pipeline e rotina do atendimento</span></a></li>
+<li><a class="nav-link" data-pagina="growai" href="../growai/"><span class="nav-num">04</span><span class="nav-nome">A VOID na GrowAI</span><span class="nav-desc">Onde entra, em que ordem e com que portões</span></a></li>
+</ol>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section aria-labelledby="titulo-pagina" class="abertura janela-luz">
+<div class="wrap">
+<p class="marcador">Página 1 de 4 · Sistema VOID</p>
+<h1 class="titulo-filme" id="titulo-pagina">Jornada VOID</h1>
+<p class="linha-off">Do anúncio à matrícula, num lugar só.</p>
+<div class="abertura-lede">
+<p>A jornada da VOID inteira numa página: de onde vem cada aluno, quanto tempo ele leva e em que passagem fica pelo caminho.</p>
+<p>Os números juntam Clint, Airtable, Meta, Google e os formulários na central de dados da VOID. Cada um traz o período e a fonte.</p>
+<p>A proposta é atacar um gargalo por vez, começando pela conversa que não vira encontro.</p>
+</div>
+<dl class="ficha">
+<div><dt>Dados até</dt><dd><time datetime="2026-11-07"><data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data></time></dd></div>
+<div><dt>Versão</dt><dd><time datetime="2026-11-08"><data data-dado="meta.versao" data-formato="data">08/11/2026</data></time></dd></div>
+<div><dt>Números</dt><dd><data data-dado="meta.fonte_rotulo" data-formato="texto">tabelas da jornada conferidas e contexto histórico de 08/11/2026</data></dd></div>
+</dl>
+</div>
+</section>
+<nav aria-label="Nesta página" class="wrap sumario">
+<p class="sumario-titulo">Nesta página</p>
+<ol>
+<li><a href="#placar"><span>01</span>Placar do mês</a></li>
+<li><a href="#jornada"><span>02</span>A jornada de ponta a ponta</a></li>
+<li><a href="#vazamentos"><span>03</span>Onde a jornada perde gente</a></li>
+<li><a href="#canal"><span>04</span>Por canal</a></li>
+<li><a href="#campanha"><span>05</span>Por campanha</a></li>
+<li><a href="#aula"><span>06</span>Aula experimental</a></li>
+<li><a href="#rastreamento"><span>07</span>Rastreamento</a></li>
+<li><a href="#higiene"><span>08</span>Higiene do CRM</a></li>
+<li><a href="#sobre-os-dados"><span>09</span>Sobre os dados</a></li>
+<li><a href="#proximo-passo"><span>10</span>Próximo passo</a></li>
+</ol>
+</nav>
+<!-- 01 · PLACAR -->
+<section aria-labelledby="t-placar" class="secao" id="placar">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">01</span>
+<h2 id="t-placar">Placar do mês</h2>
+<p class="secao-sub">As duas portas, a conversa, o encontro e a matrícula em <data data-dado="placar.mes" data-formato="mes">out/2026</data>, o último mês fechado.</p>
+</header>
+<div class="numeros">
+<div class="numero">
+<p class="numero-valor"><data data-dado="placar.start_negocios" data-formato="numero">783</data></p>
+<p class="numero-rotulo">leads do Start (M1)</p>
+<p class="numero-base">negócios criados no Funil Start e nos funis dos vendedores do Start</p>
+<p class="numero-nota"><data data-dado="placar.mes" data-formato="mes">out/2026</data> · Clint · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-dado="placar.aula_inscricoes" data-formato="numero">418</data></p>
+<p class="numero-rotulo">inscrições na aula experimental (M1)</p>
+<p class="numero-base"><data data-dado="placar.aula_envios" data-formato="numero">419</data> envios, menos <data data-dado="placar.aula_testes" data-formato="numero">1</data> de teste</p>
+<p class="numero-nota"><data data-dado="placar.mes" data-formato="mes">out/2026</data> · Jotform · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="placar.start_conversa_real_taxa" data-formato="pct">78,2%</data></p>
+<p class="numero-rotulo">dos leads do Start conversaram com uma pessoa (M2)</p>
+<p class="numero-base">base: <data data-dado="placar.start_conversa_real" data-formato="numero">612</data> de <data data-dado="placar.start_negocios" data-formato="numero">783</data> leads, resposta em até 7 dias</p>
+<p class="numero-nota"><data data-dado="placar.mes" data-formato="mes">out/2026</data> · mensagens da Clint · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero" data-sinal="vermelho">
+<p class="numero-sinal"><span class="sinal sinal-vermelho">Gargalo</span></p>
+<p class="numero-valor"><data data-dado="placar.encontros_registrados" data-formato="numero">29</data></p>
+<p class="numero-rotulo">encontros registrados na Clint (M3)</p>
+<p class="numero-base">num mês em que <data data-dado="placar.vendas_via_aula" data-formato="numero">52</data> vendas vieram de aula experimental</p>
+<p class="numero-nota"><data data-dado="placar.mes" data-formato="mes">out/2026</data> · Clint e tabela de vendas do Airtable · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero numero-luz">
+<p class="numero-valor"><data data-dado="placar.matriculas" data-formato="numero">120</data></p>
+<p class="numero-rotulo">matrículas (M5)</p>
+<p class="numero-base"><data data-dado="placar.matriculas_start" data-formato="numero">80</data> Start, <data data-dado="placar.matriculas_master" data-formato="numero">19</data> Master, <data data-dado="placar.matriculas_pro" data-formato="numero">20</data> Pro e <data data-dado="placar.matriculas_outras" data-formato="numero">1</data> outra; <data data-dado="placar.matriculas_canceladas" data-formato="numero">1</data> cancelada</p>
+<p class="numero-nota"><data data-dado="placar.mes" data-formato="mes">out/2026</data> · tabela de vendas do Airtable · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-dado="placar.valor_vendido" data-formato="brl-curto">R$ 314 mil</data></p>
+<p class="numero-rotulo">vendidos nas boletas do mês</p>
+<p class="numero-base"><data data-dado="placar.valor_vendido" data-formato="brl">R$ 314.378</data>, contando <data data-dado="placar.matriculas_canceladas" data-formato="numero">1</data> venda cancelada; é o vendido, não o recebido</p>
+<p class="numero-nota"><data data-dado="placar.mes" data-formato="mes">out/2026</data> · tabela de vendas do Airtable · <span class="origem o-medido">medido</span></p>
+</div>
+</div>
+<div class="leitura">
+<p>Lead, conversa e matrícula estão bem medidos. O encontro não está: a Clint registrou <data data-dado="placar.encontros_registrados" data-formato="numero">29</data> presenças registradas no mesmo mês em que <data data-dado="placar.vendas_via_aula" data-formato="numero">52</data> vendas vieram de aula experimental. É nessa passagem que esta página propõe começar.</p>
+<p>O placar ainda não tem meta nem capacidade, que ficam para a próxima versão. Por isso os volumes aparecem sem cor, e o vermelho marca só o gargalo da vez proposto.</p>
+</div>
+</div>
+</section>
+<!-- 02 · JORNADA -->
+<section aria-labelledby="t-jornada" class="secao" id="jornada">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">02</span>
+<h2 id="t-jornada">A jornada de ponta a ponta</h2>
+<p class="secao-sub">Os oito momentos, a prova de cada passagem e o que os dados mostram hoje.</p>
+</header>
+<div class="leitura">
+<p>A jornada da VOID tem oito momentos, de M1 a M8. Cada passagem tem uma prova, o fato que mostra que a pessoa chegou ali. Sem a prova registrada, o momento existe na escola, mas não aparece nos números.</p>
+<p>Dois nomes aparecem no caminho. MQL é o lead qualificado pelo marketing: tem perfil, disse o que quer e aceitou um encontro. SQL é o lead qualificado para vendas: foi ao encontro e quer as condições. Na VOID, o MQL é o M2 e o SQL é o M3.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Os oito momentos com os dados de hoje</caption>
+<thead><tr><th scope="col">Momento</th><th scope="col">O que prova a passagem</th><th scope="col">O que os dados mostram</th><th scope="col">Registro hoje</th></tr></thead>
+<tbody>
+<tr>
+<th scope="row">Atração<span class="momento-sub">antes do M1</span></th>
+<td>Anúncio, conteúdo ou busca que leva a pessoa à página ou ao WhatsApp.</td>
+<td>Meta: <data data-dado="jornada.atracao.meta_investimento" data-formato="brl-curto">R$ 576 mil</data>, <data data-dado="jornada.atracao.meta_leads_pixel" data-formato="numero">10.117</data> leads do pixel, <data data-dado="jornada.atracao.meta_cadastros_aula" data-formato="numero">2.068</data> cadastros da aula e <data data-dado="jornada.atracao.meta_conversas" data-formato="numero">1.428</data> conversas iniciadas, de <data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data>. Google Ads: <data data-dado="jornada.atracao.google_investimento" data-formato="brl-curto">R$ 235 mil</data>, de <data data-dado="jornada.atracao.google_de" data-formato="data">01/11/2025</data> a <data data-dado="jornada.atracao.google_ate" data-formato="data">22/10/2026</data>.</td>
+<td>Medido. O Google Ads está sem dado desde <data data-dado="jornada.atracao.google_ate" data-formato="data">22/10/2026</data>.</td>
+</tr>
+<tr>
+<th scope="row">M1 Lead</th>
+<td>Pessoa identificável, com origem e interesse: formulário, inscrição ou mensagem iniciada por ela.</td>
+<td>Start: <data data-dado="jornada.m1.start_negocios" data-formato="numero">9.698</data> negócios criados em 12 meses. Aula: <data data-dado="jornada.m1.aula_inscricoes_mes" data-formato="numero">418</data> inscrições em <data data-dado="jornada.m1.mes" data-formato="mes">out/2026</data>. Formulário do Start: <data data-dado="jornada.m1.planilha_leads_mes" data-formato="numero">992</data> leads na planilha em <data data-dado="jornada.m1.mes" data-formato="mes">out/2026</data>.</td>
+<td>Medido. A campanha de origem fica no formulário e não chega ao negócio.</td>
+</tr>
+<tr>
+<th scope="row">M2 Qualificação<span class="momento-sub">MQL</span></th>
+<td>Perfil, objetivo dito pela pessoa e aceite de um encontro.</td>
+<td><data data-casas="1" data-dado="jornada.m2.conversa_real_taxa" data-formato="pct">77,3%</data> dos leads do Start conversaram com uma pessoa (<data data-dado="jornada.m2.conversa_real" data-formato="numero">7.494</data>), mas só <data data-casas="1" data-dado="jornada.m2.saiu_entrada_taxa" data-formato="pct">53,2%</data> saíram da etapa de entrada no CRM (<data data-dado="jornada.m2.saiu_entrada" data-formato="numero">5.159</data>). O formulário de qualificação está no ar desde <data data-dado="jornada.m2.mql_desde" data-formato="data">22/10/2026</data>: <data data-dado="jornada.m2.mql_envios" data-formato="numero">29</data> envios e <data data-dado="jornada.m2.mql_sim" data-formato="numero">12</data> MQL até <data data-dado="jornada.m2.mql_ate" data-formato="data">07/11/2026</data>.</td>
+<td>Parcial. A conversa se mede pelas mensagens; a qualificação, só no formulário novo.</td>
+</tr>
+<tr data-sinal="vermelho">
+<th scope="row">M3 Encontro<span class="momento-sub">SQL</span></th>
+<td>Presença na visita, na aula experimental ou na conversa de diagnóstico. Agendar não conta.</td>
+<td><data data-casas="1" data-dado="jornada.m3.encontro_taxa" data-formato="pct">4,4%</data> dos negócios do Start passaram por uma etapa de encontro (<data data-dado="jornada.m3.encontro" data-formato="numero">430</data>). Em <data data-dado="jornada.m3.mes" data-formato="mes">out/2026</data>, a Clint registrou <data data-dado="jornada.m3.presencas_mes" data-formato="numero">29</data> presenças, e <data data-dado="jornada.m3.vendas_aula_mes" data-formato="numero">52</data> vendas vieram de aula experimental.</td>
+<td><p><span class="sinal sinal-vermelho">Gargalo</span></p><p>Parcial. A presença da aula fica na planilha do comercial.</p></td>
+</tr>
+<tr>
+<th scope="row">M4 Proposta</th>
+<td>Turma, horário, valor e condições, com próximo passo e data.</td>
+<td><data data-casas="1" data-dado="jornada.m4.valores_taxa" data-formato="pct">45,2%</data> dos negócios do Start receberam a tabela de valores (<data data-dado="jornada.m4.valores" data-formato="numero">4.388</data>), em mediana <data data-casas="1" data-dado="jornada.m4.valores_horas" data-formato="h">10,6 h</data> depois de entrar. Nenhuma etapa separa a tabela da proposta para a turma.</td>
+<td>Sem etapa própria.</td>
+</tr>
+<tr>
+<th scope="row">M5 Matrícula</th>
+<td>Boleta no Airtable e negócio ganho na Clint.</td>
+<td><data data-dado="jornada.m5.vendas" data-formato="numero">1.300</data> vendas e <data data-dado="jornada.m5.valor_vendido" data-formato="brl-curto">R$ 3,65 mi</data> vendidos de <data data-dado="jornada.m5.periodo" data-formato="texto">nov/2025 a out/2026</data> (<data data-dado="jornada.m5.valor_sem_canceladas" data-formato="brl-curto">R$ 3,47 mi</data> sem as <data data-dado="jornada.m5.canceladas" data-formato="numero">65</data> canceladas); <data data-dado="jornada.m5.start_vendas" data-formato="numero">984</data> delas do Start (<data data-dado="jornada.m5.start_valor" data-formato="brl-curto">R$ 2,92 mi</data>). <data data-casas="1" data-dado="jornada.m5.vendas_com_negocio_taxa" data-formato="pct">98,8%</data> das vendas têm negócio na Clint com o mesmo telefone. No Start, <data data-dado="jornada.m5.start_ganhos" data-formato="numero">779</data> ganhos em 12 meses (<data data-casas="1" data-dado="jornada.m5.start_ganhos_taxa" data-formato="pct">8,0%</data> dos negócios).</td>
+<td>Medido. O valor é o vendido; o recebido não tem fonte.</td>
+</tr>
+<tr>
+<th scope="row">M6 Ativação</th>
+<td>Aula 1 feita, com o kit entregue.</td>
+<td><data data-dado="jornada.m6.aulas_praticas" data-formato="numero">215</data> aulas práticas registradas por turma no Airtable, de <data data-dado="jornada.m6.aulas_periodo" data-formato="texto">05/08 a 02/10/2026</data>. No Jotform, <data data-dado="jornada.m6.feedback_start" data-formato="numero">464</data> envios do feedback do Start, <data data-dado="jornada.m6.feedback_master" data-formato="numero">95</data> do feedback do Master e <data data-dado="jornada.m6.avaliacao_aula" data-formato="numero">154</data> avaliações de aula, de <data data-dado="jornada.m6.jotform_periodo" data-formato="texto">nov/2025 a out/2026</data>.</td>
+<td>Parcial. Ainda sem ligação aluno a aluno.</td>
+</tr>
+<tr>
+<th scope="row">M7 Valor</th>
+<td>Frequência, prática em pele e formatura.</td>
+<td>Confirmações de presença nas formaturas de <data data-dado="jornada.m7.formatura_jul_data" data-formato="texto">28/07</data> (<data data-dado="jornada.m7.formatura_jul" data-formato="numero">92</data>) e de <data data-dado="jornada.m7.formatura_out_data" data-formato="texto">27/10</data> (<data data-dado="jornada.m7.formatura_out" data-formato="numero">72</data>). <data data-dado="jornada.m7.avaliacoes_google" data-formato="numero">397</data> avaliações no Google, com nota média <data data-casas="2" data-dado="jornada.m7.nota_google" data-formato="numero">4,92</data>; <data data-dado="jornada.m7.avaliacoes_desde_nov" data-formato="numero">147</data> delas desde <data data-dado="jornada.m7.avaliacoes_desde" data-formato="mes">nov/2025</data>.</td>
+<td>Parcial.</td>
+</tr>
+<tr>
+<th scope="row">M8 Expansão</th>
+<td>Nova formação comprada ou indicação feita.</td>
+<td><data data-casas="1" data-dado="jornada.m8.start_para_master_taxa" data-formato="pct">10,4%</data> dos alunos do Start compraram o Master depois (<data data-dado="jornada.m8.start_para_master" data-formato="numero">259</data> de <data data-dado="jornada.m8.start_alunos" data-formato="numero">2.494</data>, de <data data-dado="jornada.m8.periodo" data-formato="texto">jan/2024 a 07/11/2026</data>). <data data-casas="1" data-dado="jornada.m8.vendas_ex_aluno_taxa" data-formato="pct">21,8%</data> das vendas desde <data data-dado="jornada.m8.ex_aluno_desde" data-formato="mes">jun/2026</data> vieram de ex-aluno (<data data-dado="jornada.m8.vendas_ex_aluno" data-formato="numero">123</data> de <data data-dado="jornada.m8.vendas_desde_jun" data-formato="numero">565</data>).</td>
+<td>Medido pela recompra.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Meta Ads e Google Ads na atração; Clint e Jotform de M1 a M4; tabela de vendas do Airtable e Clint em M5 e M8; Airtable, Jotform e Google Meu Negócio em M6 e M7; tudo pela central de dados da VOID · 12 meses = negócios criados de <data data-dado="meta.periodos.safra_12m" data-formato="texto">08/11/2025 a 07/11/2026</data> · <span class="origem o-medido">medido</span></p>
+<h3>Quanto tempo leva</h3>
+<div class="numeros">
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="tempos.humano_util_min" data-formato="min">4,9 min</data></p>
+<p class="numero-rotulo">até a primeira mensagem de uma pessoa, no horário útil</p>
+<p class="numero-base">mediana de <data data-dado="tempos.humano_util_base" data-formato="numero">3.125</data> leads do Start que chamaram no WhatsApp; <data data-casas="1" data-dado="tempos.humano_util_15min_taxa" data-formato="pct">78,1%</data> com resposta em até 15 minutos</p>
+<p class="numero-nota">12 meses · Clint · <span class="origem o-medido">medido</span> · <span class="etiqueta etiqueta-validar">horário a validar</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="tempos.humano_fora_h" data-formato="h">11,0 h</data></p>
+<p class="numero-rotulo">de espera para quem chega fora do horário útil</p>
+<p class="numero-base"><data data-casas="1" data-dado="tempos.fora_horario_taxa" data-formato="pct">62,0%</data> dos leads chegam fora dele (<data data-dado="tempos.fora_horario_n" data-formato="numero">5.107</data> de <data data-dado="tempos.fora_horario_base" data-formato="numero">8.232</data>)</p>
+<p class="numero-nota">12 meses · Clint · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="tempos.valores_h" data-formato="h">10,6 h</data></p>
+<p class="numero-rotulo">da entrada até a tabela de valores</p>
+<p class="numero-base">mediana de <data data-dado="tempos.valores_base" data-formato="numero">4.388</data> negócios do Start</p>
+<p class="numero-nota">12 meses · Clint · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="tempos.ganho_dias" data-formato="dias">1,8 dias</data></p>
+<p class="numero-rotulo">da entrada até o ganho</p>
+<p class="numero-base">mediana de <data data-dado="tempos.ganho_base" data-formato="numero">779</data> ganhos; três em cada quatro saem em até <data data-casas="1" data-dado="tempos.ganho_p75_dias" data-formato="dias">6,8 dias</data></p>
+<p class="numero-nota">12 meses · Clint · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="0" data-dado="tempos.encontro_ganho_min" data-formato="min">6 min</data></p>
+<p class="numero-rotulo">da etapa de encontro realizado até o ganho</p>
+<p class="numero-base">mediana de <data data-dado="tempos.encontro_ganho_base" data-formato="numero">141</data> ganhos: a presença costuma ser marcada na hora da venda</p>
+<p class="numero-nota">12 meses · Clint · <span class="origem o-medido">medido</span></p>
+</div>
+</div>
+<div class="leitura">
+<p>No horário útil, a primeira resposta já é rápida, e responder mais rápido muda pouco a compra. Entre quem chamou no WhatsApp no horário útil, quem teve resposta em até 15 minutos comprou em <data data-casas="1" data-dado="tempos.ganho_ate15_de" data-formato="pct">5,7%</data> a <data data-casas="1" data-dado="tempos.ganho_ate15_ate" data-formato="pct">6,0%</data> dos casos, contra <data data-casas="1" data-dado="tempos.ganho_depois_de" data-formato="pct">3,4%</data> a <data data-casas="1" data-dado="tempos.ganho_depois_ate" data-formato="pct">3,6%</data> de quem esperou mais, em negócios criados de <data data-dado="tempos.velocidade_periodo" data-formato="texto">08/11/2025 a 07/10/2026</data>. Por isso a velocidade não entra como gargalo.</p>
+</div>
+</div>
+</section>
+<!-- 03 · VAZAMENTOS -->
+<section aria-labelledby="t-vazamentos" class="secao" id="vazamentos">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">03</span>
+<h2 id="t-vazamentos">Onde a jornada perde gente</h2>
+<p class="secao-sub">Os cinco vazamentos do Start em 12 meses, com o que cada um significa e o que fazer.</p>
+</header>
+<figure class="grafico">
+<p class="grafico-mede">Negócios do Start por caminho até a decisão · 12 meses</p>
+<h3 class="grafico-titulo"><data data-casas="1" data-dado="caminhos.nada_taxa" data-formato="pct">51,4%</data> saem sem tabela e sem encontro, e só <data data-casas="1" data-dado="caminhos.nada_ganhos_taxa" data-formato="pct">0,9%</data> desses compram</h3>
+<div class="grafico-area" data-grafico='{"tipo":"funil","de":"graficos.caminhos","taxas":false,"tabela":false,"gargalo":0,"unidade":"Negócios","colunaRotulo":"Caminho"}'></div>
+<figcaption class="fonte">Clint pela central de dados da VOID · negócios do Start criados de <data data-dado="meta.periodos.safra_12m" data-formato="texto">08/11/2025 a 07/11/2026</data> · base: <data data-dado="caminhos.base" data-formato="numero">9.698</data> negócios e <data data-dado="caminhos.ganhos" data-formato="numero">779</data> ganhos · <span class="origem o-medido">medido</span>. É associação, não causa: quem vai ao encontro já chega mais decidido, e <data data-dado="caminhos.realizado_marcado_na_venda" data-formato="numero">59</data> dos <data data-dado="caminhos.lista.4.ganhos" data-formato="numero">93</data> ganhos com encontro realizado foram marcados a menos de 1 minuto da presença.</figcaption>
+</figure>
+<aside class="aviso aviso-proposta">
+<p class="aviso-rotulo">Proposta · gargalo da vez</p>
+<p>A conversa que não vira encontro. É onde está o maior volume: <data data-casas="1" data-dado="caminhos.nada_taxa" data-formato="pct">51,4%</data> dos negócios do Start saem sem tabela e sem encontro, e <data data-dado="caminhos.nada_conversaram" data-formato="numero">2.925</data> deles conversaram com uma pessoa. E o caminho pelo encontro é o que mais compra, mesmo com a ressalva acima.</p>
+<p>Para medir o antes e o depois, falta registrar a presença, que hoje fica na planilha do comercial. A validar com Lucas e Maluf.</p>
+</aside>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Os cinco vazamentos do Start</caption>
+<thead><tr><th scope="col">Vazamento</th><th scope="col">O que os dados mostram</th><th scope="col">O que significa</th><th scope="col">O que fazer</th></tr></thead>
+<tbody>
+<tr data-sinal="vermelho">
+<th scope="row"><p><span class="sinal sinal-vermelho">Gargalo</span></p>1. Conversa sem próximo passo<span class="momento-sub">M2 para M3</span></th>
+<td><p><data data-dado="caminhos.lista.0.negocios" data-formato="numero">4.985</data> negócios (<data data-casas="1" data-dado="caminhos.nada_taxa" data-formato="pct">51,4%</data>) saíram sem tabela e sem encontro; <data data-dado="caminhos.lista.0.ganhos" data-formato="numero">45</data> compraram. "Sem retorno" é <data data-casas="1" data-dado="vazamentos.sem_retorno_taxa" data-formato="pct">47,1%</data> das perdas (<data data-dado="vazamentos.sem_retorno" data-formato="numero">4.406</data> de <data data-dado="vazamentos.perdas" data-formato="numero">9.361</data>) e vem depois de <data data-dado="vazamentos.tentativa_mediana_dias" data-formato="numero">2</data> dias de tentativa, em mediana; só <data data-casas="1" data-dado="vazamentos.tentativa_3d_taxa" data-formato="pct">23,3%</data> recebem 3 dias ou mais.</p><p>Dos negócios criados em <data data-dado="vazamentos.ultima_safra" data-formato="mes">out/2026</data>, <data data-casas="1" data-dado="vazamentos.perdido_7d_ultima_safra" data-formato="pct">83,4%</data> foram perdidos em até 7 dias; em <data data-dado="vazamentos.safra_antiga" data-formato="mes">jan/2025</data> eram <data data-casas="1" data-dado="vazamentos.perdido_7d_safra_antiga" data-formato="pct">42,7%</data>.</p></td>
+<td>A conversa acontece, termina sem convite para o encontro e o lead é descartado cedo.</td>
+<td>Escrever com o Maluf o próximo passo de toda conversa: convite para aula ou visita com data, ou motivo de saída. Testar 3 dias ou mais de tentativa antes do "Sem retorno". A automação vem depois da regra medida.</td>
+</tr>
+<tr data-sinal="laranja">
+<th scope="row"><p><span class="sinal sinal-laranja">Atenção</span></p>2. Preço antes do diagnóstico<span class="momento-sub">M2 para M4</span></th>
+<td><p>No Funil Start, <data data-casas="1" data-dado="vazamentos.leads_para_proposta_taxa" data-formato="pct">66,3%</data> das saídas da etapa Leads vão direto para Proposta (<data data-dado="vazamentos.leads_para_proposta" data-formato="numero">1.965</data> de <data data-dado="vazamentos.saidas_leads" data-formato="numero">2.966</data>), em mediana <data data-casas="1" data-dado="vazamentos.leads_para_proposta_h" data-formato="h">1,7 h</data> depois da entrada. Quem só recebe a tabela compra em <data data-casas="1" data-dado="vazamentos.so_valores_taxa" data-formato="pct">10,8%</data> dos casos (<data data-dado="vazamentos.so_valores_ganhos" data-formato="numero">462</data> de <data data-dado="vazamentos.so_valores" data-formato="numero">4.261</data>).</p><p><data data-casas="1" data-dado="vazamentos.perdas_em_valores_taxa" data-formato="pct">40,9%</data> das perdas acontecem em etapa de valores ou de follow-up de valores (<data data-dado="vazamentos.perdas_em_valores" data-formato="numero">3.832</data>). De "FUP Proposta 2", saem perdidos <data data-casas="1" data-dado="vazamentos.fup2_start_taxa" data-formato="pct">92,0%</data> no Funil Start e <data data-casas="1" data-dado="vazamentos.fup2_master_taxa" data-formato="pct">96,2%</data> no Master.</p></td>
+<td>A tabela vira o primeiro assunto, antes de saber o que a pessoa quer, e o follow-up empurra para a perda.</td>
+<td>Tratar a tabela como parte da qualificação (M2) e guardar a proposta (M4) para depois do diagnóstico ou do encontro, com turma, condição e data.</td>
+</tr>
+<tr data-sinal="laranja">
+<th scope="row"><p><span class="sinal sinal-laranja">Atenção</span></p>3. Encontro fora do registro<span class="momento-sub">M3</span></th>
+<td><p>Só <data data-dado="jornada.m3.encontro" data-formato="numero">430</data> negócios do Start (<data data-casas="1" data-dado="jornada.m3.encontro_taxa" data-formato="pct">4,4%</data>) passaram por etapa de encontro. Das <data data-dado="vazamentos.aula_inscricoes" data-formato="numero">186</data> inscrições na aula de <data data-dado="vazamentos.aula_periodo" data-formato="texto">22/10 a 07/11/2026</data>, <data data-dado="vazamentos.aula_sem_negocio" data-formato="numero">134</data> (<data data-casas="1" data-dado="vazamentos.aula_sem_negocio_taxa" data-formato="pct">72,0%</data>) não viraram negócio, embora <data data-dado="vazamentos.aula_msg_pessoa" data-formato="numero">111</data> tenham recebido mensagem de uma pessoa em até 7 dias e <data data-dado="vazamentos.aula_responderam" data-formato="numero">79</data> tenham respondido.</p><p>Em <data data-dado="placar.mes" data-formato="mes">out/2026</data>, <data data-dado="placar.encontros_registrados" data-formato="numero">29</data> presenças registradas para <data data-dado="placar.vendas_via_aula" data-formato="numero">52</data> vendas vindas de aula.</p></td>
+<td>É o outro lado do gargalo da vez: sem a presença registrada, não dá para medir quantas conversas viram encontro.</td>
+<td>Registrar a presença no dia, no mesmo lugar do negócio. Até lá, levar para a central de dados a planilha do comercial, só com datas e status.</td>
+</tr>
+<tr data-sinal="laranja">
+<th scope="row"><p><span class="sinal sinal-laranja">Atenção</span></p>4. Perfil errado entrando como lead<span class="momento-sub">M1</span></th>
+<td><p><data data-casas="1" data-dado="vazamentos.perfil_taxa" data-formato="pct">29,2%</data> das perdas são por perfil (<data data-dado="vazamentos.perfil" data-formato="numero">2.732</data>): sem perfil financeiro <data data-dado="vazamentos.perfil_financeiro" data-formato="numero">1.005</data>, curioso <data data-dado="vazamentos.curioso" data-formato="numero">886</data>, distância <data data-dado="vazamentos.distancia" data-formato="numero">560</data>, rotina <data data-dado="vazamentos.rotina" data-formato="numero">176</data> e menor de 16 anos <data data-dado="vazamentos.menor_16" data-formato="numero">105</data>.</p><p>Na Meta paga, <data data-casas="1" data-dado="vazamentos.meta_perfil_taxa" data-formato="pct">26,9%</data> dos negócios se perdem por perfil (<data data-dado="vazamentos.meta_perfil" data-formato="numero">1.635</data> de <data data-dado="vazamentos.meta_negocios" data-formato="numero">6.087</data>).</p></td>
+<td>Parte da verba traz quem não pode ou não quer fazer a formação agora.</td>
+<td>Usar a régua do formulário de qualificação antes da conversa comercial e fechar a idade mínima: 16 anos na Clint, 18 no formulário. A validar com Lucas e Maluf.</td>
+</tr>
+<tr data-sinal="laranja">
+<th scope="row"><p><span class="sinal sinal-laranja">Atenção</span></p>5. Venda sem jornada e sem origem<span class="momento-sub">M5</span></th>
+<td><p><data data-dado="vazamentos.ganhos_a_mao" data-formato="numero">390</data> dos <data data-dado="caminhos.ganhos" data-formato="numero">779</data> ganhos (<data data-casas="1" data-dado="vazamentos.ganhos_a_mao_taxa" data-formato="pct">50,1%</data>) vêm de negócio criado à mão, em mediana <data data-casas="2" data-dado="vazamentos.ganhos_a_mao_dias" data-formato="numero">0,69</data> dia antes do ganho; <data data-dado="vazamentos.ganhos_a_mao_avancada" data-formato="numero">267</data> já nasceram em etapa avançada. <data data-dado="vazamentos.ganhos_sem_canal" data-formato="numero">270</data> ganhos (<data data-casas="1" data-dado="vazamentos.ganhos_sem_canal_taxa" data-formato="pct">34,7%</data>) não têm canal.</p></td>
+<td>Metade das vendas aparece no CRM só na hora de fechar, sem o caminho e sem a origem.</td>
+<td>Criar o negócio quando a conversa começa, com a origem preenchida, e não na hora da venda.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint pela central de dados da VOID · família do Start: negócios criados de <data data-dado="meta.periodos.safra_12m" data-formato="texto">08/11/2025 a 07/11/2026</data> e perdas registradas no mesmo período · aula: Jotform e Clint, <data data-dado="vazamentos.aula_periodo" data-formato="texto">22/10 a 07/11/2026</data> · presenças e vendas de <data data-dado="placar.mes" data-formato="mes">out/2026</data>: Clint e tabela de vendas do Airtable · <span class="origem o-medido">medido</span></p>
+</div>
+</section>
+<!-- 04 · CANAL -->
+<section aria-labelledby="t-canal" class="secao" id="canal">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">04</span>
+<h2 id="t-canal">Por canal</h2>
+<p class="secao-sub">De onde vem o volume do Start e por que ainda não dá para dizer qual canal vende mais.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<figure class="grafico">
+<p class="grafico-mede">Negócios do Start por canal · 12 meses</p>
+<h3 class="grafico-titulo">O maior canal, <data data-dado="canal.volume.0.nome" data-formato="texto">Meta pago</data>, traz <data data-casas="1" data-dado="canal.volume.0.parcela" data-formato="pct">62,9%</data> dos negócios do Start</h3>
+<div class="grafico-area" data-grafico='{"tipo":"funil","de":"graficos.canal","taxas":false,"tabela":false,"unidade":"Negócios","colunaRotulo":"Canal"}'></div>
+<figcaption class="fonte">Clint pela central de dados da VOID, pela etiqueta de canal do contato no retrato de <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data> · negócios do Start criados de <data data-dado="meta.periodos.safra_12m" data-formato="texto">08/11/2025 a 07/11/2026</data> · base: <data data-dado="canal.base" data-formato="numero">9.698</data> negócios, <data data-casas="1" data-dado="canal.cobertura" data-formato="pct">90,8%</data> com canal · <span class="origem o-medido">medido</span></figcaption>
+</figure>
+<div class="leitura">
+<p>O volume por canal se sustenta, porque <data data-casas="1" data-dado="canal.cobertura" data-formato="pct">90,8%</data> dos negócios têm canal. Qual canal vende mais ainda não dá para afirmar: dos <data data-dado="canal.ganhos" data-formato="numero">779</data> ganhos do Start no mesmo período, <data data-dado="canal.ganhos_sem_origem" data-formato="numero">270</data> (<data data-casas="1" data-dado="canal.ganhos_sem_origem_taxa" data-formato="pct">34,7%</data>) não têm canal, e esse é o maior grupo. Quase todos vêm de negócio criado à mão na hora da venda, sem etiqueta. Com o maior grupo de vendas sem origem, a taxa de ganho de cada canal sai distorcida.</p>
+</div>
+<details class="mais">
+<summary>Ver a taxa de ganho por canal, com o aviso</summary>
+<aside class="aviso aviso-atencao">
+<p class="aviso-rotulo">Atenção</p>
+<p>Leitura barrada para decidir verba: "Sem origem" é o maior grupo entre os ganhos. As taxas dos canais conhecidos estão por baixo, porque parte dos ganhos sem origem veio deles.</p>
+</aside>
+<div class="tabela">
+<table>
+<caption>Start, 12 meses, pela etiqueta do contato</caption>
+<thead><tr><th scope="col">Canal</th><th class="num" scope="col">Negócios</th><th class="num" scope="col">Ganhos</th></tr></thead>
+<tbody>
+<tr><th scope="row"><data data-dado="canal.volume.0.nome" data-formato="texto">Meta pago</data></th><td class="num"><data data-dado="canal.volume.0.negocios" data-formato="numero">6.098</data></td><td class="num"><data data-dado="canal.volume.0.ganhos" data-formato="numero">214</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.volume.1.nome" data-formato="texto">Google pago</data></th><td class="num"><data data-dado="canal.volume.1.negocios" data-formato="numero">1.233</data></td><td class="num"><data data-dado="canal.volume.1.ganhos" data-formato="numero">100</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.volume.2.nome" data-formato="texto">Sem origem</data></th><td class="num"><data data-dado="canal.volume.2.negocios" data-formato="numero">893</data></td><td class="num"><data data-dado="canal.volume.2.ganhos" data-formato="numero">270</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.volume.3.nome" data-formato="texto">Instagram orgânico</data></th><td class="num"><data data-dado="canal.volume.3.negocios" data-formato="numero">850</data></td><td class="num"><data data-dado="canal.volume.3.ganhos" data-formato="numero">85</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.volume.4.nome" data-formato="texto">Google orgânico</data></th><td class="num"><data data-dado="canal.volume.4.negocios" data-formato="numero">552</data></td><td class="num"><data data-dado="canal.volume.4.ganhos" data-formato="numero">60</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.volume.5.nome" data-formato="texto">Outros</data></th><td class="num"><data data-dado="canal.volume.5.negocios" data-formato="numero">72</data></td><td class="num"><data data-dado="canal.volume.5.ganhos" data-formato="numero">50</data></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint pela central de dados da VOID · negócios do Start criados de <data data-dado="meta.periodos.safra_12m" data-formato="texto">08/11/2025 a 07/11/2026</data> e seus ganhos até <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data> · "Outros" junta negócios com mais de um canal e etiquetas antigas sem rede · <span class="origem o-medido">medido</span></p>
+</details>
+<h3>Três leituras da origem da venda</h3>
+<div class="leitura">
+<p>A origem de uma venda aparece em três lugares, e eles não medem a mesma coisa. A etiqueta da Clint mostra o canal do lead. A boleta do Airtable, preenchida pelo comercial desde jun/2026, mistura canal com porta (a aula) e com público (o ex-aluno). A ficha de matrícula mostra o que o aluno lembra. As tabelas da jornada vão pôr as três lado a lado, venda a venda, e medir quanto elas concordam.</p>
+</div>
+<div class="grade-2">
+<div class="tabela">
+<table>
+<caption>Origem do lead na boleta</caption>
+<thead><tr><th scope="col">Origem</th><th class="num" scope="col">Vendas</th></tr></thead>
+<tbody>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.0.nome" data-formato="texto">Inscrição na aula experimental</data></th><td class="num"><data data-dado="canal.boleta.lista.0.vendas" data-formato="numero">147</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.1.nome" data-formato="texto">Ex-aluno</data></th><td class="num"><data data-dado="canal.boleta.lista.1.vendas" data-formato="numero">123</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.2.nome" data-formato="texto">Formulário Google</data></th><td class="num"><data data-dado="canal.boleta.lista.2.vendas" data-formato="numero">75</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.3.nome" data-formato="texto">Formulário Meta</data></th><td class="num"><data data-dado="canal.boleta.lista.3.vendas" data-formato="numero">75</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.4.nome" data-formato="texto">Instagram orgânico</data></th><td class="num"><data data-dado="canal.boleta.lista.4.vendas" data-formato="numero">63</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.5.nome" data-formato="texto">Google orgânico</data></th><td class="num"><data data-dado="canal.boleta.lista.5.vendas" data-formato="numero">48</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.6.nome" data-formato="texto">Sem origem definida</data></th><td class="num"><data data-dado="canal.boleta.lista.6.vendas" data-formato="numero">19</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.7.nome" data-formato="texto">Facebook</data></th><td class="num"><data data-dado="canal.boleta.lista.7.vendas" data-formato="numero">11</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.8.nome" data-formato="texto">Indicação</data></th><td class="num"><data data-dado="canal.boleta.lista.8.vendas" data-formato="numero">3</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.boleta.lista.9.nome" data-formato="texto">Campanha Meta Master</data></th><td class="num"><data data-dado="canal.boleta.lista.9.vendas" data-formato="numero">1</data></td></tr>
+</tbody>
+</table>
+<p class="fonte">Tabela de vendas do Airtable · <data data-dado="canal.boleta.de" data-formato="data">01/06/2026</data> a <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data> · base: <data data-dado="canal.boleta.base" data-formato="numero">565</data> vendas, <data data-casas="1" data-dado="canal.boleta.com_origem_taxa" data-formato="pct">96,6%</data> com origem · declarado pelo comercial · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="tabela">
+<table>
+<caption>"Por onde conheceu", na ficha do Start</caption>
+<thead><tr><th scope="col">Resposta do aluno</th><th class="num" scope="col">Fichas</th></tr></thead>
+<tbody>
+<tr><th scope="row"><data data-dado="canal.declarado.lista.0.nome" data-formato="texto">Anúncios do Instagram ou Facebook</data></th><td class="num"><data data-dado="canal.declarado.lista.0.fichas" data-formato="numero">144</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.declarado.lista.1.nome" data-formato="texto">Indicação de amigos</data></th><td class="num"><data data-dado="canal.declarado.lista.1.fichas" data-formato="numero">47</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.declarado.lista.2.nome" data-formato="texto">Anúncios do Google</data></th><td class="num"><data data-dado="canal.declarado.lista.2.fichas" data-formato="numero">33</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.declarado.lista.3.nome" data-formato="texto">Já seguia no Instagram</data></th><td class="num"><data data-dado="canal.declarado.lista.3.fichas" data-formato="numero">31</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.declarado.lista.4.nome" data-formato="texto">Parceiros</data></th><td class="num"><data data-dado="canal.declarado.lista.4.fichas" data-formato="numero">6</data></td></tr>
+<tr><th scope="row"><data data-dado="canal.declarado.lista.5.nome" data-formato="texto">Outros</data></th><td class="num"><data data-dado="canal.declarado.lista.5.fichas" data-formato="numero">3</data></td></tr>
+</tbody>
+</table>
+<p class="fonte">Ficha de matrícula do Start no Jotform · <data data-dado="canal.declarado.de" data-formato="data">01/08/2026</data> a <data data-dado="canal.declarado.ate" data-formato="data">07/11/2026</data> · base: <data data-dado="canal.declarado.base" data-formato="numero">264</data> fichas · declarado pelo aluno · <span class="origem o-dito">dito</span></p>
+</div>
+</div>
+<aside class="aviso aviso-atencao">
+<p class="aviso-rotulo">Sinal, não medição</p>
+<p>Entre os contatos do formulário do Start que chegaram com UTM (os parâmetros do link que dizem a campanha) de <data data-dado="canal.sinal_utm.de" data-formato="data">01/09/2026</data> a <data data-dado="canal.sinal_utm.ate" data-formato="data">08/11/2026</data>, o ganho na Clint foi de <data data-casas="1" data-dado="canal.sinal_utm.lista.1.taxa" data-formato="pct">6,9%</data> no Instagram orgânico (<data data-dado="canal.sinal_utm.lista.1.ganhos" data-formato="numero">13</data> de <data data-dado="canal.sinal_utm.lista.1.contatos" data-formato="numero">188</data>) e de <data data-casas="1" data-dado="canal.sinal_utm.lista.2.taxa" data-formato="pct">6,0%</data> no Google Ads (<data data-dado="canal.sinal_utm.lista.2.ganhos" data-formato="numero">10</data> de <data data-dado="canal.sinal_utm.lista.2.contatos" data-formato="numero">168</data>), contra <data data-casas="1" data-dado="canal.sinal_utm.lista.0.taxa" data-formato="pct">1,4%</data> nas campanhas do Start na Meta (<data data-dado="canal.sinal_utm.lista.0.ganhos" data-formato="numero">14</data> de <data data-dado="canal.sinal_utm.lista.0.contatos" data-formato="numero">1.029</data>). A janela é curta, são só <data data-dado="canal.sinal_utm.ganhos" data-formato="numero">39</data> ganhos e ganho na Clint ainda não é matrícula. Vale acompanhar antes de mexer na verba.</p>
+<p class="fonte">ActiveCampaign e Clint pela central de dados da VOID, ligados pelo telefone · contatos criados de <data data-dado="canal.sinal_utm.de" data-formato="data">01/09/2026</data> a <data data-dado="canal.sinal_utm.ate" data-formato="data">08/11/2026</data> · <data data-dado="canal.sinal_utm.casam" data-formato="numero">1.281</data> de <data data-dado="canal.sinal_utm.contatos" data-formato="numero">1.520</data> contatos casam com a Clint · <span class="origem o-derivado">derivado</span></p>
+</aside>
+</details></div>
+</section>
+<!-- 05 · CAMPANHA -->
+<section aria-labelledby="t-campanha" class="secao" id="campanha">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">05</span>
+<h2 id="t-campanha">Por campanha</h2>
+<p class="secao-sub">Quanto custa cada lead e cada inscrição, e onde a campanha já chega até a venda.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="numeros">
+<div class="numero">
+<p class="numero-valor"><data data-dado="campanha.meta_12m" data-formato="brl-curto">R$ 576 mil</data></p>
+<p class="numero-rotulo">investidos na Meta</p>
+<p class="numero-base"><data data-casas="1" data-dado="campanha.meta_variacao" data-formato="pct">81,1%</data> acima dos 12 meses anteriores (<data data-dado="campanha.meta_12m_anterior" data-formato="brl-curto">R$ 318 mil</data>)</p>
+<p class="numero-nota"><data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data> · Meta Ads · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-dado="campanha.google_recorte" data-formato="brl-curto">R$ 235 mil</data></p>
+<p class="numero-rotulo">investidos no Google Ads</p>
+<p class="numero-base"><data data-casas="1" data-dado="campanha.google_queda" data-formato="pct">42,9%</data> abaixo do mesmo recorte do ano anterior (<data data-dado="campanha.google_recorte_anterior" data-formato="brl-curto">R$ 412 mil</data>); sem dado depois de <data data-dado="campanha.google_ate" data-formato="data">22/10/2026</data></p>
+<p class="numero-nota"><data data-dado="campanha.google_de" data-formato="data">01/11/2025</data> a <data data-dado="campanha.google_ate" data-formato="data">22/10/2026</data> · Google Ads · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="2" data-dado="campanha.start_cpl_fim" data-formato="brl">R$ 37,55</data></p>
+<p class="numero-rotulo">por lead do Start em <data data-dado="campanha.mes_fim" data-formato="mes">out/2026</data></p>
+<p class="numero-base">era <data data-casas="2" data-dado="campanha.start_cpl_inicio" data-formato="brl">R$ 18,30</data> em <data data-dado="campanha.mes_inicio" data-formato="mes">nov/2025</data></p>
+<p class="numero-nota">Meta Ads, campanhas de captação do Start · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="2" data-dado="campanha.aula_custo_fim" data-formato="brl">R$ 71,64</data></p>
+<p class="numero-rotulo">por cadastro na aula em <data data-dado="campanha.mes_fim" data-formato="mes">out/2026</data></p>
+<p class="numero-base">era <data data-casas="2" data-dado="campanha.aula_custo_inicio" data-formato="brl">R$ 135,89</data> em <data data-dado="campanha.mes_inicio" data-formato="mes">nov/2025</data>, com a verba subindo de <data data-dado="campanha.aula_verba_inicio" data-formato="brl">R$ 4.620</data> para <data data-dado="campanha.aula_verba_fim" data-formato="brl">R$ 20.990</data> por mês</p>
+<p class="numero-nota">Meta Ads, campanhas da aula · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<figure class="grafico">
+<p class="grafico-mede">Custo por resultado na Meta, por mês · <data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data></p>
+<h3 class="grafico-titulo">O lead do Start ficou mais caro e o cadastro da aula, mais barato</h3>
+<div class="grafico-area" data-grafico='{"tipo":"linha","de":"campanha.custos_mensais","formato":"brl","casas":2,"colunaRotulo":"Mês"}'></div>
+<figcaption class="fonte">Meta Ads pela central de dados da VOID · <data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data> · base: investimento dividido pelo lead do pixel nas campanhas de captação do Start e pelo cadastro na página de obrigado nas campanhas da aula, só em dias com gasto · <span class="origem o-derivado">derivado</span></figcaption>
+</figure>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Verba da Meta por produto, 12 meses</caption>
+<thead><tr><th scope="col">Produto</th><th class="num" scope="col">Investimento</th><th class="num" scope="col">Resultado</th><th class="num" scope="col">Custo por resultado</th></tr></thead>
+<tbody>
+<tr><th scope="row"><data data-dado="campanha.produtos.0.nome" data-formato="texto">Start, captação</data></th><td class="num"><data data-dado="campanha.produtos.0.investimento" data-formato="brl">R$ 301.290</data> (<data data-casas="1" data-dado="campanha.produtos.0.parcela" data-formato="pct">52,3%</data>)</td><td class="num"><data data-dado="campanha.produtos.0.resultado" data-formato="numero">9.007</data> <data data-dado="campanha.produtos.0.resultado_nome" data-formato="texto">leads</data></td><td class="num"><data data-casas="2" data-dado="campanha.produtos.0.custo" data-formato="brl">R$ 33,45</data></td></tr>
+<tr><th scope="row"><data data-dado="campanha.produtos.1.nome" data-formato="texto">Aula experimental</data></th><td class="num"><data data-dado="campanha.produtos.1.investimento" data-formato="brl">R$ 157.679</data> (<data data-casas="1" data-dado="campanha.produtos.1.parcela" data-formato="pct">27,4%</data>)</td><td class="num"><data data-dado="campanha.produtos.1.resultado" data-formato="numero">1.932</data> <data data-dado="campanha.produtos.1.resultado_nome" data-formato="texto">cadastros</data></td><td class="num"><data data-casas="2" data-dado="campanha.produtos.1.custo" data-formato="brl">R$ 81,61</data></td></tr>
+<tr><th scope="row"><data data-dado="campanha.produtos.2.nome" data-formato="texto">Start, vídeo de aquecimento</data></th><td class="num"><data data-dado="campanha.produtos.2.investimento" data-formato="brl">R$ 63.268</data> (<data data-casas="1" data-dado="campanha.produtos.2.parcela" data-formato="pct">11,0%</data>)</td><td class="num">não gera lead</td><td class="num">não se aplica</td></tr>
+<tr><th scope="row"><data data-dado="campanha.produtos.3.nome" data-formato="texto">Outros (institucional, Master, Pro, lives, Projeto Tatuador, Combo)</data></th><td class="num"><data data-dado="campanha.produtos.3.investimento" data-formato="brl">R$ 54.179</data> (<data data-casas="1" data-dado="campanha.produtos.3.parcela" data-formato="pct">9,4%</data>)</td><td class="num">vários</td><td class="num">não se aplica</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Meta Ads pela central de dados da VOID · <data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data> · produto pelo nome da campanha · só dias com gasto · <span class="origem o-medido">medido</span></p>
+<div class="leitura">
+<p>A qualificação (MQL) entrou nas campanhas em <data data-dado="campanha.mql.de" data-formato="data">22/10/2026</data>. Até <data data-dado="campanha.mql.ate" data-formato="data">04/11/2026</data>, a captação do Start teve <data data-dado="campanha.mql.start_leads" data-formato="numero">281</data> leads e <data data-dado="campanha.mql.start_mql" data-formato="numero">9</data> MQL (<data data-dado="campanha.mql.start_investimento" data-formato="brl">R$ 10.512</data>), e a aula teve <data data-dado="campanha.mql.aula_cadastros" data-formato="numero">91</data> cadastros, <data data-dado="campanha.mql.aula_mql" data-formato="numero">6</data> MQL e <data data-dado="campanha.mql.aula_nao_mql" data-formato="numero">14</data> não MQL (<data data-dado="campanha.mql.aula_investimento" data-formato="brl">R$ 8.554</data>). São duas semanas: servem para ligar a régua, ainda não para julgar campanha.</p>
+</div>
+<h3>Da campanha até a venda</h3>
+<div class="leitura">
+<p>A campanha só chega à venda pelo telefone: desde <data data-dado="campanha.utm_start_desde" data-formato="mes">set/2026</data> no formulário do Start e desde <data data-dado="campanha.utm_aula_desde" data-formato="data">05/10/2026</data> na aula. Na aula, de <data data-dado="aula.funil_de" data-formato="data">01/10/2026</data> a <data data-dado="aula.funil_ate" data-formato="data">07/11/2026</data>, <data data-dado="campanha.aula_ganhos" data-formato="numero">20</data> inscrições viraram ganho na Clint, e <data data-dado="campanha.aula_ganhos_com_campanha" data-formato="numero">10</data> delas trazem a campanha na UTM. O custo por matrícula de cada campanha fica para quando a origem for gravada na criação do negócio.</p>
+<p>Na Meta, <data data-dado="campanha.nomes_repetidos" data-formato="numero">5</data> nomes de campanha se repetem em <data data-dado="campanha.campanhas_com_nome_repetido" data-formato="numero">10</data> campanhas diferentes, que somam <data data-dado="campanha.verba_nome_repetido" data-formato="brl">R$ 96.011</data> de <data data-dado="campanha.nomes_repetidos_periodo" data-formato="texto">01/11/2025 a 04/11/2026</data>. Juntar campanhas pelo nome mistura essas verbas; a ligação certa é pelo código da campanha.</p>
+</div>
+<details class="mais">
+<summary><span>Ver as maiores campanhas da Meta em <data data-dado="campanha.campanhas_mes" data-formato="mes">out/2026</data></span></summary>
+<div class="tabela tabela-rolar">
+<table>
+<caption>Meta, <data data-dado="campanha.campanhas_mes" data-formato="mes">out/2026</data>, por investimento</caption>
+<thead><tr><th scope="col">Campanha</th><th class="num" scope="col">Investimento</th><th class="num" scope="col">Leads</th><th class="num" scope="col">Cadastros da aula</th><th class="num" scope="col">MQL</th></tr></thead>
+<tbody>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.0.nome" data-formato="texto">AULÃO_CAPTAÇÃO_CONVERSÃO_RMKT_START_[LPA]</data></th><td class="num"><data data-dado="campanha.campanhas_out.0.investimento" data-formato="brl">R$ 4.655</data></td><td class="num"><data data-dado="campanha.campanhas_out.0.leads" data-formato="numero">2</data></td><td class="num"><data data-dado="campanha.campanhas_out.0.cadastros" data-formato="numero">70</data></td><td class="num"><data data-dado="campanha.campanhas_out.0.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.1.nome" data-formato="texto">AULÃO_CAPTAÇÃO_CONVERSÃO_ADV_TESTE_NOVOS_ADS_JUNHO_[LPA]_[1]</data></th><td class="num"><data data-dado="campanha.campanhas_out.1.investimento" data-formato="brl">R$ 4.639</data></td><td class="num"><data data-dado="campanha.campanhas_out.1.leads" data-formato="numero">8</data></td><td class="num"><data data-dado="campanha.campanhas_out.1.cadastros" data-formato="numero">64</data></td><td class="num"><data data-dado="campanha.campanhas_out.1.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.2.nome" data-formato="texto">START_ENGAJAMENTO_VIDEOVIEW_ETAPA_C3</data></th><td class="num"><data data-dado="campanha.campanhas_out.2.investimento" data-formato="brl">R$ 4.329</data></td><td class="num"><data data-dado="campanha.campanhas_out.2.leads" data-formato="numero">4</data></td><td class="num"><data data-dado="campanha.campanhas_out.2.cadastros" data-formato="numero">3</data></td><td class="num"><data data-dado="campanha.campanhas_out.2.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.3.nome" data-formato="texto">START_ENGAJAMENTO_VIDEOVIEW_ETAPA_C2</data></th><td class="num"><data data-dado="campanha.campanhas_out.3.investimento" data-formato="brl">R$ 4.235</data></td><td class="num"><data data-dado="campanha.campanhas_out.3.leads" data-formato="numero">9</data></td><td class="num"><data data-dado="campanha.campanhas_out.3.cadastros" data-formato="numero">2</data></td><td class="num"><data data-dado="campanha.campanhas_out.3.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.4.nome" data-formato="texto">START_CAPTAÇÃO_CONVERSÃO_QUENTE_2026_[FORMULÁRIO]_[LPA]_NOVOS_ADS_AGOSTO</data></th><td class="num"><data data-dado="campanha.campanhas_out.4.investimento" data-formato="brl">R$ 4.007</data></td><td class="num"><data data-dado="campanha.campanhas_out.4.leads" data-formato="numero">102</data></td><td class="num"><data data-dado="campanha.campanhas_out.4.cadastros" data-formato="numero">2</data></td><td class="num"><data data-dado="campanha.campanhas_out.4.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.5.nome" data-formato="texto">AULÃO_CAPTAÇÃO_CONVERSÃO_RMKT_START_[LPD]</data></th><td class="num"><data data-dado="campanha.campanhas_out.5.investimento" data-formato="brl">R$ 3.090</data></td><td class="num"><data data-dado="campanha.campanhas_out.5.leads" data-formato="numero">3</data></td><td class="num"><data data-dado="campanha.campanhas_out.5.cadastros" data-formato="numero">53</data></td><td class="num"><data data-dado="campanha.campanhas_out.5.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.6.nome" data-formato="texto">START_CAPTAÇÃO_CONVERSÃO_QUENTE_2026_[FORMULÁRIO]_[LPC]</data></th><td class="num"><data data-dado="campanha.campanhas_out.6.investimento" data-formato="brl">R$ 3.066</data></td><td class="num"><data data-dado="campanha.campanhas_out.6.leads" data-formato="numero">63</data></td><td class="num"><data data-dado="campanha.campanhas_out.6.cadastros" data-formato="numero">0</data></td><td class="num"><data data-dado="campanha.campanhas_out.6.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.7.nome" data-formato="texto">START_CAPTAÇÃO_CONVERSÃO_REMARKETING_NOVOS_ADS_[LP_RMKT]</data></th><td class="num"><data data-dado="campanha.campanhas_out.7.investimento" data-formato="brl">R$ 3.059</data></td><td class="num"><data data-dado="campanha.campanhas_out.7.leads" data-formato="numero">77</data></td><td class="num"><data data-dado="campanha.campanhas_out.7.cadastros" data-formato="numero">2</data></td><td class="num"><data data-dado="campanha.campanhas_out.7.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.8.nome" data-formato="texto">START_CAPTAÇÃO_CONVERSÃO_QUENTE+_2026_[FORMULÁRIO]_[LPC]</data></th><td class="num"><data data-dado="campanha.campanhas_out.8.investimento" data-formato="brl">R$ 3.045</data></td><td class="num"><data data-dado="campanha.campanhas_out.8.leads" data-formato="numero">155</data></td><td class="num"><data data-dado="campanha.campanhas_out.8.cadastros" data-formato="numero">0</data></td><td class="num"><data data-dado="campanha.campanhas_out.8.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.9.nome" data-formato="texto">AULÃO_CAPTAÇÃO_CONVERSÃO_ADV_TESTE_NOVOS_ADS_JUNHO_[LPD]_[2]</data></th><td class="num"><data data-dado="campanha.campanhas_out.9.investimento" data-formato="brl">R$ 3.039</data></td><td class="num"><data data-dado="campanha.campanhas_out.9.leads" data-formato="numero">6</data></td><td class="num"><data data-dado="campanha.campanhas_out.9.cadastros" data-formato="numero">54</data></td><td class="num"><data data-dado="campanha.campanhas_out.9.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.10.nome" data-formato="texto">START_CAPTAÇÃO_CONVERSÃO_QUENTE_2026_[FORMULÁRIO]_[LPA]_VAR_CAMPEOES</data></th><td class="num"><data data-dado="campanha.campanhas_out.10.investimento" data-formato="brl">R$ 2.248</data></td><td class="num"><data data-dado="campanha.campanhas_out.10.leads" data-formato="numero">50</data></td><td class="num"><data data-dado="campanha.campanhas_out.10.cadastros" data-formato="numero">0</data></td><td class="num"><data data-dado="campanha.campanhas_out.10.mql" data-formato="numero">0</data></td></tr>
+<tr><th class="quebra" scope="row"><data data-dado="campanha.campanhas_out.11.nome" data-formato="texto">START_CAPTAÇÃO_CONVERSÃO_QUENTE+_2026_[FORMULÁRIO]_[LPA]_ADS_SETEMBRO</data></th><td class="num"><data data-dado="campanha.campanhas_out.11.investimento" data-formato="brl">R$ 1.929</data></td><td class="num"><data data-dado="campanha.campanhas_out.11.leads" data-formato="numero">81</data></td><td class="num"><data data-dado="campanha.campanhas_out.11.cadastros" data-formato="numero">0</data></td><td class="num"><data data-dado="campanha.campanhas_out.11.mql" data-formato="numero">0</data></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Meta Ads pela central de dados da VOID · <data data-dado="campanha.campanhas_mes" data-formato="mes">out/2026</data> · as maiores verbas e as campanhas de MQL, das <data data-dado="campanha.out_campanhas" data-formato="numero">28</data> que gastaram (<data data-dado="campanha.out_total" data-formato="brl">R$ 53.710</data> no mês) · o total do mês foi conferido duas vezes; as linhas por campanha, uma · <span class="origem o-medido">medido</span></p>
+</details>
+</details></div>
+</section>
+<!-- 06 · AULA EXPERIMENTAL -->
+<section aria-labelledby="t-aula" class="secao" id="aula">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">06</span>
+<h2 id="t-aula">Aula experimental</h2>
+<p class="secao-sub">O caminho da inscrição até a matrícula, com o [FB] e o [OR] lado a lado.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar</p>
+<p>A aula entra na jornada única como porta (M1), encontro (M3) e cadência entre os dois, e não como funil à parte. É o padrão desta versão, a validar com Lucas e Maluf.</p>
+</aside>
+<div class="numeros">
+<div class="numero">
+<p class="numero-valor"><data data-dado="aula.inscricoes" data-formato="numero">418</data></p>
+<p class="numero-rotulo">inscrições em <data data-dado="aula.mes" data-formato="mes">out/2026</data></p>
+<p class="numero-base">[FB] <data data-dado="aula.por_formulario.fb" data-formato="numero">292</data>, [OR] <data data-dado="aula.por_formulario.or" data-formato="numero">60</data>, [FB - Teste] <data data-dado="aula.por_formulario.fb_teste" data-formato="numero">49</data> e MQL <data data-dado="aula.por_formulario.mql" data-formato="numero">18</data>: <data data-dado="aula.envios" data-formato="numero">419</data> envios, <data data-dado="aula.testes" data-formato="numero">1</data> de teste</p>
+<p class="numero-nota"><data data-dado="aula.mes" data-formato="mes">out/2026</data> · Jotform · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="aula.negocio_7d_taxa" data-formato="pct">14,1%</data></p>
+<p class="numero-rotulo">ganharam negócio novo na Clint em até 7 dias</p>
+<p class="numero-base">base: <data data-dado="aula.negocio_7d" data-formato="numero">59</data> de <data data-dado="aula.negocio_7d_base" data-formato="numero">418</data> envios; outros <data data-dado="aula.negocio_antes" data-formato="numero">56</data> já tinham negócio antes</p>
+<p class="numero-nota"><data data-dado="aula.mes" data-formato="mes">out/2026</data> · Jotform e Clint, pelo telefone · <span class="origem o-derivado">derivado</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor sem-dado">sem dado</p>
+<p class="numero-rotulo">presença na aula</p>
+<p class="numero-base">fica na planilha do comercial, fora da central de dados</p>
+<p class="numero-nota">desde <data data-dado="aula.formulario_sem_data_desde" data-formato="mes">out/2026</data>, o formulário também deixou de pedir a data da aula</p>
+</div>
+<div class="numero">
+<p class="numero-valor"><data data-casas="1" data-dado="aula.mat30_de" data-formato="pct">5,2%</data> a <data data-casas="1" data-dado="aula.mat30_ate" data-formato="pct">10,6%</data></p>
+<p class="numero-rotulo">dos inscritos se matriculam em 30 dias</p>
+<p class="numero-base">inscritos de <data data-dado="aula.mat30_periodo" data-formato="texto">mai a set/2026</data>; em 60 dias, de <data data-casas="1" data-dado="aula.mat60_de" data-formato="pct">5,5%</data> a <data data-casas="1" data-dado="aula.mat60_ate" data-formato="pct">10,6%</data> (<data data-dado="aula.mat60_periodo" data-formato="texto">mai a ago/2026</data>)</p>
+<p class="numero-nota">Jotform e tabela de vendas do Airtable · <span class="origem o-derivado">derivado</span></p>
+</div>
+</div>
+<figure class="grafico">
+<p class="grafico-mede">Inscrições na aula até o ganho na Clint · <data data-dado="aula.funil_de" data-formato="data">01/10/2026</data> a <data data-dado="aula.funil_ate" data-formato="data">07/11/2026</data></p>
+<h3 class="grafico-titulo">A inscrição vira contato, mas raramente vira negócio</h3>
+<div class="grafico-area" data-grafico='{"tipo":"funil","de":"graficos.aula_funil","unidade":"Inscrições","colunaRotulo":"Passagem","casasTaxa":1}'></div>
+<figcaption class="fonte">Jotform e Clint pela central de dados da VOID, ligados pelo telefone · <data data-dado="aula.funil_de" data-formato="data">01/10/2026</data> a <data data-dado="aula.funil_ate" data-formato="data">07/11/2026</data> · base: inscrições dos formulários [FB] e [OR] · <data data-dado="aula.negocios_em_lista" data-formato="numero">47</data> dos <data data-dado="aula.negocios_novos" data-formato="numero">77</data> negócios criados depois da inscrição caíram na lista ACÕES VOID, todos ainda abertos · <span class="origem o-medido">medido</span></figcaption>
+</figure>
+<div class="leitura">
+<p>A conversa acontece. Das <data data-dado="aula.conversa_sem_negocio" data-formato="numero">134</data> inscrições de <data data-dado="vazamentos.aula_periodo" data-formato="texto">22/10 a 07/11/2026</data> que não viraram negócio, <data data-dado="aula.conversa_msg_pessoa" data-formato="numero">111</data> receberam mensagem de uma pessoa pelo WhatsApp da Clint em até 7 dias, e <data data-dado="aula.conversa_responderam" data-formato="numero">79</data> responderam. Falta essa conversa virar negócio com data e presença. É a mesma passagem do gargalo da vez, vista pela porta da aula.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>[FB] e [OR] lado a lado, <data data-dado="aula.funil_de" data-formato="data">01/10/2026</data> a <data data-dado="aula.funil_ate" data-formato="data">07/11/2026</data></caption>
+<thead><tr><th scope="col">Formulário</th><th class="num" scope="col">Inscrições</th><th class="num" scope="col">Ganhos na Clint</th><th class="num" scope="col">Ganho por inscrição</th></tr></thead>
+<tbody>
+<tr><th scope="row"><data data-dado="aula.formularios.0.nome" data-formato="texto">[FB], vindo da Meta</data></th><td class="num"><data data-dado="aula.formularios.0.inscricoes" data-formato="numero">350</data></td><td class="num"><data data-dado="aula.formularios.0.ganhos" data-formato="numero">11</data></td><td class="num"><data data-casas="1" data-dado="aula.formularios.0.taxa" data-formato="pct">3,1%</data></td></tr>
+<tr><th scope="row"><data data-dado="aula.formularios.1.nome" data-formato="texto">[OR], orgânico e link da bio</data></th><td class="num"><data data-dado="aula.formularios.1.inscricoes" data-formato="numero">72</data></td><td class="num"><data data-dado="aula.formularios.1.ganhos" data-formato="numero">9</data></td><td class="num"><data data-casas="1" data-dado="aula.formularios.1.taxa" data-formato="pct">12,5%</data></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Jotform e Clint pela central de dados da VOID · ganho = negócio criado depois da inscrição e marcado como ganho até <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data> · o [OR] tem <data data-casas="1" data-dado="aula.or_parcela_inscricoes" data-formato="pct">17,1%</data> das inscrições e <data data-casas="0" data-dado="aula.or_parcela_ganhos" data-formato="pct">45%</data> dos ganhos, e <data data-dado="aula.or_ganhos_com_campanha" data-formato="numero">3</data> dos ganhos dele trazem campanha de anúncio na UTM · são só <data data-dado="campanha.aula_ganhos" data-formato="numero">20</data> ganhos: sinal, não medição · <span class="origem o-derivado">derivado</span></p>
+<figure class="grafico">
+<p class="grafico-mede">Matrícula em até 30 dias, por mês da inscrição · <data data-dado="aula.coortes_periodo" data-formato="texto">mar a out/2026</data></p>
+<h3 class="grafico-titulo">De <data data-dado="aula.mat30_periodo" data-formato="texto">mai a set/2026</data>, de <data data-casas="1" data-dado="aula.mat30_de" data-formato="pct">5,2%</data> a <data data-casas="1" data-dado="aula.mat30_ate" data-formato="pct">10,6%</data> dos inscritos se matricularam em 30 dias</h3>
+<div class="grafico-area" data-grafico='{"tipo":"barras","de":"aula.coortes_30d","formato":"pct100","casas":1,"unidade":"Matrícula em 30 dias","colunaRotulo":"Mês da inscrição"}'></div>
+<figcaption class="fonte">Jotform e tabela de vendas do Airtable pela central de dados da VOID, ligados por telefone ou e-mail · inscrições de <data data-dado="aula.coortes_periodo" data-formato="texto">mar a out/2026</data> nos formulários [FB], [OR], [FB - Teste], [GS/YT] e MQL · vendas sem as canceladas · <data data-dado="aula.mes" data-formato="mes">out/2026</data> ainda sem os 30 dias completos · <span class="origem o-derivado">derivado</span>. Mede a inscrição; a conversão de quem foi à aula não se mede sem a presença.</figcaption>
+</figure>
+<div class="leitura">
+<p>O formulário de qualificação (MQL) está no ar desde <data data-dado="jornada.m2.mql_desde" data-formato="data">22/10/2026</data>. Até <data data-dado="jornada.m2.mql_ate" data-formato="data">07/11/2026</data> foram <data data-dado="jornada.m2.mql_envios" data-formato="numero">29</data> envios: <data data-dado="jornada.m2.mql_sim" data-formato="numero">12</data> classificados como MQL, <data data-dado="jornada.m2.mql_nao" data-formato="numero">14</data> como não MQL e <data data-dado="jornada.m2.mql_sem" data-formato="numero">3</data> sem classificação. Só <data data-dado="jornada.m2.mql_com_negocio" data-formato="numero">1</data> dos <data data-dado="jornada.m2.mql_sim" data-formato="numero">12</data> MQL tem negócio na Clint, numa lista de nutrição. O funil Aula Experimental da Clint tem <data data-dado="aula.funil_clint_teste" data-formato="numero">2</data> negócios até <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data>, os dois de teste.</p>
+<p class="fonte">Jotform e Clint pela central de dados da VOID · <data data-dado="jornada.m2.mql_desde" data-formato="data">22/10/2026</data> a <data data-dado="jornada.m2.mql_ate" data-formato="data">07/11/2026</data> · <span class="origem o-medido">medido</span></p>
+</div>
+</details></div>
+</section>
+<!-- 07 · RASTREAMENTO -->
+<section aria-labelledby="t-rastreamento" class="secao" id="rastreamento">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">07</span>
+<h2 id="t-rastreamento">Rastreamento</h2>
+<p class="secao-sub">O que já chega à central de dados e o que ainda se perde entre o anúncio e a venda.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A jornada já fecha pelo telefone. <data data-casas="1" data-dado="rastreamento.vendas_com_negocio_taxa" data-formato="pct">98,8%</data> das matrículas de <data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data> têm negócio na Clint com o mesmo telefone (<data data-dado="rastreamento.vendas_com_negocio" data-formato="numero">1.285</data> de <data data-dado="rastreamento.vendas" data-formato="numero">1.300</data>), e <data data-casas="1" data-dado="rastreamento.ganhos_com_venda_taxa" data-formato="pct">98,2%</data> dos ganhos da Clint no mesmo período têm venda no Airtable em até 45 dias (<data data-dado="rastreamento.ganhos_com_venda" data-formato="numero">1.121</data> de <data data-dado="rastreamento.ganhos" data-formato="numero">1.141</data>). O que se perde no caminho é a origem: a campanha fica no formulário e não chega ao negócio.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Por porta de entrada: o que fica gravado</caption>
+<thead><tr><th scope="col">Porta</th><th scope="col">O que grava hoje</th><th scope="col">O que chega à Clint</th></tr></thead>
+<tbody>
+<tr>
+<th scope="row">Formulário do Start<span class="momento-sub">página, planilha e ActiveCampaign</span></th>
+<td>UTM em <data data-casas="1" data-dado="rastreamento.planilha_utm_taxa" data-formato="pct">89,8%</data> dos leads da planilha em <data data-dado="rastreamento.planilha_mes" data-formato="mes">out/2026</data> (<data data-dado="rastreamento.planilha_utm" data-formato="numero">891</data> de <data data-dado="rastreamento.planilha_leads" data-formato="numero">992</data>), e o código do clique no anúncio em <data data-dado="rastreamento.clique_id_leads" data-formato="numero">3.226</data> leads desde <data data-dado="rastreamento.clique_id_de" data-formato="data">09/06/2026</data>.</td>
+<td><data data-casas="1" data-dado="rastreamento.planilha_negocio_taxa" data-formato="pct">77,1%</data> desses leads têm negócio na Clint (<data data-dado="rastreamento.planilha_negocio" data-formato="numero">765</data>), <data data-dado="rastreamento.planilha_negocio_7d" data-formato="numero">691</data> com o negócio criado em até 7 dias. Chegam o telefone e a etiqueta de canal; a campanha, não.</td>
+</tr>
+<tr>
+<th scope="row">Inscrição na aula<span class="momento-sub">Jotform</span></th>
+<td>UTM em <data data-casas="1" data-dado="rastreamento.aula_utm_taxa" data-formato="pct">60,0%</data> em <data data-dado="rastreamento.aula_utm_mes" data-formato="mes">out/2026</data> (<data data-dado="rastreamento.aula_utm" data-formato="numero">251</data> de <data data-dado="rastreamento.aula_utm_base" data-formato="numero">418</data>) e <data data-casas="1" data-dado="rastreamento.aula_utm_nov_taxa" data-formato="pct">73,8%</data> de <data data-dado="rastreamento.aula_utm_nov_periodo" data-formato="texto">01 a 07/11/2026</data> (<data data-dado="rastreamento.aula_utm_nov" data-formato="numero">59</data> de <data data-dado="rastreamento.aula_utm_nov_base" data-formato="numero">80</data>). <data data-dado="rastreamento.aula_macro_vazia" data-formato="numero">13</data> envios chegaram com o código da Meta sem preencher.</td>
+<td>O telefone. <data data-casas="1" data-dado="rastreamento.aula_sem_etiqueta_taxa" data-formato="pct">85,1%</data> dos inscritos que viram contato ficam sem etiqueta (<data data-dado="rastreamento.aula_sem_etiqueta" data-formato="numero">336</data> de <data data-dado="rastreamento.aula_contatos" data-formato="numero">395</data>, <data data-dado="rastreamento.aula_contatos_periodo" data-formato="texto">01/10 a 07/11/2026</data>).</td>
+</tr>
+<tr>
+<th scope="row">WhatsApp direto<span class="momento-sub">o lead chama</span></th>
+<td>A conversa, sem o anúncio que a trouxe.</td>
+<td><data data-dado="rastreamento.criacoes_conversa" data-formato="numero">908</data> das <data data-dado="rastreamento.criacoes" data-formato="numero">949</data> criações de negócio de <data data-dado="rastreamento.criacoes_periodo" data-formato="texto">08/10 a 07/11/2026</data> vieram de conversa; o campo de anúncio de origem veio vazio em todas.</td>
+</tr>
+<tr>
+<th scope="row">Negócio criado à mão</th>
+<td>Nada de origem.</td>
+<td><data data-dado="vazamentos.ganhos_a_mao" data-formato="numero">390</data> dos <data data-dado="caminhos.ganhos" data-formato="numero">779</data> ganhos do Start em 12 meses nasceram assim.</td>
+</tr>
+<tr>
+<th scope="row">Páginas com o rastreamento da GrowAI<span class="momento-sub">desde <data data-dado="rastreamento.growai_desde" data-formato="data">22/10/2026</data></span></th>
+<td><data data-dado="rastreamento.growai_envios" data-formato="numero">691</data> envios de formulário de <data data-dado="rastreamento.growai_periodo" data-formato="texto">22/10 a 07/11/2026</data>, com a página e o formulário de origem.</td>
+<td>Ainda não liga a pessoa: <data data-dado="rastreamento.growai_com_contato" data-formato="numero">0</data> envios com nome, telefone ou e-mail.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Airtable, Jotform, ActiveCampaign e Clint pela central de dados da VOID, e plataforma GrowAI · períodos em cada linha · <span class="origem o-medido">medido</span></p>
+<h3>O semáforo do registro</h3>
+<ul class="semaforo">
+<li><span class="sinal sinal-verde">No alvo</span><span>O indicador bate o alvo proposto.</span></li>
+<li><span class="sinal sinal-laranja">Perto do alvo</span><span>Até <data data-dado="meta.semaforo_corte_pontos" data-formato="numero">20</data> pontos percentuais abaixo do alvo.</span></li>
+<li><span class="sinal sinal-vermelho">Longe do alvo</span><span>Mais de <data data-dado="meta.semaforo_corte_pontos" data-formato="numero">20</data> pontos abaixo. Aqui o vermelho mede o registro; o gargalo da vez continua um só.</span></li>
+<li><span class="sinal sinal-cinza">Alvo a definir</span><span>Ainda sem alvo combinado.</span></li>
+</ul>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar</p>
+<p>Os alvos e os cortes do semáforo são proposta desta versão, a validar com Lucas e Maluf.</p>
+</aside>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Origem e registro da aula</caption>
+<thead><tr><th scope="col">Indicador</th><th scope="col">Hoje</th><th scope="col">Alvo proposto</th><th scope="col">Sinal</th></tr></thead>
+<tbody>
+<tr data-sinal="vermelho"><th scope="row">Inscrições da aula com UTM válida, <data data-dado="qualidade.aula_utm.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-casas="1" data-dado="qualidade.aula_utm.valor" data-formato="pct">60,0%</data> (<data data-dado="qualidade.aula_utm.num" data-formato="numero">251</data> de <data data-dado="qualidade.aula_utm.den" data-formato="numero">418</data>)</td><td><data data-casas="0" data-dado="qualidade.aula_utm.alvo" data-formato="pct">95%</data> no tráfego pago</td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.aula_utm">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Contatos novos da Clint com uma das 4 etiquetas de canal, <data data-dado="qualidade.contatos_etiqueta.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-casas="1" data-dado="qualidade.contatos_etiqueta.valor" data-formato="pct">59,5%</data> (<data data-dado="qualidade.contatos_etiqueta.num" data-formato="numero">730</data> de <data data-dado="qualidade.contatos_etiqueta.den" data-formato="numero">1.227</data>)</td><td><data data-casas="0" data-dado="qualidade.contatos_etiqueta.alvo" data-formato="pct">95%</data></td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.contatos_etiqueta">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Ganhos do Start com canal, <data data-dado="qualidade.ganhos_canal.periodo_rotulo" data-formato="texto">12 meses</data></th><td><data data-casas="1" data-dado="qualidade.ganhos_canal.valor" data-formato="pct">59,7%</data> (<data data-dado="qualidade.ganhos_canal.num" data-formato="numero">465</data> de <data data-dado="qualidade.ganhos_canal.den" data-formato="numero">779</data>)</td><td><data data-casas="0" data-dado="qualidade.ganhos_canal.alvo" data-formato="pct">90%</data></td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.ganhos_canal">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Envios de formulário na GrowAI com telefone ou e-mail, <data data-dado="qualidade.growai_contato.periodo_rotulo" data-formato="texto">22/10 a 08/11/2026</data></th><td><data data-casas="1" data-dado="qualidade.growai_contato.valor" data-formato="pct">0,0%</data> (<data data-dado="qualidade.growai_contato.num" data-formato="numero">0</data> de <data data-dado="qualidade.growai_contato.den" data-formato="numero">697</data>)</td><td><data data-casas="0" data-dado="qualidade.growai_contato.alvo" data-formato="pct">95%</data></td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.growai_contato">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Inscrições da aula com negócio novo em até 7 dias, <data data-dado="qualidade.aula_negocio_7d.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-casas="1" data-dado="qualidade.aula_negocio_7d.valor" data-formato="pct">14,1%</data> (<data data-dado="qualidade.aula_negocio_7d.num" data-formato="numero">59</data> de <data data-dado="qualidade.aula_negocio_7d.den" data-formato="numero">418</data>)</td><td><data data-casas="0" data-dado="qualidade.aula_negocio_7d.alvo" data-formato="pct">100%</data> no pipeline novo</td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.aula_negocio_7d">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Presenças registradas para cada venda vinda de aula, <data data-dado="qualidade.presenca_por_venda.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-casas="1" data-dado="qualidade.presenca_por_venda.valor" data-formato="pct">55,8%</data> (<data data-dado="qualidade.presenca_por_venda.num" data-formato="numero">29</data> presenças para <data data-dado="qualidade.presenca_por_venda.den" data-formato="numero">52</data> vendas)</td><td><data data-casas="0" data-dado="qualidade.presenca_por_venda.alvo" data-formato="pct">100%</data> ou mais</td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.presenca_por_venda">Longe do alvo</span></td></tr>
+<tr><th scope="row">Contatos novos da Clint com e-mail, <data data-dado="qualidade.contatos_email.periodo_rotulo" data-formato="texto">desde 01/10/2026</data></th><td><data data-dado="qualidade.contatos_email.num" data-formato="numero">1</data> de <data data-dado="qualidade.contatos_email.den" data-formato="numero">1.516</data></td><td>a definir</td><td><span class="sinal sinal-cinza" data-semaforo="qualidade.contatos_email">Alvo a definir</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Jotform, Clint, tabela de vendas do Airtable e plataforma GrowAI pela central de dados da VOID · período em cada linha · <span class="origem o-derivado">derivado</span></p>
+<h3>Frescor de cada fonte</h3>
+<div class="leitura">
+<p data-frescor-resumo="">Em dia: Clint, Tabela de vendas do Airtable, Jotform, ActiveCampaign, Instagram e YouTube. Parcial: Meta Ads, GA4 e Conta Azul. Parada: Google Ads, Search Console, Google Meu Negócio e TikTok Ads. Fora da central: Planilha do comercial (agenda e presença da aula).</p>
+</div>
+<details class="mais">
+<summary>Ver o frescor de cada fonte</summary>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Situação das fontes em <data data-dado="meta.versao" data-formato="data">08/11/2026</data></caption>
+<thead><tr><th scope="col">Fonte</th><th scope="col">Dado mais recente</th><th scope="col">Observação</th><th scope="col">Situação</th></tr></thead>
+<tbody>
+<tr data-sinal="verde"><th scope="row"><data data-dado="frescor.0.fonte" data-formato="texto">Clint</data></th><td><data data-dado="frescor.0.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.0.nota" data-formato="texto">carga diária, a última em 08/11</data></td><td><span class="sinal sinal-verde" data-frescor="0">Em dia</span></td></tr>
+<tr data-sinal="verde"><th scope="row"><data data-dado="frescor.1.fonte" data-formato="texto">Tabela de vendas do Airtable</data></th><td><data data-dado="frescor.1.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.1.nota" data-formato="texto">carga diária completa</data></td><td><span class="sinal sinal-verde" data-frescor="1">Em dia</span></td></tr>
+<tr data-sinal="verde"><th scope="row"><data data-dado="frescor.2.fonte" data-formato="texto">Jotform</data></th><td><data data-dado="frescor.2.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.2.nota" data-formato="texto">carga diária</data></td><td><span class="sinal sinal-verde" data-frescor="2">Em dia</span></td></tr>
+<tr data-sinal="verde"><th scope="row"><data data-dado="frescor.3.fonte" data-formato="texto">ActiveCampaign</data></th><td><data data-dado="frescor.3.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.3.nota" data-formato="texto">sem listas, etiquetas e automações</data></td><td><span class="sinal sinal-verde" data-frescor="3">Em dia</span></td></tr>
+<tr data-sinal="verde"><th scope="row"><data data-dado="frescor.4.fonte" data-formato="texto">Instagram</data></th><td><data data-dado="frescor.4.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.4.nota" data-formato="texto">seguidores só desde 01/09/2026</data></td><td><span class="sinal sinal-verde" data-frescor="4">Em dia</span></td></tr>
+<tr data-sinal="verde"><th scope="row"><data data-dado="frescor.5.fonte" data-formato="texto">YouTube</data></th><td><data data-dado="frescor.5.ate" data-formato="data">05/11/2026</data></td><td><data data-dado="frescor.5.nota" data-formato="texto">carga diária</data></td><td><span class="sinal sinal-verde" data-frescor="5">Em dia</span></td></tr>
+<tr data-sinal="laranja"><th scope="row"><data data-dado="frescor.6.fonte" data-formato="texto">Meta Ads</data></th><td><data data-dado="frescor.6.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.6.nota" data-formato="texto">por campanha até 04/11; traz 1 das 10 contas cadastradas</data></td><td><span class="sinal sinal-laranja" data-frescor="6">Parcial</span></td></tr>
+<tr data-sinal="laranja"><th scope="row"><data data-dado="frescor.7.fonte" data-formato="texto">GA4</data></th><td><data data-dado="frescor.7.ate" data-formato="data">07/11/2026</data></td><td><data data-dado="frescor.7.nota" data-formato="texto">sem campanha, página de entrada nem conversão</data></td><td><span class="sinal sinal-laranja" data-frescor="7">Parcial</span></td></tr>
+<tr data-sinal="laranja"><th scope="row"><data data-dado="frescor.8.fonte" data-formato="texto">Conta Azul</data></th><td><data data-dado="frescor.8.ate" data-formato="data">06/11/2026</data></td><td><data data-dado="frescor.8.nota" data-formato="texto">só despesas; a receita parou em 2024</data></td><td><span class="sinal sinal-laranja" data-frescor="8">Parcial</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row"><data data-dado="frescor.9.fonte" data-formato="texto">Google Ads</data></th><td><data data-dado="frescor.9.ate" data-formato="data">22/10/2026</data></td><td><data data-dado="frescor.9.nota" data-formato="texto">a autorização venceu em 23/10</data></td><td><span class="sinal sinal-vermelho" data-frescor="9">Parada</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row"><data data-dado="frescor.10.fonte" data-formato="texto">Search Console</data></th><td><data data-dado="frescor.10.ate" data-formato="data">19/10/2026</data></td><td><data data-dado="frescor.10.nota" data-formato="texto">mede o domínio antigo e zerou em out/2026</data></td><td><span class="sinal sinal-vermelho" data-frescor="10">Parada</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row"><data data-dado="frescor.11.fonte" data-formato="texto">Google Meu Negócio</data></th><td><data data-dado="frescor.11.ate" data-formato="data">02/10/2026</data></td><td><data data-dado="frescor.11.nota" data-formato="texto">tudo zerado desde 03/10</data></td><td><span class="sinal sinal-vermelho" data-frescor="11">Parada</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row"><data data-dado="frescor.12.fonte" data-formato="texto">TikTok Ads</data></th><td><data data-dado="frescor.12.ate" data-formato="data">sem dado</data></td><td><data data-dado="frescor.12.nota" data-formato="texto">nunca carregou</data></td><td><span class="sinal sinal-vermelho" data-frescor="12">Parada</span></td></tr>
+<tr><th scope="row"><data data-dado="frescor.13.fonte" data-formato="texto">Planilha do comercial (agenda e presença da aula)</data></th><td><data data-dado="frescor.13.ate" data-formato="data">sem dado</data></td><td><data data-dado="frescor.13.nota" data-formato="texto">não está ligada à central</data></td><td><span class="sinal sinal-cinza" data-frescor="13">Fora da central</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Histórico de cargas e data mais recente de cada fonte na central de dados da VOID · leitura de <data data-dado="meta.versao" data-formato="data">08/11/2026</data> · as fontes carregam uma vez por dia, perto da meia-noite · <span class="origem o-medido">medido</span></p>
+</details>
+<aside class="aviso aviso-proposta">
+<p class="aviso-rotulo">Proposta · três consertos de rastreamento</p>
+<ol class="lista-curta">
+<li>Nome, telefone e origem em todo formulário, com a UTM e o código da campanha em campo oculto.</li>
+<li>Presença da aula registrada no dia, no mesmo lugar do negócio.</li>
+<li>Origem gravada na criação do negócio, inclusive quando ele nasce de conversa ou é criado à mão.</li>
+</ol>
+<p>Processo antes de automação: primeiro a regra escrita e quem confere, depois a automação. A validar com Lucas e Maluf.</p>
+</aside>
+</details></div>
+</section>
+<!-- 08 · HIGIENE -->
+<section aria-labelledby="t-higiene" class="secao" id="higiene">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">08</span>
+<h2 id="t-higiene">Higiene do CRM</h2>
+<p class="secao-sub">Dono, valor, motivo e tentativas: o que o comercial registra hoje na Clint.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>O time conversa mais do que a Clint mostra: <data data-casas="1" data-dado="jornada.m2.conversa_real_taxa" data-formato="pct">77,3%</data> dos leads do Start conversaram com uma pessoa, mas só <data data-casas="1" data-dado="jornada.m2.saiu_entrada_taxa" data-formato="pct">53,2%</data> saíram da etapa de entrada em 12 meses. A etapa virou lembrete de tarefa: o vendedor move o card para lembrar do próximo follow-up, e o negócio deixa de mostrar em que momento o aluno está.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Registro do comercial</caption>
+<thead><tr><th scope="col">Indicador</th><th scope="col">Hoje</th><th scope="col">Alvo proposto</th><th scope="col">Sinal</th></tr></thead>
+<tbody>
+<tr data-sinal="vermelho"><th scope="row">Negócios com responsável, <data data-dado="qualidade.responsavel.periodo_rotulo" data-formato="texto">criados em out/2026</data></th><td><data data-casas="1" data-dado="qualidade.responsavel.valor" data-formato="pct">18,3%</data> (<data data-dado="qualidade.responsavel.num" data-formato="numero">158</data> de <data data-dado="qualidade.responsavel.den" data-formato="numero">862</data>)</td><td><data data-casas="0" data-dado="qualidade.responsavel.alvo" data-formato="pct">95%</data></td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.responsavel">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Ganhos com valor no negócio, <data data-dado="qualidade.ganhos_valor.periodo_rotulo" data-formato="texto">criados em out/2026</data></th><td><data data-casas="1" data-dado="qualidade.ganhos_valor.valor" data-formato="pct">0,0%</data> (<data data-dado="qualidade.ganhos_valor.num" data-formato="numero">0</data> de <data data-dado="qualidade.ganhos_valor.den" data-formato="numero">66</data>)</td><td><data data-casas="0" data-dado="qualidade.ganhos_valor.alvo" data-formato="pct">100%</data></td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.ganhos_valor">Longe do alvo</span></td></tr>
+<tr data-sinal="vermelho"><th scope="row">Mudanças de etapa para etapas de follow-up, <data data-dado="qualidade.etapas_followup.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-casas="1" data-dado="qualidade.etapas_followup.valor" data-formato="pct">30,1%</data> (<data data-dado="qualidade.etapas_followup.num" data-formato="numero">270</data> de <data data-dado="qualidade.etapas_followup.den" data-formato="numero">897</data>)</td><td><data data-casas="0" data-dado="qualidade.etapas_followup.alvo" data-formato="pct">0%</data> no pipeline novo</td><td><span class="sinal sinal-vermelho" data-semaforo="qualidade.etapas_followup">Longe do alvo</span></td></tr>
+<tr data-sinal="verde"><th scope="row">Perdidos com motivo, <data data-dado="qualidade.perdidos_motivo.periodo_rotulo" data-formato="texto">criados em out/2026</data></th><td><data data-casas="1" data-dado="qualidade.perdidos_motivo.valor" data-formato="pct">100,0%</data> (<data data-dado="qualidade.perdidos_motivo.num" data-formato="numero">748</data> de <data data-dado="qualidade.perdidos_motivo.den" data-formato="numero">748</data>)</td><td><data data-casas="0" data-dado="qualidade.perdidos_motivo.alvo" data-formato="pct">100%</data></td><td><span class="sinal sinal-verde" data-semaforo="qualidade.perdidos_motivo">No alvo</span></td></tr>
+<tr data-sinal="laranja"><th scope="row">Mudanças de etapa com o negócio já ganho ou perdido, <data data-dado="qualidade.mudancas_decidido.periodo_rotulo" data-formato="texto">12 meses</data></th><td><data data-casas="1" data-dado="qualidade.mudancas_decidido.valor" data-formato="pct">7,6%</data> (<data data-dado="qualidade.mudancas_decidido.num" data-formato="numero">1.486</data> de <data data-dado="qualidade.mudancas_decidido.den" data-formato="numero">19.459</data>)</td><td>perto de <data data-casas="0" data-dado="qualidade.mudancas_decidido.alvo" data-formato="pct">0%</data></td><td><span class="sinal sinal-laranja" data-semaforo="qualidade.mudancas_decidido">Perto do alvo</span></td></tr>
+<tr data-sinal="verde"><th scope="row">Ganhos com venda no Airtable em até 45 dias, <data data-dado="qualidade.ganhos_com_venda.periodo_rotulo" data-formato="texto">criados em out/2026</data></th><td><data data-casas="1" data-dado="qualidade.ganhos_com_venda.valor" data-formato="pct">100,0%</data> (<data data-dado="qualidade.ganhos_com_venda.num" data-formato="numero">66</data> de <data data-dado="qualidade.ganhos_com_venda.den" data-formato="numero">66</data>)</td><td><data data-casas="0" data-dado="qualidade.ganhos_com_venda.alvo" data-formato="pct">100%</data></td><td><span class="sinal sinal-verde" data-semaforo="qualidade.ganhos_com_venda">No alvo</span></td></tr>
+<tr data-sinal="verde"><th scope="row">Vendas com negócio na Clint, <data data-dado="qualidade.vendas_com_negocio.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-casas="1" data-dado="qualidade.vendas_com_negocio.valor" data-formato="pct">100,0%</data> (<data data-dado="qualidade.vendas_com_negocio.num" data-formato="numero">120</data> de <data data-dado="qualidade.vendas_com_negocio.den" data-formato="numero">120</data>)</td><td><data data-casas="0" data-dado="qualidade.vendas_com_negocio.alvo" data-formato="pct">100%</data></td><td><span class="sinal sinal-verde" data-semaforo="qualidade.vendas_com_negocio">No alvo</span></td></tr>
+<tr><th scope="row">"Sem retorno" com 3 dias ou mais de tentativa, <data data-dado="qualidade.sem_retorno_cadencia.periodo_rotulo" data-formato="texto">Start, 12 meses</data></th><td><data data-casas="1" data-dado="qualidade.sem_retorno_cadencia.valor" data-formato="pct">23,3%</data> (<data data-dado="qualidade.sem_retorno_cadencia.num" data-formato="numero">994</data> de <data data-dado="qualidade.sem_retorno_cadencia.den" data-formato="numero">4.258</data>)</td><td>a definir com o Maluf</td><td><span class="sinal sinal-cinza" data-semaforo="qualidade.sem_retorno_cadencia">Alvo a definir</span></td></tr>
+<tr><th scope="row">Abertos nos funis comerciais parados há mais de 30 dias, <data data-dado="qualidade.parados_30d.periodo_rotulo" data-formato="texto">em 07/11/2026</data></th><td><data data-dado="qualidade.parados_30d.num" data-formato="numero">35</data> de <data data-dado="qualidade.parados_30d.den" data-formato="numero">158</data></td><td>a definir</td><td><span class="sinal sinal-cinza" data-semaforo="qualidade.parados_30d">Alvo a definir</span></td></tr>
+<tr><th scope="row">Atividades concluídas, <data data-dado="qualidade.atividades_concluidas.periodo_rotulo" data-formato="texto">geradas de 08/10 a 07/11/2026</data></th><td><data data-dado="qualidade.atividades_concluidas.num" data-formato="numero">1</data> de <data data-dado="qualidade.atividades_concluidas.den" data-formato="numero">1.664</data></td><td>conferir na tela da Clint se a conclusão chega à central</td><td><span class="sinal sinal-cinza" data-semaforo="qualidade.atividades_concluidas">A conferir</span></td></tr>
+<tr><th scope="row">Vendas com turma a definir, <data data-dado="qualidade.turma_a_definir.periodo_rotulo" data-formato="texto">out/2026</data></th><td><data data-dado="qualidade.turma_a_definir.num" data-formato="numero">29</data> vendas</td><td>a definir</td><td><span class="sinal sinal-cinza" data-semaforo="qualidade.turma_a_definir">Sem alvo</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint e tabela de vendas do Airtable pela central de dados da VOID · período em cada linha · <span class="origem o-derivado">derivado</span></p>
+<div class="leitura">
+<p>O responsável medido acima é o do retrato de <data data-dado="meta.versao" data-formato="data">08/11/2026</data>. O dono na criação, que é o que o pipeline novo pede, vai sair da tabela de transições, que guarda cada troca de responsável.</p>
+<p>Abandonado é o negócio aberto nos funis comerciais sem mensagem da pessoa e sem mudança de etapa há 45 dias <span class="etiqueta etiqueta-validar">a validar</span>. Listas e Contatos Importantes ficam de fora. Em <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data>, <data data-dado="higiene.parados_45d" data-formato="numero">288</data> dos <data data-dado="higiene.abertos_comerciais" data-formato="numero">438</data> abertos comerciais estavam havia mais de 45 dias na mesma etapa; a conta com a regra completa sai da tabela de negócios.</p>
+<p class="fonte">Clint pela central de dados da VOID · retrato de <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data> · <span class="origem o-medido">medido</span></p>
+</div>
+</details></div>
+</section>
+<!-- 09 · SOBRE OS DADOS -->
+<section aria-labelledby="t-dados" class="secao" id="sobre-os-dados">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">09</span>
+<h2 id="t-dados">Sobre os dados</h2>
+<p class="secao-sub">Definições, períodos e as tabelas de onde os números vão sair.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Esta versão usa o <data data-dado="meta.fonte_rotulo" data-formato="texto">tabelas da jornada conferidas e contexto histórico de 08/11/2026</data> na central de dados da VOID, com os dados carregados na <data data-dado="meta.periodos.carga" data-formato="texto">madrugada de 08/11/2026</data>, até <data data-dado="meta.periodos.corte" data-formato="texto">07/11/2026 às 22h35</data>. Cada número-chave foi refeito por uma segunda contagem, independente da primeira. As fontes carregam uma vez por dia, perto da meia-noite; números de retrato, como a etapa e o status de hoje, podem mudar depois da carga seguinte.</p>
+<p>A página traz só números agregados: nenhum nome, telefone, e-mail ou CPF de lead ou aluno, e nada por vendedor.</p>
+</div>
+<details class="mais">
+<summary>Definições</summary>
+<dl class="legenda">
+<div><dt>Família do Start</dt><dd>O Funil Start mais os funis dos vendedores do Start. O Funil Start é a porta de entrada e também é trabalhado como funil de venda.</dd></div>
+<div><dt>12 meses</dt><dd>Negócios criados de <data data-dado="meta.periodos.safra_12m" data-formato="texto">08/11/2025 a 07/11/2026</data>. Venda, mídia e formulários usam o mês cheio: <data data-dado="meta.periodos.ano_fechado" data-formato="texto">nov/2025 a out/2026</data>. Cada bloco diz o seu.</dd></div>
+<div><dt>Safra</dt><dd>Os negócios criados no mesmo mês, acompanhados até a decisão.</dd></div>
+<div><dt>Mediana</dt><dd>O valor do meio: metade dos casos leva menos que isso.</dd></div>
+<div><dt>Lead (M1)</dt><dd>No Start, o negócio criado na Clint. Na aula, a inscrição no Jotform.</dd></div>
+<div><dt>Conversa real</dt><dd>O lead escreveu depois de uma mensagem enviada por uma pessoa, em até 7 dias. Mensagem automática e disparo não contam; na série por mês, a mesma resposta pronta enviada a 20 conversas ou mais em 60 segundos também não.</dd></div>
+<div><dt>MQL</dt><dd>Lead qualificado pelo marketing. Na inscrição com data escolhida, o próprio formulário prova o MQL. No formulário do Start e no WhatsApp, a classificação do formulário ordena a fila, e o M2 se completa na conversa que confirma o objetivo e o aceite de um próximo passo.</dd></div>
+<div><dt>SQL</dt><dd>Lead qualificado para vendas: o comercial marca quando o encontro aconteceu e a pessoa quer as condições.</dd></div>
+<div><dt>Encontro (M3)</dt><dd>Visita guiada, aula experimental, aulão ou conversa de diagnóstico. Só a presença prova o encontro; agendar e confirmar, não.</dd></div>
+<div><dt>Tabela de valores</dt><dd>As etapas chamadas "Proposta" na Clint. Tabela enviada antes do encontro é parte da qualificação (M2); proposta (M4) tem turma, condição e data.</dd></div>
+<div><dt>Ganho</dt><dd>O status Ganho na Clint. Não é coluna e não é pagamento.</dd></div>
+<div><dt>Matrícula (M5)</dt><dd>A venda na tabela de vendas do Airtable, a fonte da verdade da matrícula. "Valor vendido" é o valor da boleta, não o recebido.</dd></div>
+<div><dt>Inscrição na aula</dt><dd>Envios ativos dos formulários [FB], [FB - Teste], [OR], [GS/YT] e MQL, sem teste. Em <data data-dado="aula.mes" data-formato="mes">out/2026</data>: <data data-dado="aula.envios_tres_formularios" data-formato="numero">401</data> nos três primeiros, <data data-dado="aula.envios" data-formato="numero">419</data> somando o formulário MQL e <data data-dado="aula.inscricoes" data-formato="numero">418</data> sem o envio marcado como teste. Alguns blocos usam só [FB] e [OR] e dizem isso.</dd></div>
+<div><dt>Horário útil</dt><dd>Segunda a sexta, das 9h às 17h59, sem descontar feriados nos números desta versão. <span class="etiqueta etiqueta-validar">a validar</span></dd></div>
+<div><dt>Canal</dt><dd>Hoje, a etiqueta de canal do contato na Clint. Nas tabelas, a ordem é: o toque com UTM do mesmo telefone, de 30 dias antes a 1 dia depois da criação do negócio; a etiqueta posta até 1 dia depois da criação; o disparo que criou o negócio; a etiqueta atual; a origem na boleta; e, por último, "sem origem". <span class="etiqueta etiqueta-validar">a validar</span></dd></div>
+<div><dt>Abandonado</dt><dd>Negócio aberto nos funis comerciais, sem mensagem da pessoa e sem mudança de etapa há 45 dias. <span class="etiqueta etiqueta-validar">a validar</span></dd></div>
+<div><dt>Semáforo</dt><dd>Verde no alvo, laranja até <data data-dado="meta.semaforo_corte_pontos" data-formato="numero">20</data> pontos abaixo, vermelho abaixo disso. Só onde há alvo. <span class="etiqueta etiqueta-validar">a validar</span></dd></div>
+</dl>
+</details>
+<details class="mais">
+<summary>Regras a validar com Lucas e Maluf</summary>
+<ul class="lista-curta">
+<li>O gargalo da vez: a conversa que não vira encontro.</li>
+<li>O horário útil do comercial.</li>
+<li>A régua de MQL e a idade mínima: hoje 16 anos na Clint e 18 no formulário.</li>
+<li>A aula como porta, encontro e cadência dentro da jornada única.</li>
+<li>As janelas de canal: 30 dias antes a 1 dia depois da criação do negócio, e 1 dia antes a 30 dias depois do toque.</li>
+<li>O abandonado em 45 dias, só nos funis comerciais.</li>
+<li>Os alvos e os cortes do semáforo.</li>
+</ul>
+</details>
+<details class="mais">
+<summary>As tabelas da jornada</summary>
+<div class="leitura">
+<p>As treze tabelas da jornada foram executadas e conferidas na central de dados da VOID. O objeto desta página recebe somente os agregados, com o corte e a versão das regras. A atualização é manual.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Tabela, o que guarda e onde aparece</caption>
+<thead><tr><th scope="col">Tabela</th><th scope="col">O que guarda</th><th scope="col">Seções</th></tr></thead>
+<tbody>
+<tr><th class="quebra" scope="row">tvd_jornada_dicionario</th><td>O significado de cada etapa, etiqueta, UTM, formulário e motivo, na régua de M1 a M8.</td><td>todas</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_transicao</th><td>Cada mudança de etapa, funil, status, motivo, responsável, etiqueta e disparo, presa ao negócio certo.</td><td>03 e 08</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_negocio</th><td>Um negócio por linha, com caminho, tempos, conversa real, canal e matrícula.</td><td>01 a 04 e 08</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_lead</th><td>Uma pessoa por linha, juntando as fontes pelo telefone.</td><td>02</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_toque</th><td>Cada formulário, inscrição, disparo e evento, com UTM.</td><td>04, 05 e 07</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_aula</th><td>Cada inscrição na aula, com conversa, negócio, presença e matrícula em 30 e 60 dias.</td><td>01 e 06</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_matricula</th><td>Cada venda do Airtable, com produto, valor, origem da boleta, canal declarado e tipo de receita.</td><td>01, 02, 04 e 07</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_aluno</th><td>Cada venda de formação, com os sinais de pós-venda (M6 e M7, parciais).</td><td>02</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_canal</th><td>Negócios por mês, família, canal e porta.</td><td>04</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_campanha</th><td>Investimento e resultado por campanha e mês, com a ligação até a venda onde ela existe.</td><td>05</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_mensal</th><td>As séries por mês: mídia, captura, comercial, jornada, matrícula, dinheiro, nutrição e pós-venda.</td><td>01, 02 e 05</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_estoque</th><td>Abertos por semana e momento, com idade e tempo parado.</td><td>08</td></tr>
+<tr><th class="quebra" scope="row">tvd_jornada_qualidade</th><td>Os indicadores de registro e de frescor das fontes, com alvo e semáforo.</td><td>07 e 08</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+<details class="mais">
+<summary>Fora desta versão</summary>
+<ul class="lista-curta">
+<li>Meta e capacidade de matrícula, e a previsão do que o estoque aberto deve virar.</li>
+<li>Recebido e inadimplência: nenhuma fonte registra a baixa das parcelas.</li>
+<li>Quebras de público da Meta (região, idade e hora).</li>
+<li>A planilha do comercial, com agenda e presença da aula.</li>
+<li>Os dados da plataforma GrowAI dentro da central de dados.</li>
+</ul>
+</details>
+<p class="fonte">Clint, Airtable, Jotform, ActiveCampaign, Meta Ads, Google Ads, GA4, Instagram, YouTube, Google Meu Negócio, Conta Azul e plataforma GrowAI · dados até <data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data> · versão de <data data-dado="meta.versao" data-formato="data">08/11/2026</data></p>
+</details><p class="leitura" id="nota-exportacao">Os quadros principais usam as tabelas da jornada conferidas nesta entrega. Exemplos e comparações do levantamento de 08/11/2026 conservam as fontes e os períodos indicados. A atribuição de eventos foi refinada; pequenas diferenças para a linha de base estão descritas abaixo. Os toques rastreados e as etiquetas do contato são leituras distintas de canal. A ligação de vendas inclui a ponte de e-mail para telefone quando ela aponta para um único número. Não há atualização automática.</p><p class="leitura">Inscrição na aula: cinco formulários ([FB], [FB - Teste], [OR], [GS/YT] e MQL), envios ativos, excluídos os testes reais. Em outubro: 419 envios, 1 teste e 418 inscrições válidas. Campanha com a palavra “teste” não transforma um lead real em teste. Para negócio novo, a janela vai da véspera até sete dias depois; a última semana ainda pode estar em maturação.</p><p class="leitura">No canal, etiquetas de base e reativação e de eventos entram em “Outros”; não são necessariamente o primeiro canal de aquisição. Os 438 abertos comerciais incluem Start, Master, aula experimental, One/Online e Pro. A leitura anterior de 158 abertos cobria apenas Start e Master.</p></div>
+</section>
+<!-- 10 · PRÓXIMO PASSO -->
+<section aria-labelledby="t-proximo" class="secao" id="proximo-passo">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">10</span>
+<h2 id="t-proximo">Próximo passo</h2>
+</header>
+<ul class="checklist">
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Validar com Lucas e Maluf o gargalo da vez proposto: a conversa que não vira encontro.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Ligar os três consertos de rastreamento: nome, telefone e origem em todo formulário; presença da aula registrada no dia; origem gravada na criação do negócio.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Compartilhar a planilha do comercial com agenda e presença da aula, só com datas e status, para o gargalo ter uma linha de base na central de dados.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Fechar as regras marcadas como a validar: horário útil, régua de MQL, idade mínima, abandonado em 45 dias, janelas de canal e os alvos do semáforo.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Reconectar o Google Ads na central de dados: a autorização venceu em <data data-dado="campanha.google_autorizacao_vencida" data-formato="data">23/10/2026</data>, e o custo desde então não está medido.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Conferir na tela da Clint se as atividades aparecem como concluídas, porque a central recebeu <data data-dado="qualidade.atividades_concluidas.num" data-formato="numero">1</data> concluída em <data data-dado="qualidade.atividades_concluidas.den" data-formato="numero">1.664</data>.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Usar os agregados conferidos para escolher o próximo gargalo e combinar a próxima atualização manual.</span></li>
+</ul>
+</div>
+</section>
+</main>
+<footer class="rodape">
+<div class="wrap">
+<div class="rodape-topo">
+<p class="rodape-dados">Dados até <time datetime="2026-11-07"><data data-dado="meta.dados_ate" data-formato="data">07/11/2026</data></time></p>
+<ul class="rodape-links">
+<li><a href="../../">Painel de receita</a></li>
+<li><a href="../../m1/">Plano M1</a></li>
+</ul>
+</div>
+<div class="rodape-assinatura">
+<p class="rodape-void"><span class="junto">The VOID Tattoo Academy</span> · <span class="junto">Vila Madalena, São Paulo</span></p>
+<p class="rodape-growai">Preparado por <img alt="GrowAI" height="31" src="../assets/growai-logo-branco.svg" width="81"/></p>
+</div>
+</div>
+</footer>
+<script>
+/* Semáforo do registro e frescor das fontes: lê VOID_DADOS e escreve cor, ícone e palavra (o HTML já traz o mesmo estado). */
+(function (D, d) {
+  if (!D) return;
+  var CORES = ['sinal-verde', 'sinal-laranja', 'sinal-vermelho', 'sinal-cinza'];
+  function pintar(el, estado, texto) {
+    if (!estado) return;
+    CORES.forEach(function (c) { el.classList.remove(c); });
+    el.classList.add('sinal', 'sinal-' + estado);
+    if (texto) el.textContent = texto;
+    var linha = el.closest('tr');
+    if (linha) { if (estado === 'cinza') linha.removeAttribute('data-sinal'); else linha.setAttribute('data-sinal', estado); }
+  }
+  Array.prototype.forEach.call(d.querySelectorAll('[data-semaforo]'), function (el) {
+    var partes = el.getAttribute('data-semaforo').split('.'), q = D;
+    partes.forEach(function (p) { q = q == null ? q : q[p]; });
+    if (q) pintar(el, q.sinal, q.sinal_texto);
+  });
+  Array.prototype.forEach.call(d.querySelectorAll('[data-frescor]'), function (el) {
+    var f = (D.frescor || [])[+el.getAttribute('data-frescor')];
+    if (f) pintar(el, f.estado, f.rotulo);
+  });
+  /* resumo do frescor: agrupa as fontes pela situação, na ordem em que aparecem */
+  var resumo = d.querySelector('[data-frescor-resumo]');
+  if (resumo && D.frescor && D.frescor.length) {
+    var grupos = [], porRotulo = {};
+    D.frescor.forEach(function (f) {
+      if (!porRotulo[f.rotulo]) { porRotulo[f.rotulo] = []; grupos.push(f.rotulo); }
+      porRotulo[f.rotulo].push(f.fonte);
+    });
+    function lista(nomes) { return nomes.length < 2 ? nomes.join('') : nomes.slice(0, -1).join(', ') + ' e ' + nomes[nomes.length - 1]; }
+    resumo.textContent = grupos.map(function (g) { return g + ': ' + lista(porRotulo[g]) + '.'; }).join(' ');
+  }
+})(window.VOID_DADOS, document);
+</script>
+<script defer="" src="../assets/sistema.js"></script>
+</body>
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html data-estacao="chamado" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="#181818" name="theme-color"/>
+<title>Mapa do Funil VOID · Sistema VOID</title>
+<meta content="O Mapa do Funil da VOID na versão GrowAI: os oito momentos da jornada, as portas de entrada, origem e UTM, MQL e SQL e o que medir em cada passagem." name="description"/>
+<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Newsreader:ital,opsz,wght@1,6..72,300&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/sistema.css" rel="stylesheet"/>
+<script>document.documentElement.className+=' js'</script>
+<style>
+/* Só desta página (Mapa do Funil). Tokens da base; raio 0; sem sombra. */
+.acertos{list-style:none;margin:24px 0 8px;padding:0;display:grid;gap:10px;counter-reset:acerto}
+.acertos li{counter-increment:acerto;display:grid;grid-template-columns:2.4rem minmax(0,1fr);align-content:start;column-gap:4px;margin:0;padding:14px 16px;background:var(--bastidor);border-top:2px solid var(--fio)}
+.acertos li::before{content:counter(acerto,decimal-leading-zero);grid-row:1 / span 2;font:800 20px/1.25 var(--font-letreiro);font-variant-numeric:lining-nums tabular-nums;color:var(--areia)}
+.acertos p{margin:0;font-size:16px;line-height:1.5}
+.acertos .acerto-nome{margin:0 0 4px;font:700 18px/1.25 var(--font-letreiro);color:var(--tela)}
+@media (min-width:760px){.acertos{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+.sub{display:block;margin-top:4px;font:400 15px/1.45 var(--font-texto);letter-spacing:0;text-transform:none;color:var(--po)}
+.laco-fig{margin:32px 0;max-width:640px}
+.laco{margin:12px 0 0}
+.laco div{margin:0 0 14px}
+.laco dt{margin:0 0 6px;text-align:center;font:600 12px/1.3 var(--font-letreiro);font-variation-settings:"wdth" 125;letter-spacing:.14em;text-transform:uppercase;color:var(--po)}
+.laco dd{width:var(--l,100%);margin:0 auto 6px;padding:10px 8px;background:var(--bastidor);border-top:2px solid var(--fio);text-align:center;font:600 16px/1.3 var(--font-letreiro);color:var(--tela)}
+.laco dd b{margin-right:6px;color:var(--areia)}
+.laco dd.no{background:var(--coxia);border-top-color:var(--areia)}
+.cartao{margin:0;padding:16px;background:var(--bastidor);border-top:2px solid var(--fio)}
+.cartao > :last-child{margin-bottom:0}
+.cartao-nome{margin:0 0 8px;font:700 18px/1.25 var(--font-letreiro);color:var(--tela)}
+.utm{margin:16px 0 24px;background:var(--bastidor);border-top:2px solid var(--fio)}
+.utm-cab{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 16px;border-bottom:1px solid var(--fio)}
+.utm-nome{flex:1 1 auto;min-width:0;margin:0;font:700 12px/1.4 var(--font-letreiro);letter-spacing:.12em;text-transform:uppercase;color:var(--po)}
+.utm-cab .copiar{flex:none}
+.utm pre{margin:0;padding:16px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:400 15px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--tela)}
+.links li{margin-bottom:12px}
+.links code{display:block;margin-top:2px}
+@media (min-width:360px){.utm pre span,.links code span{white-space:nowrap}}
+.copiar{min-height:44px;padding:0 14px;background:transparent;border:1px solid var(--chumbo);border-radius:0;color:var(--areia);font:700 12px/1 var(--font-letreiro);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.copiar:hover{border-color:var(--areia)}
+code{font:400 .88em/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--tela);overflow-wrap:anywhere}
+.mais{margin:16px 0 24px;border-top:1px solid var(--fio);border-bottom:1px solid var(--fio)}
+.mais summary{display:flex;align-items:center;gap:10px;min-height:48px;list-style:none;cursor:pointer;font:700 13px/1.3 var(--font-letreiro);letter-spacing:.12em;text-transform:uppercase;color:var(--areia)}
+.mais summary::-webkit-details-marker{display:none}
+.mais summary::before{content:"";flex:none;width:16px;height:16px;background:currentColor;-webkit-mask:var(--icone-arrow-right) center/contain no-repeat;mask:var(--icone-arrow-right) center/contain no-repeat}
+.mais[open] summary::before{transform:rotate(90deg)}
+.mais .tabela{margin-top:8px}
+.fonte + .leitura,.fonte + .grade-2,.fonte + .aviso{margin-top:24px}
+</style>
+</head>
+<body data-pagina="mapa-do-funil">
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo">
+<div class="wrap topo-barra">
+<a class="topo-marca" href="../"><img alt="The VOID Tattoo Academy, início do Sistema VOID" height="24" src="../assets/void-horizontal-branco.svg" width="158"/></a>
+<button aria-controls="nav-sistema" aria-expanded="false" class="menu-botao" type="button"><span aria-hidden="true" class="menu-icone"></span><span class="menu-rotulo">Menu</span></button>
+<nav aria-label="Páginas do Sistema VOID" class="nav-sistema" id="nav-sistema">
+<ol class="nav-lista">
+<li><a class="nav-link" data-pagina="inicio" href="../"><span aria-hidden="true" class="nav-num"></span><span class="nav-nome">Início</span><span class="nav-desc">O que é o Sistema VOID</span></a></li>
+<li><a class="nav-link" data-pagina="jornada" href="../jornada/"><span class="nav-num">01</span><span class="nav-nome">Jornada</span><span class="nav-desc">Do anúncio à matrícula, num lugar só</span></a></li>
+<li><a aria-current="page" class="nav-link" data-pagina="mapa-do-funil" href="../mapa-do-funil/"><span class="nav-num">02</span><span class="nav-nome">Mapa do Funil</span><span class="nav-desc">O seu mapa, na versão GrowAI</span></a></li>
+<li><a class="nav-link" data-pagina="playbook" href="../playbook/"><span class="nav-num">03</span><span class="nav-nome">Playbook</span><span class="nav-desc">Pipeline e rotina do atendimento</span></a></li>
+<li><a class="nav-link" data-pagina="growai" href="../growai/"><span class="nav-num">04</span><span class="nav-nome">A VOID na GrowAI</span><span class="nav-desc">Onde entra, em que ordem e com que portões</span></a></li>
+</ol>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section aria-labelledby="titulo-pagina" class="abertura janela-luz">
+<div class="wrap">
+<p class="marcador">Página 2 de 4 · Para Lucas, Maluf e Felipe</p>
+<h1 class="titulo-filme" id="titulo-pagina">Mapa do Funil VOID</h1>
+<p class="linha-off">Do primeiro contato à próxima formação.</p>
+<div class="abertura-lede">
+<p>O mapa que você mandou em 27/10 já tem o desenho certo. Esta versão dá um nome único a cada momento da jornada e transforma cada passagem em número.</p>
+<p>Ela parte do que o seu mapa acerta e acrescenta o que falta para medir a jornada de ponta a ponta, inclusive depois da matrícula.</p>
+</div>
+<dl class="ficha">
+<div><dt>Dados até</dt><dd><time datetime="2026-11-07">07/11/2026</time></dd></div>
+<div><dt>Versão</dt><dd><time datetime="2026-11-08">08/11/2026</time></dd></div>
+</dl>
+</div>
+</section>
+<div class="wrap">
+<aside class="aviso aviso-reconstrucao">
+<p class="aviso-rotulo">Reconstrução</p>
+<p>Montamos esta versão a partir do que você compartilhou nas calls e no grupo. Se algum ponto do seu original ficou de fora, a gente ajusta.</p>
+</aside>
+</div>
+<nav aria-label="Nesta página" class="wrap sumario">
+<p class="sumario-titulo">Nesta página</p>
+<ol>
+<li><a href="#o-que-ja-acerta"><span>01</span>O que o seu mapa já acerta</a></li>
+<li><a href="#oito-momentos"><span>02</span>A jornada em oito momentos</a></li>
+<li><a href="#quatro-receitas"><span>03</span>Quatro áreas, quatro receitas</a></li>
+<li><a href="#duas-portas"><span>04</span>Duas portas, uma jornada</a></li>
+<li><a href="#etiqueta-campo-etapa"><span>05</span>Etiqueta, campo e etapa</a></li>
+<li><a href="#origem-e-utm"><span>06</span>Origem e UTM</a></li>
+<li><a href="#mql-e-sql"><span>07</span>MQL e SQL</a></li>
+<li><a href="#pontuacao"><span>08</span>Pontuação por comportamento</a></li>
+<li><a href="#consciencia"><span>09</span>Duas leituras: etapa e consciência</a></li>
+<li><a href="#o-que-medir"><span>10</span>O que medir em cada passagem</a></li>
+<li><a href="#onde-o-dado-se-perde"><span>11</span>Onde o dado se perde</a></li>
+<li><a href="#decisoes"><span>12</span>Decisões que faltam</a></li>
+<li><a href="#sobre-os-dados"><span>13</span>Sobre os dados</a></li>
+<li><a href="#proximo-passo"><span>14</span>Próximo passo</a></li>
+</ol>
+</nav>
+<!-- 01 -->
+<section aria-labelledby="t-acerta" class="secao" id="o-que-ja-acerta">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">01</span>
+<h2 id="t-acerta">O que o seu mapa já acerta</h2>
+<p class="secao-sub">Dez escolhas do seu desenho que o método também pede. Todas ficam.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Os acertos estão no funil “Aula Experimental” que você montou na Clint e testou em 30/10 e 03/11, e no que você mandou no grupo.</p>
+</div>
+<ol class="acertos">
+<li><p class="acerto-nome">Dado antes de opinião</p><p>Você fez a foto da captação e o mapa antes de mexer, e pediu aprovação da estrutura antes de implantar e treinar.</p></li>
+<li><p class="acerto-nome">Um gargalo por vez</p><p>Começou pela passagem do lead para o comercial e pelo funil mais simples, o da aula.</p></li>
+<li><p class="acerto-nome">Caminho próprio para a aula</p><p>Inscrição, agenda, confirmação e presença saíram da planilha e ganharam etapas, campos e tarefas.</p></li>
+<li><p class="acerto-nome">Nenhuma etapa de follow-up</p><p>São 0 no funil novo, contra 41 etapas com FUP, Follow ou Tentativa no nome em 8 dos 15 funis (inclui 5 sinais de FUP quente). O próximo passo virou campo com data, e, no teste, a cadência pausou até ele.</p></li>
+<li><p class="acerto-nome">Qualificação com critério escrito</p><p>O lead qualificado pelo marketing (MQL) sai de duas perguntas com peso e de exclusões claras. Os 7 envios que marcaram “quero apenas viver a experiência” saíram como não MQL.</p></li>
+<li><p class="acerto-nome">Dado tratado na entrada</p><p>UTM, porta, respostas e pontuação vão para campos do negócio, com nomes padronizados e etiqueta separada de campo.</p></li>
+<li><p class="acerto-nome">Dono desde a criação</p><p>O lead do funil novo nasce com responsável.</p></li>
+<li><p class="acerto-nome">Presença como alvo</p><p>Confirmação ao agendar, reconfirmação na véspera e uma marca para quem não confirmou.</p></li>
+<li><p class="acerto-nome">Teste isolado</p><p>Formulário “não divulgar”, etiqueta <code>lead:teste</code> e UTM de teste. Nenhum lead real entrou antes da hora.</p></li>
+<li><p class="acerto-nome">Objetivo de negócio claro</p><p>Filtrar a base para disparo, ter um painel único de tráfego e comercial e devolver à Meta e ao Google o lead que interessa.</p></li>
+</ol>
+<p class="fonte">Clint e Jotform pela central de dados da VOID · funil e formulário de qualificação no estado de 07/11/2026; os 7 envios são de 22/10 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+<p class="leitura">Acertos observados no funil de teste da aula e nos materiais recuperados; esta versão não comparou o texto do artifact original.</p></details></div>
+</section>
+<!-- 02 -->
+<section aria-labelledby="t-momentos" class="secao" id="oito-momentos">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">02</span>
+<h2 id="t-momentos">A jornada em oito momentos</h2>
+<p class="secao-sub">Um nome por momento, igual em todos os funis e em todas as conversas.</p>
+</header>
+<div class="leitura">
+<p>Hoje o mesmo momento tem nomes diferentes em cada funil da Clint. Daqui em diante vale esta régua, com o nome da VOID e o código ao lado. Cada momento é um estado do aluno, provado por um registro com data.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Os oito momentos da VOID</caption>
+<thead><tr><th scope="col">Momento e dono</th><th scope="col">O que prova</th><th scope="col">Hoje</th></tr></thead>
+<tbody>
+<tr><th scope="row">M1 Lead<span class="sub">Dono: marketing</span></th><td>Pessoa identificada, com origem e interesse ativo: formulário, inscrição ou mensagem dela.</td><td>9.698 negócios na família do Start em 12 meses.</td></tr>
+<tr><th scope="row">M2 Qualificação · MQL<span class="sub">Dono: comercial</span></th><td>Perfil da formação, objetivo dito e encontro pedido ou aceito. Mensagem automática não conta.</td><td>7.494 desses negócios (77,3%) conversaram com uma pessoa. O MQL só existe no formulário da aula: 12 em 29 envios de 22/10 a 07/11.</td></tr>
+<tr><th scope="row">M3 Encontro · SQL<span class="sub">Dono: comercial e quem recebe na escola</span></th><td>Encontro realizado, com presença registrada: visita, aula, aulão ou conversa de diagnóstico. Agendar não prova.</td><td>431 negócios (4,4%) passaram por alguma etapa de encontro.</td></tr>
+<tr><th scope="row">M4 Proposta<span class="sub">Dono: comercial</span></th><td>Turma, horário, valor, condição e próximo passo com data, para aquela pessoa. Tabela de preço não conta.</td><td>Sem registro próprio: a etapa “Proposta” marca a tabela enviada, em mediana 1,7 hora depois da entrada no Funil Start.</td></tr>
+<tr><th scope="row">M5 Matrícula<span class="sub">Dono: comercial</span></th><td>Boleta no Airtable e ganho com valor, turma e forma de pagamento. Ganho é status, não coluna.</td><td>1.300 vendas de nov/2025 a out/2026. Nenhum dos 92 ganhos de out/2026 tem valor na Clint.</td></tr>
+<tr><th scope="row">M6 Ativação<span class="sub">Dono: CS <span class="etiqueta etiqueta-validar">a validar</span></span></th><td>Presença na Aula 1, com kit entregue.</td><td>Sem registro. 29 vendas de out/2026 com turma “a definir”.</td></tr>
+<tr><th scope="row">M7 Valor<span class="sub">Dono: CS e professores <span class="etiqueta etiqueta-validar">a validar</span></span></th><td>Frequência, artes aprovadas, tatuagens em pele humana e formatura.</td><td>Parcial: 464 feedbacks do Start e 154 avaliações de aula em 12 meses; nota 4,92 em 397 avaliações no Google.</td></tr>
+<tr><th scope="row">M8 Expansão<span class="sub">Dono: CS ou comercial <span class="etiqueta etiqueta-validar">a validar</span></span></th><td>Nova matrícula do mesmo aluno, ou uma indicação.</td><td>259 de 2.494 alunos do Start (10,4%) compraram o Master depois.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint: família do Start (Funil Start e as três cadeiras), negócios criados de 08/11/2025 a 07/11/2026 · Airtable: vendas de nov/2025 a out/2026; Start e Master de jan/2024 a 07/11/2026 · Jotform: envios de 01/11/2025 a 31/10/2026 · Google Meu Negócio: avaliações até 28/10/2026 · tudo pela central de dados da VOID · <span class="origem o-medido">medido</span></p>
+</div>
+</section>
+<!-- 03 -->
+<section aria-labelledby="t-receitas" class="secao" id="quatro-receitas">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">03</span>
+<h2 id="t-receitas">Quatro áreas, quatro receitas</h2>
+<p class="secao-sub">Depois da matrícula, a jornada continua, e a receita também.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>O método da GrowAI desenha a jornada como um laço, o Bowtie (<span class="junto">gravata-borboleta</span>, em inglês). À esquerda, a aquisição afunila até a matrícula; à direita, o resultado segue até a próxima formação. Os oito momentos ficam em quatro áreas. As receitas nascem do nó para a direita: nova na matrícula, retida enquanto o aluno segue, expandida na próxima formação e perdida no cancelamento.</p>
+</div>
+<figure class="laco-fig">
+<p class="grafico-mede">O laço da VOID · desenho do método, sem escala</p>
+<h3 class="grafico-titulo">A matrícula é o nó: a jornada segue depois dela</h3>
+<dl class="laco">
+<div><dt>Geração de demanda</dt><dd style="--l:100%"><b>M1</b>Lead</dd></div>
+<div><dt>Vendas · receita nova</dt><dd style="--l:88%"><b>M2</b>Qualificação</dd><dd style="--l:76%"><b>M3</b>Encontro</dd><dd style="--l:64%"><b>M4</b>Proposta</dd><dd class="no" style="--l:52%"><b>M5</b>Matrícula</dd></div>
+<div><dt>Retenção · receita retida</dt><dd style="--l:64%"><b>M6</b>Ativação</dd><dd style="--l:76%"><b>M7</b>Valor</dd></div>
+<div><dt>Expansão · receita expandida</dt><dd style="--l:88%"><b>M8</b>Expansão</dd></div>
+</dl>
+<figcaption class="fonte">A largura das faixas é só desenho, sem número. Método GrowAI aplicado à VOID · <span class="etiqueta etiqueta-proposta">proposta</span></figcaption>
+</figure>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>As quatro receitas na VOID</caption>
+<thead><tr><th scope="col">Receita</th><th scope="col">Hoje</th></tr></thead>
+<tbody>
+<tr><th scope="row">Nova<span class="sub">Primeira matrícula da pessoa (M5)</span></th><td>1.300 vendas e R$ 3.651.902 vendidos de nov/2025 a out/2026, somando nova e expandida. A boleta só separa as duas desde jun/2026.</td></tr>
+<tr><th scope="row">Retida<span class="sub">O aluno segue na formação e paga o que combinou (M6 e M7)</span></th><td>Sem dado: nenhuma fonte registra o que foi recebido. 560 vendas de nov/2025 a out/2026 saíram com saldo a pagar, R$ 1.379.385 no total, sem registro de baixa.</td></tr>
+<tr><th scope="row">Expandida<span class="sub">Nova formação de quem já é ou foi aluno (M8)</span></th><td>123 das 565 vendas de 01/06 a 07/11/2026 (21,8%) vieram de ex-aluno, pela origem do lead na boleta.</td></tr>
+<tr><th scope="row">Perdida<span class="sub">Venda cancelada, em qualquer ponto depois da matrícula</span></th><td>65 vendas canceladas de nov/2025 a out/2026, que somam R$ 179.952 do valor vendido.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Tabela de vendas do Airtable pela central de dados da VOID · períodos em cada linha · <span class="origem o-medido">medido</span> · R$ 179.952 é a diferença entre o valor vendido com e sem as canceladas · <span class="origem o-derivado">derivado</span></p>
+</details></div>
+</section>
+<!-- 04 -->
+<section aria-labelledby="t-portas" class="secao" id="duas-portas">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">04</span>
+<h2 id="t-portas">Duas portas, uma jornada</h2>
+<p class="secao-sub">Toda entrada cai no mesmo M1. A aula é porta, encontro e cadência.</p>
+</header>
+<div class="leitura">
+<p>As duas portas principais são o orçamento do Start (a pessoa preenche a página e chama no WhatsApp) e a inscrição na aula experimental. Todas as entradas começam no mesmo M1 e seguem a mesma régua; assim, a leitura de ponta a ponta não precisa juntar dois funis.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>As portas de entrada · “Na jornada única”: <span class="etiqueta etiqueta-proposta">proposta</span></caption>
+<thead><tr><th scope="col">Porta</th><th scope="col">Hoje</th><th scope="col">Na jornada única</th></tr></thead>
+<tbody>
+<tr><th scope="row">Orçamento do Start</th><td>Página, formulário e WhatsApp. O negócio nasce na Clint quando a pessoa escreve: 908 das 949 criações de 08/10 a 07/11/2026 vieram de conversa.</td><td>M1, porta “orçamento”, com a UTM do formulário.</td></tr>
+<tr><th scope="row">Aula experimental</th><td>Inscrição no Jotform. Agenda e confirmação numa planilha do comercial, fora da central de dados.</td><td>M1, porta “aula”. A aula é o encontro (M3).</td></tr>
+<tr><th scope="row">WhatsApp direto</th><td>Anúncio de mensagem, status ou contato salvo. A conversa vira negócio sem o anúncio de origem.</td><td>M1, porta “WhatsApp”, com o código da campanha na mensagem pronta.</td></tr>
+<tr><th scope="row">Direct do Instagram</th><td>Na Clint, o canal está desconectado; a última mensagem é de 31/10/2025.</td><td>M1, porta “Direct”, com dono e origem.</td></tr>
+<tr><th scope="row">Evento</th><td>Tattoo Week, aulão e live viram lista no funil ACÕES VOID. O check-in da Tattoo Week 2025 teve 225 envios.</td><td>Nutrição até a pessoa responder; depois, M1 com porta “evento”.</td></tr>
+<tr><th scope="row">Ex-aluno</th><td>Volta pelo Master ou pelo PRO sem marca de aluno: 386 dos 902 negócios do Master em 12 meses (42,8%).</td><td>M8, ligado ao mesmo aluno; pode começar direto em M4.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint e Jotform pela central de dados da VOID · criações de negócio de 08/10 a 07/11/2026 · Master: negócios criados de 08/11/2025 a 07/11/2026 de quem já tinha compra registrada na Clint (42,8% é piso) · Jotform: 01/11/2025 a 31/10/2026 · <span class="origem o-medido">medido</span></p>
+<h3>A aula: porta, encontro e cadência</h3>
+<div class="leitura">
+<p>O caminho que você desenhou para a aula continua. Em vez de um funil separado, cada parte vira uma peça da jornada única:</p>
+<ul>
+<li>Porta: a inscrição cria o lead em M1, com dono, origem e respostas.</li>
+<li>Encontro: a aula ou a visita é o M3, provado pela presença marcada no dia.</li>
+<li>Cadência: confirmação ao agendar, aquecimentos em <span class="junto">D-3</span> e <span class="junto">D-1</span> com “1 confirmo / 2 preciso remarcar” e remarcação com duas datas. São tarefas e mensagens, fora das colunas.</li>
+</ul>
+<p>O lead do Start que o comercial convida para a aula fica na mesma jornada, com a porta de origem dele e um encontro marcado.</p>
+</div>
+<div class="numeros">
+<div class="numero">
+<p class="numero-valor">134 de 186</p>
+<p class="numero-rotulo">inscrições na aula sem negócio na Clint (72,0%)</p>
+<p class="numero-base">111 delas receberam mensagem de uma pessoa pelo WhatsApp da Clint em até 7 dias; 79 escreveram depois da mensagem humana (85 escreveram em algum momento da janela)</p>
+<p class="numero-nota">22/10 a 07/11/2026 · Jotform e Clint, ligados pelo telefone · <span class="origem o-medido">medido</span></p>
+</div>
+<div class="numero">
+<p class="numero-valor">35,8%</p>
+<p class="numero-rotulo">das vendas fecharam depois de uma aula experimental</p>
+<p class="numero-base">base: 202 de 565 vendas</p>
+<p class="numero-nota">01/06 a 07/11/2026 · Airtable, origem da venda na boleta · <span class="origem o-medido">medido</span></p>
+</div>
+</div>
+<details class="mais">
+<summary>As nove etapas do seu funil, na jornada</summary>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Do funil “Aula Experimental” para os momentos · <span class="etiqueta etiqueta-validar">a validar</span></caption>
+<thead><tr><th scope="col">Etapa do seu funil</th><th scope="col">Momento</th><th scope="col">Como fica</th></tr></thead>
+<tbody>
+<tr><th scope="row">Inscrito</th><td>M1 (M2 quando o formulário der MQL)</td><td>Coluna M1. A classificação MQL vira campo, com data.</td></tr>
+<tr><th scope="row">Em contato</th><td>Passagem de M1 para M2</td><td>Só depois de conversa com uma pessoa. Mensagem automática não move.</td></tr>
+<tr><th scope="row">Agendado</th><td>M2, com encontro marcado</td><td>Data, formato e período da aula em campos.</td></tr>
+<tr><th scope="row">Confirmado</th><td>M2</td><td>Campo de confirmação. Confirmar não prova presença.</td></tr>
+<tr><th scope="row">Compareceu · proposta</th><td>M3 e M4</td><td>Duas provas: presença com data (M3) e proposta com data e valor (M4).</td></tr>
+<tr><th scope="row">Negociação</th><td>M4</td><td>Continua em M4.</td></tr>
+<tr><th scope="row">Remarcar</th><td>Nenhum</td><td>Presença marcada como falta, tarefa de remarcação e contador de remarcações.</td></tr>
+<tr><th scope="row">Nutrição pós-aula</th><td>Nenhum</td><td>Perdido com o motivo “adiou” e lista de nutrição do marketing.</td></tr>
+<tr><th scope="row">Matrícula</th><td>M5</td><td>Status ganho, com valor, turma e forma de pagamento.</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</section>
+<!-- 05 -->
+<section aria-labelledby="t-dicionario" class="secao" id="etiqueta-campo-etapa">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">05</span>
+<h2 id="t-dicionario">Etiqueta, campo e etapa</h2>
+<p class="secao-sub">Cada tipo de registro com uma função, mais a tarefa, que fica fora das colunas.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Quando um tipo de registro faz o papel de outro, o dado some: a etapa vira lembrete e a etiqueta vira o único sinal de origem. Em 12 meses, 38,8% das mudanças de etapa feitas por pessoas na Clint foram para etapas de follow-up e tentativa (5.367 de 13.829).</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Dicionário curto</caption>
+<thead><tr><th scope="col">Tipo</th><th scope="col">Para que serve</th><th scope="col">No seu teste</th><th scope="col">Regra</th></tr></thead>
+<tbody>
+<tr><th scope="row">Etapa</th><td>Mostrar em que momento o aluno está (M1 a M4). Ganho, perdido e abandonado são status.</td><td>Inscrito, Agendado</td><td>Muda só com prova. Nunca é lembrete.</td></tr>
+<tr><th scope="row">Campo</th><td>Guardar o dado que vira número ou filtro: origem, UTM, pontuação, datas, valor, turma, motivo.</td><td><code>lead_score</code>, <code>aula_data</code>, <code>proximo_passo</code></td><td>Lista antes de texto. Um lugar para cada dado.</td></tr>
+<tr><th scope="row">Etiqueta</th><td>Separar grupos para disparo e para fila de atendimento.</td><td><code>lead:teste</code>, <code>aula:sem-confirmacao</code></td><td>Prefixo por tipo: <code>funil:</code>, <code>lead:</code>, <code>aula:</code>, <code>cadencia:</code>, <code>campanha:</code>. Nunca no lugar de campo.</td></tr>
+<tr><th scope="row">Tarefa</th><td>Registrar o que alguém da VOID faz: ligação, tentativa, confirmação, retorno.</td><td>“Mandar a confirmação do agendamento”</td><td>Follow-up é tarefa com data, concluída quando feita.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint pela central de dados da VOID · mudanças de etapa feitas por pessoas de 08/11/2025 a 07/11/2026, sem as chegadas por troca de funil; as 668 idas para etapas de FUP quente contam como sinal de intenção e ficam fora da conta · <span class="origem o-medido">medido</span></p>
+<div class="leitura">
+<p>A sua etiqueta <code>cadencia_pausada</code> entra no padrão como <code>cadencia:pausada</code>.</p>
+</div>
+</details></div>
+</section>
+<!-- 06 -->
+<section aria-labelledby="t-utm" class="secao" id="origem-e-utm">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">06</span>
+<h2 id="t-utm">Origem e UTM</h2>
+<p class="secao-sub">Uma lista de canais e um padrão de UTM para todo link.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A origem diz de que canal a pessoa veio. A UTM, o conjunto de parâmetros no fim do link, diz qual campanha, conjunto e anúncio a trouxe. Na Clint, “origem” é o nome do funil. Nesta régua, origem é o canal, num campo de lista preenchido na criação do lead.</p>
+</div>
+<h3>A lista única de canais</h3>
+<div class="leitura">
+<p>Oito canais, os mesmos no CRM, na boleta e no painel <span class="etiqueta etiqueta-proposta">proposta</span></p>
+<ol>
+<li>Meta Ads</li>
+<li>Google Ads</li>
+<li>Google orgânico</li>
+<li>Instagram (Direct e bio)</li>
+<li>WhatsApp direto</li>
+<li>Indicação</li>
+<li>Evento, aulão e live</li>
+<li>Base e reativação</li>
+</ol>
+<p>Etiquetas de lista, ação e campanha, como Nutrição, Bilhete premiado e Visita Guiada, seguem como etiqueta: elas não dizem de onde a pessoa veio. Na boleta, a opção “Inscrição Aula Experimental” marca a porta; o canal dessa venda vem do formulário da inscrição.</p>
+</div>
+<details class="mais">
+<summary>Como cada canal aparece hoje</summary>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Etiquetas da Clint e opções da boleta, por canal</caption>
+<thead><tr><th scope="col">Canal</th><th scope="col">Etiquetas na Clint</th><th scope="col">Na boleta</th></tr></thead>
+<tbody>
+<tr><th scope="row">Meta Ads</th><td>Formulário Meta, Meta Novo, Formulário Meta LP Valor, Face Pagina nova e Master Meta Novo. “Facebook” parece ser o nome antigo <span class="etiqueta etiqueta-validar">a validar</span></td><td>Formulário Meta, Facebook (tráfego antigo) e Campanha Meta Master</td></tr>
+<tr><th scope="row">Google Ads</th><td>Formulário Google e Google Novo. “Google” parece ser o nome antigo <span class="etiqueta etiqueta-validar">a validar</span></td><td>Formulário Google</td></tr>
+<tr><th scope="row">Google orgânico</th><td>Google Orgânico Novo</td><td>Google orgânico</td></tr>
+<tr><th scope="row">Instagram (Direct e bio)</th><td>Instagram e Master link bio</td><td>Instagram orgânico</td></tr>
+<tr><th scope="row">WhatsApp direto</th><td>sem etiqueta</td><td>sem opção</td></tr>
+<tr><th scope="row">Indicação</th><td>sem etiqueta</td><td>Indicação</td></tr>
+<tr><th scope="row">Evento, aulão e live</th><td>Tattoo Week e Live Presente Misterioso</td><td>sem opção</td></tr>
+<tr><th scope="row">Base e reativação</th><td>sem etiqueta de canal</td><td><span class="junto">Ex-aluno</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Etiquetas: Clint pela central de dados da VOID, retrato de 07/11/2026 · boleta: tabela de vendas do Airtable, opções usadas de 01/06 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+</details>
+<h3>A convenção de UTM</h3>
+<div class="leitura">
+<p>Os anúncios da Meta já mandam na UTM o nome da campanha, do conjunto e do anúncio. Falta o id de cada um, o número que a Meta dá a eles: o nome muda e se repete, o id fica. Com origem e meio fixos, a origem deixa de depender do modelo do anúncio, que às vezes chega sem preencher.</p>
+</div>
+<aside class="aviso aviso-proposta">
+<p class="aviso-rotulo">Proposta</p>
+<p>Pronta para copiar, a validar com Lucas e Maluf. Depois do sim, entra primeiro nos anúncios novos.</p>
+</aside>
+<div class="utm">
+<div class="utm-cab"><p class="utm-nome">Meta Ads · parâmetros de URL do anúncio</p></div>
+<pre><span>utm_source=meta</span><wbr/><span>&amp;utm_medium=paid_social</span><wbr/><span>&amp;utm_campaign={{campaign.name}}</span><wbr/><span>&amp;utm_term={{adset.name}}</span><wbr/><span>&amp;utm_content={{ad.name}}</span><wbr/><span>&amp;utm_id={{campaign.id}}</span><wbr/><span>&amp;adset_id={{adset.id}}</span><wbr/><span>&amp;ad_id={{ad.id}}</span></pre>
+</div>
+<div class="utm">
+<div class="utm-cab"><p class="utm-nome">Google Ads · sufixo do URL final da campanha</p></div>
+<pre><span>utm_source=google</span><wbr/><span>&amp;utm_medium=cpc</span><wbr/><span>&amp;utm_campaign=NOME_DA_CAMPANHA</span><wbr/><span>&amp;utm_term={keyword}</span><wbr/><span>&amp;utm_content={creative}</span><wbr/><span>&amp;utm_id={campaignid}</span><wbr/><span>&amp;adset_id={adgroupid}</span><wbr/><span>&amp;ad_id={creative}</span></pre>
+</div>
+<div class="leitura">
+<p>No Google, troque <code>NOME_DA_CAMPANHA</code> pelo nome exato da campanha na plataforma; hoje a UTM do Google usa um nome diferente. Nos links sem anúncio, o padrão é este:</p>
+<ul class="links">
+<li>Bio do Instagram para o Start<code><span>?utm_source=instagram</span><wbr/><span>&amp;utm_medium=organico</span><wbr/><span>&amp;utm_campaign=START_BIO</span></code></li>
+<li>Bio do Instagram para a aula<code><span>?utm_source=instagram</span><wbr/><span>&amp;utm_medium=organico</span><wbr/><span>&amp;utm_campaign=AULAO_BIO</span></code></li>
+<li>E-mail<code><span>?utm_source=email</span><wbr/><span>&amp;utm_medium=email</span><wbr/><span>&amp;utm_campaign=NOME_DO_EMAIL</span></code></li>
+<li>Disparo pelo WhatsApp<code><span>?utm_source=whatsapp</span><wbr/><span>&amp;utm_medium=whatsapp_api</span><wbr/><span>&amp;utm_campaign=NOME_DO_DISPARO</span></code></li>
+</ul>
+<p>Regras que valem para todos:</p>
+<ul>
+<li><code>utm_source</code> e <code>utm_medium</code> com valor fixo, em minúsculas, sem acento e sem espaço.</li>
+<li><code>utm_campaign</code> começa pelo produto (START_, AULAO_, MASTER_, PRO_), como as campanhas da Meta já fazem.</li>
+<li>Todo formulário de aula e do Start guarda os oito campos ocultos (<code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>utm_content</code>, <code>utm_term</code>, <code>utm_id</code>, <code>adset_id</code> e <code>ad_id</code>), e eles seguem com o lead até o negócio.</li>
+<li>Antes de subir verba numa campanha nova, um envio de teste confere se algum valor chegou com as chaves do modelo.</li>
+</ul>
+<p>Hoje a UTM chega à planilha de leads do Start (891 dos 992 leads de out/2026) e à inscrição da aula (63,2% dos envios de out/2026 e 73,8% de 01 a 07/11), mas não ao negócio na Clint, que recebe só a etiqueta de canal. A boleta tem origem nas 565 vendas desde 01/06/2026, 19 delas como “sem origem definida”.</p>
+</div>
+<p class="fonte">Airtable (planilha de leads e vendas) e Jotform pela central de dados da VOID · inscrições na aula sem os envios de teste: 264 de 418 em out/2026 e 59 de 80 de 01 a 07/11 · <span class="origem o-medido">medido</span></p>
+</details></div>
+</section>
+<!-- 07 -->
+<section aria-labelledby="t-mql" class="secao" id="mql-e-sql">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">07</span>
+<h2 id="t-mql">MQL e SQL</h2>
+<p class="secao-sub">Uma régua só, para o marketing, o comercial e o sinal que volta para a Meta.</p>
+</header>
+<div class="grade-2">
+<div class="cartao">
+<p class="cartao-nome">MQL · lead qualificado pelo marketing</p>
+<p>A pessoa tem o perfil da formação, disse o que quer e pediu ou aceitou um encontro. É a entrada em M2 Qualificação.</p>
+</div>
+<div class="cartao">
+<p class="cartao-nome">SQL · lead qualificado para vendas</p>
+<p>A pessoa passou pelo encontro (aula, visita ou conversa de diagnóstico) e quer condições. É a entrada em M3 Encontro, marcada pelo comercial.</p>
+</div>
+</div>
+<h3>A régua conciliada</h3>
+<div class="leitura">
+<p>A sua definição (o marketing qualifica pelo formulário) e a do método (conversa com encontro aceito) medem a mesma coisa quando a porta entra na conta:</p>
+<ol>
+<li>Formulário com data escolhida para a aula ou a visita: MQL direto. O comercial confirma e prepara o encontro.</li>
+<li>Orçamento: quando o formulário tiver a nota proposta, ela ordena a fila. WhatsApp direto não tem formulário; nos dois casos, e o M2 se completa na conversa, quando a pessoa confirma o objetivo e aceita um próximo passo.</li>
+<li>A data do M2 é o dia em que os três critérios ficaram provados.</li>
+<li>SQL: o comercial marca quando o encontro aconteceu e a pessoa quer condições, com os campos da conversa preenchidos: o que ela quer, o que impede, o que acontece se adiar e quem decide.</li>
+</ol>
+</div>
+<aside class="aviso aviso-atencao">
+<p class="aviso-rotulo">Atenção</p>
+<p>Hoje nenhum formulário de aula pede a data. Em set/2026, 102 inscritos escolheram uma data no formulário; desde out/2026, nenhum (Jotform). Para a primeira porta existir, a escolha de data volta, no formulário ou numa agenda.</p>
+</aside>
+<h3>A sua nota de perfil</h3>
+<div class="tabela">
+<table>
+<caption>As duas perguntas com peso, nota de 0 a 75</caption>
+<thead><tr><th scope="col">Pergunta</th><th scope="col">Opções e pontos</th></tr></thead>
+<tbody>
+<tr><th scope="row">Considera fazer a formação completa e paga do Start?</th><td>Começar nos próximos 3 meses: 40<br/>Preciso conhecer a escola, valores e horários: 40<br/>Depois dos próximos 3 meses: 20<br/>Ainda descobrindo: 15<br/>Não considero: 0</td></tr>
+<tr><th scope="row">Consegue frequentar as aulas presenciais na Vila Madalena?</th><td>Durante a semana: 35<br/>Fim de semana: 35<br/>Os dois: 35<br/>Preciso conferir dias e horários: 15<br/>Não consigo: 0</td></tr>
+</tbody>
+</table>
+</div>
+<div class="leitura">
+<p>Nos 29 envios de 22/10 a 07/11/2026 houve 12 MQL, 14 não MQL e 3 sem classificação. Todo MQL tinha 75 pontos, e três envios com 75 saíram não MQL: dois por “quero apenas viver a experiência” e um por “menor de 18 anos”. A leitura provável desses 29 envios, a confirmar com Lucas: 75 pontos, sem “só a experiência” e com 18 anos ou mais. <span class="etiqueta etiqueta-reconstrucao">reconstrução</span></p>
+<p>Proposta: quem soma 55 porque marcou “preciso conferir dias e horários” vai para uma fila de revisão, e o comercial confere a agenda antes de decidir. Era a fila de “revisão humana” do seu primeiro mapa dos funis, que hoje some no corte de 75. <span class="etiqueta etiqueta-validar">a validar</span></p>
+<p>A renda é perguntada e não pesa na nota, como pede a regra do seu mapa dos funis: “Renda isolada, idade e profissão não substituem a avaliação de objetivo e viabilidade”.</p>
+</div>
+<p class="fonte">Jotform pela central de dados da VOID · formulário “Aula Experimental Start, Qualificação MQL”, envios de 22/10 a 07/11/2026, sem o formulário de teste · <span class="origem o-medido">medido</span></p>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar</p>
+<p>Idade mínima: a Clint usa o motivo de perda “Menor que 16 anos” (105 perdas na família do Start em 12 meses) e nos envios observados do formulário, menor de 18 saiu como não MQL. Nesta versão a idade fica como dado, pela faixa etária do formulário, até Lucas e Maluf decidirem entre 16 e 18.</p>
+</aside>
+<h3>O sinal de volta à Meta</h3>
+<div class="leitura">
+<p>Desde 22/10 a Meta recebe os eventos de MQL. De 22/10 a 04/11/2026, as campanhas do Start somaram 9 MQL em 288 leads, e as da aula, 6 MQL e 14 não MQL em 91 cadastros. Com a régua única, o MQL que a Meta aprende é o mesmo que o comercial vê, e o SQL e a matrícula podem seguir pelo mesmo caminho depois.</p>
+</div>
+<p class="fonte">Meta pela central de dados da VOID · conversões “CP | MQL Start”, “CP | MQL Aulão” e “CP | Não MQL Aulão”, 22/10 a 04/11/2026 · <span class="origem o-medido">medido</span></p>
+<p class="leitura">Hoje só o formulário da aula tem pontuação configurada. Pontuar o orçamento do Start ainda é proposta; a régua depende do aceite de Lucas e Maluf.</p></div>
+</section>
+<!-- 08 -->
+<section aria-labelledby="t-pontuacao" class="secao" id="pontuacao">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">08</span>
+<h2 id="t-pontuacao">Pontuação por comportamento</h2>
+<p class="secao-sub">Regras propostas para achar quem está se mexendo agora. Nenhuma automação nesta fase.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A nota do formulário diz se a pessoa tem o perfil. A pontuação por comportamento diz se ela está se aproximando. Você pediu as duas (“preciso ter um score dele”). A proposta parte do exemplo das nossas conversas (e-mail aberto vale 1 ponto, clicado vale 5, listas acima de 50 pontos) e usa ações que deixam registro com data.</p>
+</div>
+<div class="tabela leitura">
+<table>
+<caption>Pesos de partida · <span class="etiqueta etiqueta-validar">a validar</span></caption>
+<thead><tr><th scope="col">Ação da pessoa</th><th class="num" scope="col">Pontos</th></tr></thead>
+<tbody>
+<tr><th scope="row">Abriu um e-mail</th><td class="num">+1</td></tr>
+<tr><th scope="row">Clicou num e-mail</th><td class="num">+5</td></tr>
+<tr><th scope="row">Preencheu o formulário do Start</th><td class="num">+10</td></tr>
+<tr><th scope="row">Inscreveu-se na aula experimental</th><td class="num">+10</td></tr>
+<tr><th scope="row">Escolheu data para a aula ou a visita</th><td class="num">+15</td></tr>
+<tr><th scope="row">Respondeu a uma pessoa no WhatsApp</th><td class="num">+15</td></tr>
+<tr><th scope="row">Confirmou presença (“1 confirmo”)</th><td class="num">+10</td></tr>
+<tr><th scope="row">Fez check-in num evento, aulão ou live</th><td class="num">+10</td></tr>
+<tr><th scope="row">Ficou 14 dias sem nenhuma dessas ações</th><td class="num">−10</td></tr>
+<tr><th scope="row">Pediu para sair das listas</th><td class="num">zera</td></tr>
+</tbody>
+</table>
+</div>
+<div class="leitura">
+<ul>
+<li>Mensagem automática, disparo e lista importada não dão ponto. Só a ação da pessoa conta.</li>
+<li>A nota de perfil (0 a 75) e a de comportamento ficam separadas, e a fila do comercial olha as duas.</li>
+<li>Acima de 50 pontos de comportamento, a pessoa entra numa lista de prioridade para o convite ao encontro.</li>
+<li>Quem já é aluno sai das listas de oferta do Start.</li>
+</ul>
+</div>
+<aside class="aviso aviso-proposta">
+<p class="aviso-rotulo">Proposta</p>
+<p>Antes de ligar qualquer automação, a régua roda no papel sobre os dados de outubro: quantas pessoas passariam de 50 pontos e quantas delas compraram. Se o grupo acima do corte não comprar mais do que o de baixo, os pesos mudam. Formulários, conversas e ganhos já estão na central de dados. As aberturas de e-mail por pessoa ainda precisam ser conferidas, e a escolha de data e a confirmação dependem da agenda, que hoje é planilha.</p>
+</aside>
+<p class="leitura">Aberturas automáticas, inclusive as do Apple Mail, não devem dar ponto. Essa regra depende de separar abertura automática de ação da pessoa; até conferir isso, o sinal de abertura fica fora da prioridade.</p></details></div>
+</section>
+<!-- 09 -->
+<section aria-labelledby="t-consciencia" class="secao" id="consciencia">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">09</span>
+<h2 id="t-consciencia">Duas leituras: etapa e consciência</h2>
+<p class="secao-sub">A etapa diz onde a pessoa está com a VOID. A camada, de C1 a C3, diz quanto ela já entende.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>A leitura por etapa (M1 a M8) mostra onde cada pessoa está na jornada com a escola. A leitura por nível de consciência mostra o quanto ela já entende da profissão e da formação. As duas andam separadas: alguém pode chegar em M1 já convencido, vindo de um anúncio de prova, ou estar em M2 ainda explorando a ideia. O seu manual de conteúdo já tem as três camadas.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>As camadas do seu manual · ligação com o CRM: <span class="etiqueta etiqueta-proposta">proposta</span></caption>
+<thead><tr><th scope="col">Camada</th><th scope="col">O que a pessoa passa a pensar</th><th scope="col">No CRM (lista do seu mapa)</th></tr></thead>
+<tbody>
+<tr><th scope="row">C1 Reconhecimento</th><td>De “gosto de tatuagem, mas esse mundo parece distante de mim” para “talvez eu possa me aproximar desse caminho”.</td><td>Explora profissão</td></tr>
+<tr><th scope="row">C2 Compreensão</th><td>De “tatuar parece uma habilidade que se aprende vendo dicas” para “existe conhecimento, sequência e acompanhamento por trás disso”.</td><td>Considera formação</td></tr>
+<tr><th scope="row">C3 Convicção</th><td>De “entendo a proposta, mas não sei se funcionaria para mim” para “consigo me enxergar atravessando um processo como esse”.</td><td>Avalia a VOID e Avalia matrícula</td></tr>
+</tbody>
+</table>
+</div>
+<div class="leitura">
+<p>Na mídia, a camada já aparece no nome das campanhas de vídeo do Start (<code>START_ENGAJAMENTO_VIDEOVIEW_ETAPA_C2</code> e <code>_C3</code>). De 24/08 a 22/10/2026, as duas gastaram R$ 13.449,97 em 37 anúncios.</p>
+</div>
+<p class="fonte">Meta pela central de dados da VOID · gasto por anúncio de 24/08 a 22/10/2026 · <span class="origem o-medido">medido</span></p>
+<h3>Como ler as duas juntas</h3>
+<div class="leitura">
+<p>Quando uma passagem trava, a camada diz de quem é o conserto. Se quem para entre M2 e M3 ainda está em C1, a conversa de venda chegou cedo e o caminho é conteúdo. Se está em C3, o ponto é o convite para o encontro ou a própria conversa. Foi o que você descreveu: às vezes o gargalo está no pitch, às vezes no agendamento, às vezes no nível de consciência do lead.</p>
+</div>
+<h3>Como registrar a camada</h3>
+<div class="leitura">
+<ul>
+<li>Na campanha: a camada já está no nome (<code>_C2</code>, <code>_C3</code>). Com a UTM no lead, a camada de cada anúncio chega junto.</li>
+<li>Na conversa: o comercial marca o campo Consciência com a lista do seu mapa. A regra também é sua: “não confundir seguir ou clicar com estar pronto para comprar”.</li>
+</ul>
+</div>
+</details></div>
+</section>
+<!-- 10 -->
+<section aria-labelledby="t-medir" class="secao" id="o-que-medir">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">10</span>
+<h2 id="t-medir">O que medir em cada passagem</h2>
+<p class="secao-sub">Volume, conversão e tempo, mais a higiene do registro.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Cada passagem se mede por quantas pessoas chegam, quantas seguem e quanto tempo levam. A higiene diz se existe o registro que prova a passagem; sem ele, os outros números não fecham. A linha de base é a de hoje. O semáforo é a nossa leitura, e os cortes de vermelho, laranja e verde ficam para validar com Lucas e Maluf.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Passagens, linha de base e semáforo</caption>
+<thead><tr><th scope="col">Passagem e o que medir</th><th scope="col">Linha de base</th></tr></thead>
+<tbody>
+<tr data-sinal="laranja"><th scope="row">Entrada (M1) <span class="sinal sinal-laranja">Atenção</span><span class="sub">Leads por porta e canal; quantos têm origem e dono desde a criação.</span></th><td>59,5% dos contatos novos de out/2026 com etiqueta de canal (730 de 1.227). 25,1% dos negócios criados de 08/10 a 07/11/2026 com responsável no retrato de 08/11 (237 de 945).</td></tr>
+<tr data-sinal="verde"><th scope="row">M1 para M2 <span class="sinal sinal-verde">No caminho</span><span class="sub">Tempo até a primeira mensagem de uma pessoa; conversa real.</span></th><td>Mediana de 4,9 minutos no horário útil. 62,1% dos leads chegam fora dele e esperam 11,0 horas, mas a demora fora do horário não mostrou padrão claro na compra. 77,3% conversam com uma pessoa.</td></tr>
+<tr data-sinal="vermelho"><th scope="row">M2 para M3 <span class="sinal sinal-vermelho">Gargalo</span><span class="sub">Conversas que viram encontro; tentativas antes de “Sem retorno”; tempo até o encontro.</span></th><td>4,4% passaram por encontro (431 de 9.698). 2.917 conversaram e saíram sem valores e sem encontro. “Sem retorno” é 47,1% das perdas (4.406 de 9.361), marcado com mediana de 2 dias de tentativa.</td></tr>
+<tr data-sinal="laranja"><th scope="row">Encontro (M3) <span class="sinal sinal-laranja">Atenção</span><span class="sub">Agendados, confirmados, realizados e faltas, com presença registrada.</span></th><td>Em out/2026, 29 presenças registradas na Clint (24 em “Visita Presente” e 5 em “Presente no aulão”) contra 52 vendas que vieram da aula.</td></tr>
+<tr data-sinal="laranja"><th scope="row">Para M4 <span class="sinal sinal-laranja">Atenção</span><span class="sub">Proposta concreta, separada da tabela de preço; tempo até a decisão.</span></th><td>66,3% das saídas de “Leads” no Funil Start vão direto para “Proposta”, em mediana 1,7 hora. Só com a tabela, 10,9% compram (465 de 4.268).</td></tr>
+<tr data-sinal="laranja"><th scope="row">M4 para M5 <span class="sinal sinal-laranja">Atenção</span><span class="sub">Propostas que viram matrícula; ganhos com valor, turma e boleta.</span></th><td>Mediana de 1,8 dia do lead ao ganho no Start. Nenhum dos 92 ganhos de out/2026 com valor na Clint. 98,2% dos ganhos de nov/2025 a out/2026 com venda no Airtable em até 45 dias (1.121 de 1.141).</td></tr>
+<tr><th scope="row">Depois da matrícula (M6 e M7) <span class="sinal sinal-cinza">Parcial</span><span class="sub">Presença na Aula 1, frequência, artes, formatura e avaliação.</span></th><td>Sem registro da Aula 1; 29 vendas de out/2026 com turma “a definir”. Parcial no resto: 464 feedbacks do Start, 154 avaliações de aula e 92 e 72 confirmações nas formaturas de 28/07 e 27/10.</td></tr>
+<tr data-sinal="laranja"><th scope="row">M7 para M8 <span class="sinal sinal-laranja">Atenção</span><span class="sub">Formados que compram a próxima formação; tempo até a nova matrícula.</span></th><td>10,4% dos alunos do Start compraram o Master depois (259 de 2.494). A régua de pós-curso ainda não tem dono.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Clint, Jotform e Airtable pela central de dados da VOID · família do Start, negócios criados de 08/11/2025 a 07/11/2026, salvo outro período na linha; perdas e mudanças de etapa contadas pela data em que aconteceram, no mesmo período · tempo até a primeira mensagem nos negócios criados pela mensagem do lead, com horário útil de segunda a sexta, das 9h às 17h59 · Jotform de 01/11/2025 a 31/10/2026 · Start e Master de jan/2024 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+</details></div>
+</section>
+<!-- 11 -->
+<section aria-labelledby="t-perde" class="secao" id="onde-o-dado-se-perde">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">11</span>
+<h2 id="t-perde">Onde o dado se perde</h2>
+<p class="secao-sub">Sete pontos em que a informação some no caminho, e o conserto de cada um.</p>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Processo antes de automação: cada conserto começa por uma regra combinada com o time e só depois vira configuração.</p>
+</div>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Pontos de perda e conserto · conserto: <span class="etiqueta etiqueta-proposta">proposta</span></caption>
+<thead><tr><th scope="col">Onde se perde</th><th scope="col">Hoje</th><th scope="col">Conserto</th></tr></thead>
+<tbody>
+<tr><th scope="row">Link sem UTM</th><td>18 dos 29 envios da aula pelo link da bio chegaram sem <code>utm_source</code> (19/10 a 07/11/2026).</td><td>UTM em todo link e campos ocultos em todo formulário (seção 06).</td></tr>
+<tr><th scope="row">Modelo do anúncio sem preencher</th><td>Em 10 das 232 inscrições de 19/10 a 07/11/2026, a origem chegou como <code>{{site_source_name}}<wbr/>_{{placement}}</code>.</td><td>Origem e meio fixos, id da campanha e um envio de teste antes de subir verba.</td></tr>
+<tr><th scope="row">Formulário fora do CRM</th><td>72,0% das inscrições de 22/10 a 07/11/2026 sem negócio (134 de 186), embora 111 tenham recebido mensagem de uma pessoa.</td><td>A inscrição cria o lead em M1 na hora, com dono e origem, como o seu funil de teste já faz.</td></tr>
+<tr><th scope="row">Presença em planilha</th><td>Em out/2026, 29 presenças na Clint contra 52 vendas que vieram da aula.</td><td>Presença marcada no dia, no CRM, por quem recebeu.</td></tr>
+<tr><th scope="row">Conversa sem origem</th><td>908 das 949 criações de negócio de 08/10 a 07/11/2026 vieram de conversa, nenhuma com o anúncio.</td><td>Código da campanha na mensagem pronta do anúncio, lido do mesmo jeito que a etiqueta de canal.</td></tr>
+<tr><th scope="row">Origem só como etiqueta</th><td>488 dos 1.227 contatos novos de out/2026 entraram sem nenhuma etiqueta.</td><td>Origem como campo de lista, obrigatório na criação.</td></tr>
+<tr><th scope="row">Negócio criado na hora da venda</th><td>49,6% dos ganhos do Start em 12 meses vieram de negócio criado à mão (386 de 779), em mediana 0,69 dia antes do ganho; 40,3% ficaram sem canal (314).</td><td>Todo lead nasce pela porta, com origem. Negócio à mão só com a origem preenchida.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="fonte">Jotform e Clint pela central de dados da VOID · períodos em cada linha; 12 meses do Start = negócios criados de 08/11/2025 a 07/11/2026 · <span class="origem o-medido">medido</span></p>
+</details></div>
+</section>
+<!-- 12 -->
+<section aria-labelledby="t-decisoes" class="secao" id="decisoes">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">12</span>
+<h2 id="t-decisoes">Decisões que faltam</h2>
+<p class="secao-sub">O padrão que esta versão adotou, para Lucas e Maluf confirmarem ou trocarem.</p>
+</header>
+<aside class="aviso aviso-validar">
+<p class="aviso-rotulo">A validar</p>
+<p>Tudo na coluna “Padrão desta versão” está a validar com Lucas e Maluf. Até lá, é a régua usada nesta página.</p>
+</aside>
+<div class="tabela tabela-cartoes">
+<table>
+<caption>Decisões em aberto</caption>
+<thead><tr><th scope="col">Decisão e o que está em aberto</th><th scope="col">Padrão desta versão</th></tr></thead>
+<tbody>
+<tr><th scope="row">Ordem dos momentos<span class="sub">O painel de receita e o Plano M1 trocam M3 e M4.</span></th><td>M3 Encontro, M4 Proposta.</td></tr>
+<tr><th scope="row">Régua de MQL<span class="sub">Formulário ou conversa com encontro aceito; nota de corte.</span></th><td>As duas portas da seção 07. 75 pontos é MQL; 55 com “preciso conferir dias e horários” vai para revisão.</td></tr>
+<tr><th scope="row">Perfil<span class="sub">Idade mínima (16 ou 18), regiões aceitas e se a renda entra na nota.</span></th><td>Idade e região ficam como dado, sem regra nova.</td></tr>
+<tr><th scope="row">Proposta<span class="sub">Se a tabela de preço conta como proposta; se uma data com consequência para a pessoa é obrigatória em M4.</span></th><td>A tabela é atividade de M2. Proposta tem turma, valor, condição e próximo passo com data.</td></tr>
+<tr><th scope="row">Primeiro contato<span class="sub">Prazo (3 minutos, 15 minutos ou 1 hora útil), número de tentativas e canal.</span></th><td>Os três prazos medidos lado a lado, no horário útil de segunda a sexta, das 9h às 17h59, sem descontar feriados nos números desta versão. “Sem retorno” só depois das tentativas registradas.</td></tr>
+<tr><th scope="row">Aula experimental<span class="sub">Funil separado ou parte da jornada.</span></th><td>Porta, encontro e cadência na jornada única.</td></tr>
+<tr><th scope="row">Abandonado<span class="sub">Quando um negócio aberto deixa de contar.</span></th><td>45 dias sem mensagem da pessoa e sem mudança de etapa, só nos funis comerciais.</td></tr>
+<tr><th scope="row">Origem do negócio<span class="sub">Como ligar o formulário ao negócio que nasce na conversa.</span></th><td>Formulário com UTM do mesmo telefone, de 30 dias antes a 1 dia depois da criação do negócio.</td></tr>
+<tr><th scope="row">Donos<span class="sub">De cada momento, do lead na criação, de quem recebe na escola e de M6 a M8.</span></th><td>Dono definido na criação do lead; M6 a M8 sem padrão até a decisão.</td></tr>
+<tr><th scope="row">Matrícula<span class="sub">O que marca a matrícula (boleta, pagamento ou sinal) e quem leva o crédito.</span></th><td>Boleta no Airtable e ganho com valor, turma e um só vendedor.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 13 -->
+<section aria-labelledby="t-dados" class="secao" id="sobre-os-dados">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">13</span>
+<h2 id="t-dados">Sobre os dados</h2>
+</header><details class="secao-detalhes"><summary>Abrir explicação, números e fontes</summary>
+<div class="leitura">
+<p>Os números saem da central de dados da VOID, que junta Clint, Jotform, Airtable, Meta, Google Meu Negócio e outras fontes e é atualizada uma vez por dia, por volta da <span class="junto">meia-noite</span>. A leitura foi feita em 08/11/2026, com a Clint até 07/11/2026 às 22h35, em horário de Brasília. Nenhum nome, telefone ou e-mail sai da central: as fontes se ligam pelo telefone convertido em código, e aqui só aparecem contagens.</p>
+<h3>Definições</h3>
+<ul>
+<li>Família do Start: o Funil Start e as três cadeiras de vendedor da Clint.</li>
+<li>12 meses: na Clint, negócios criados (ou perdas e mudanças de etapa ocorridas) de 08/11/2025 a 07/11/2026; no Airtable, vendas de nov/2025 a out/2026; no Jotform, envios de 01/11/2025 a 31/10/2026.</li>
+<li>Conversa real: a pessoa escreveu depois de uma mensagem enviada por alguém da VOID. Mensagem automática e disparo não contam.</li>
+<li>Envios e negócios de teste ficam fora das contagens.</li>
+<li>Números de retrato, como o responsável de hoje, podem mudar um pouco depois da carga diária.</li>
+</ul>
+<h3>O que esta página não mede</h3>
+<ul>
+<li>A presença na aula, que está numa planilha do comercial, fora da central de dados.</li>
+<li>O dinheiro recebido: nenhuma fonte registra a baixa das parcelas, e os valores aqui são de venda.</li>
+<li>Números da GrowAI, que ainda não está ligada à central de dados.</li>
+<li>O texto do seu Mapa original: esta versão parte do funil de teste na Clint e do que você compartilhou.</li>
+</ul>
+</div>
+<details class="mais leitura">
+<summary>Tabelas da central de dados</summary>
+<ul>
+<li>Clint: <code>thevoid_clint_deals</code>, <code>thevoid_clint_deal_history</code>, <code>thevoid_clint_messages</code>, <code>thevoid_clint_chats</code>, <code>thevoid_clint_contacts</code>, <code>thevoid_clint_origins</code> e <code>thevoid_clint_channel_accounts</code>.</li>
+<li>Jotform: <code>thevoid_jotform_forms</code>, <code>thevoid_jotform_form_questions</code> e <code>thevoid_jotform_submissions</code>.</li>
+<li>Airtable: vendas em <code>thevoid_airtable_planilha_de_controle_de_vendas_para_atendimento_the_void_online_presencial_c_2023_vendas_efetuadas_cadastro_inicial</code> e planilha de leads em <code>thevoid_airtable_leads_comercial_the_void_leads_formulario</code>.</li>
+<li>Meta: <code>thevoid_facebook_ads_campaign_insights</code>, <code>thevoid_facebook_ads_adsinsights_by_device_platform</code> e <code>thevoid_facebook_ads_customconversions</code>.</li>
+<li>Google Meu Negócio: <code>thevoid_google_my_business_reviews</code>.</li>
+</ul>
+</details>
+<p class="fonte">Central de dados da VOID · leitura de 08/11/2026 · dados até 07/11/2026</p>
+</details></div>
+</section>
+<!-- 14 -->
+<section aria-labelledby="t-proximo" class="secao" id="proximo-passo">
+<div class="wrap">
+<header class="secao-titulo">
+<span aria-hidden="true" class="secao-num">14</span>
+<h2 id="t-proximo">Próximo passo</h2>
+<p class="secao-sub">Validado o mapa, a configuração é desenhada uma vez só e serve à Clint de hoje e ao que for montado na GrowAI.</p>
+</header>
+<ul class="checklist">
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Ler esta versão e marcar o que ficou diferente do seu Mapa original.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Validar com o Maluf os oito momentos, na ordem desta página, e as portas de entrada.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Fechar com o Maluf a régua de MQL e SQL, a fila de revisão e a idade mínima (16 ou 18 anos).</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Escolher o gargalo da vez. A nossa proposta é a conversa que não vira encontro, de M2 para M3.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Aplicar a convenção de UTM nos anúncios novos e pôr os oito campos ocultos nos formulários de aula e do Start.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Tornar a origem um campo obrigatório na criação do lead, com a lista única de canais.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Marcar a presença da aula e da visita no dia, no CRM, por quem recebeu.</span></li>
+<li class="tarefa"><span aria-hidden="true" class="caixa"></span><span class="tarefa-texto">Rodar a pontuação por comportamento no papel, com os dados de outubro, antes de ligar qualquer automação.</span></li>
+</ul>
+</div>
+</section>
+</main>
+<footer class="rodape">
+<div class="wrap">
+<div class="rodape-topo">
+<p class="rodape-dados">Dados até <time datetime="2026-11-07">07/11/2026</time></p>
+<ul class="rodape-links">
+<li><a href="../../">Painel de receita</a></li>
+<li><a href="../../m1/">Plano M1</a></li>
+</ul>
+</div>
+<div class="rodape-assinatura">
+<p class="rodape-void"><span class="junto">The VOID Tattoo Academy</span> · <span class="junto">Vila Madalena, São Paulo</span></p>
+<p class="rodape-growai">Preparado por <img alt="GrowAI" height="31" src="../assets/growai-logo-branco.svg" width="81"/></p>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/sistema.js"></script>
+<script>
+/* Botão "Copiar" nos blocos de UTM. Sem JavaScript, o texto continua selecionável. */
+(function () {
+  var blocos = document.querySelectorAll('.utm');
+  Array.prototype.forEach.call(blocos, function (bloco) {
+    var pre = bloco.querySelector('pre'), cab = bloco.querySelector('.utm-cab'), nome = bloco.querySelector('.utm-nome');
+    if (!pre || !cab) return;
+    var botao = document.createElement('button');
+    var aviso = document.createElement('span');
+    botao.type = 'button';
+    botao.className = 'copiar';
+    botao.textContent = 'Copiar';
+    botao.setAttribute('aria-label', 'Copiar ' + (nome ? nome.textContent : 'parâmetros'));
+    aviso.className = 'sr-only';
+    aviso.setAttribute('aria-live', 'polite');
+    function mostrar(texto) {
+      botao.textContent = texto;
+      aviso.textContent = texto;
+      window.setTimeout(function () { botao.textContent = 'Copiar'; aviso.textContent = ''; }, 2000);
+    }
+    function selecionar() {
+      var faixa = document.createRange();
+      faixa.selectNodeContents(pre);
+      var selecao = window.getSelection();
+      selecao.removeAllRanges();
+      selecao.addRange(faixa);
+      mostrar('Selecionado');
+    }
+    botao.addEventListener('click', function () {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(pre.textContent).then(function () { mostrar('Copiado'); }, selecionar);
+      } else {
+        selecionar();
+      }
+    });
+    cab.appendChild(botao);
+    cab.appendChild(aviso);
+  });
+})();
+</script>
+</body>
+</html>
