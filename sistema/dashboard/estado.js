@@ -1,1 +1,1 @@
-window.VOID_ATUALIZACAO={"estado": "concluido", "verificado_em": "2026-11-09T11:10:11.060638-03:00", "dados_ate": "2026-11-08", "nota": "Fontes conferidas; nenhuma carga nova desde o último processamento."};
+window.VOID_ATUALIZACAO={"estado": "concluido", "verificado_em": "2026-11-09T17:10:12.272906-03:00", "dados_ate": "2026-11-08", "nota": "Fontes conferidas; nenhuma carga nova desde o último processamento."};
