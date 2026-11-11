@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="description" content="Sensores de decisão da The VOID. Resultados registrados, qualidade da medição e próximos passos, com dados ouro da Nekt.">
+  <title>The VOID · Painel de decisão</title>
+  <link rel="preload" href="assets/nunito-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#principal">Ir para o conteúdo</a>
+  <header class="topbar">
+    <a class="wordmark" href="#visao" aria-label="The VOID, início"><span class="brand-symbol" aria-hidden="true">V<span>↗</span></span><span>THE VOID<small>PAINEL DE DECISÃO</small></span></a>
+    <nav class="main-nav" aria-label="Navegação do painel">
+      <a class="active" href="#visao">Visão geral</a><a href="#acoes">Próximas ações</a><a href="#sensores">Sensores</a><a href="#confiabilidade">Confiabilidade</a>
+    </nav>
+    <span class="layer-label"><i aria-hidden="true"></i> Dados ouro</span>
+  </header>
+
+  <main id="principal">
+    <div id="connection-alert" class="connection-alert" role="status" hidden></div>
+    <section id="visao" class="hero" aria-labelledby="page-title">
+      <div class="hero-copy"><p class="eyebrow">A OPERAÇÃO, COM MAIS CLAREZA</p><h1 id="page-title">Dados que orientam.<br><em>Decisões que movem.</em></h1><p class="hero-description">O que está acontecendo, o que ainda falta medir<br class="desktop-only"> e qual é o próximo passo da The VOID.</p></div>
+      <aside id="hero-priority" class="hero-priority" aria-label="Próxima decisão"><p class="eyebrow">PRÓXIMA DECISÃO</p><h2 id="hero-action-title">O próximo passo começa na evidência.</h2><p id="hero-action-fact">Consultando os sensores para organizar a próxima revisão.</p><button type="button" class="text-button" id="hero-action-open" disabled>Ver plano <span aria-hidden="true">↗</span></button></aside>
+    </section>
+    <div class="hero-meta"><span id="connection-status" class="connection-status"><i aria-hidden="true"></i> Conectando à Nekt</span><p id="read-time">Consultando a camada ouro…</p><p id="gold-time">Cálculo ouro: aguardando leitura</p><button type="button" class="text-button" id="freshness-open">Ver atualização das fontes <span aria-hidden="true">↗</span></button></div>
+
+    <section class="toolbar" aria-label="Período e atualização">
+      <div class="period-control"><span class="control-label">Período das séries</span><div class="segmented" role="group" aria-label="Período das séries mensais"><button data-period="month" type="button">Mês atual</button><button data-period="3m" type="button">3 meses</button><button data-period="12m" type="button" aria-pressed="true" class="selected">12 meses</button><button data-period="all" type="button">Histórico</button></div></div>
+      <div class="refresh-controls"><button id="auto-toggle" class="auto-toggle" type="button" aria-pressed="true"><span class="toggle-track" aria-hidden="true"><span></span></span><span>Consulta automática <small>a cada minuto</small></span></button><button id="refresh-button" class="button button-secondary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M19.2 11a7.2 7.2 0 0 0-12.3-5L4 9m16 6-2.9 3A7.2 7.2 0 0 1 4.8 13"/></svg><span>Atualizar</span></button></div>
+    </section>
+
+    <div id="headline-kpis" class="headline-grid" aria-live="polite"><div class="loading-block">Carregando os indicadores registrados na Nekt…</div></div>
+
+    <section class="overview-grid" aria-label="Evolução e capacidade de decisão">
+      <article class="panel revenue-panel"><div class="panel-heading"><div><p class="eyebrow">RESULTADO REGISTRADO</p><h2>Como as vendas evoluem</h2></div><span id="chart-period" class="subtle-tag">Últimos 12 meses</span></div><div class="chart-summary"><strong id="revenue-total">—</strong><span id="revenue-caption">Aguardando leitura</span></div><div id="revenue-chart" class="revenue-chart" aria-live="polite"></div><div class="chart-legend"><span><i class="legend-dot"></i>Valor de venda registrado</span><span class="chart-note">Inclui situações registradas. Não representa caixa.</span></div><details class="chart-disclosure"><summary>Entender o que está neste valor</summary><p id="revenue-disclosure">Aguardando leitura da camada ouro.</p></details></article>
+      <aside class="measurement-panel"><p class="eyebrow">ANTES DE DECIDIR</p><h2>Você sabe o que<br><em>pode medir.</em></h2><p class="measurement-intro">Cada sensor mostra a evidência disponível e o limite da leitura.</p><div id="measurement-summary" class="measurement-summary"><strong>—<small>sensores com observação</small></strong></div><div id="coverage-bar" class="coverage-bar" aria-hidden="true"></div><div id="measurement-legend" class="measurement-legend"></div><a href="#confiabilidade" class="measurement-link">Entender a confiabilidade <span aria-hidden="true">↗</span></a></aside>
+    </section>
+
+    <section id="acoes" class="actions-section" aria-labelledby="actions-title"><div class="section-heading"><div><p class="eyebrow">DA LEITURA À AÇÃO</p><h2 id="actions-title">O que fazer agora</h2><p>Prioridades de medição e revisão, sustentadas nos dados disponíveis.</p></div><span id="actions-count" class="count-label">— próximos passos</span></div><div class="action-filters"><div id="cadence-filters" class="filter-tabs" role="group" aria-label="Filtrar ações por cadência"><button type="button" data-cadence="all" class="active" aria-pressed="true">Todas</button><button type="button" data-cadence="diario">Diário</button><button type="button" data-cadence="semanal">Semanal</button><button type="button" data-cadence="mensal">Mensal</button><button type="button" data-cadence="trimestral">Trimestral</button></div><label class="select-label"><span class="sr-only">Prioridade da ação</span><select id="action-priority"><option value="all">Todas as prioridades</option><option value="alta">Prioridade alta</option><option value="media">Prioridade média</option><option value="baixa">Prioridade baixa</option></select></label></div><div id="action-list" class="action-list" aria-live="polite"><div class="empty-state">Os próximos passos aparecerão após a leitura dos sensores.</div></div><p class="section-footnote">As ações são recomendações. Limites de negócio, responsáveis e alertas ainda precisam de calibração.</p></section>
+
+    <section id="familias" class="families-section" aria-labelledby="families-title"><div class="section-heading"><div><p class="eyebrow">OITO PERSPECTIVAS DA OPERAÇÃO</p><h2 id="families-title">Um sistema de sensores</h2><p>Abra uma família para explorar os fatos e as lacunas de medição.</p></div><a href="#sensores" class="text-button">Explorar todos os sensores <span aria-hidden="true">↓</span></a></div><div id="family-grid" class="family-grid"></div></section>
+
+    <section id="sensores" class="sensor-section" aria-labelledby="sensors-title"><div class="section-heading"><div><p class="eyebrow">EVIDÊNCIA, DEFINIÇÃO E CONTEXTO</p><h2 id="sensors-title">Explore cada sensor</h2><p>Um número só faz sentido junto do período, da população e da sua limitação.</p></div><span id="sensor-count" class="count-label">— sensores</span></div><div class="sensor-filters"><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Buscar sensor</span><input id="sensor-search" type="search" placeholder="Buscar um sensor ou indicador" autocomplete="off"></label><label><span class="sr-only">Família do sensor</span><select id="sensor-family"><option value="all">Todas as famílias</option></select></label><label><span class="sr-only">Estado do cálculo</span><select id="sensor-status"><option value="all">Todos os estados</option><option value="calculado">Calculado</option><option value="parcial">Observação parcial / proxy</option><option value="indisponivel">Sem medição disponível</option></select></label><button id="clear-filters" class="text-button" type="button" hidden>Limpar filtros</button></div><div class="sensor-table-wrap"><table class="sensor-table"><thead><tr><th scope="col">Sensor</th><th scope="col">Observação</th><th scope="col">Estado da medição</th><th scope="col"><span class="sr-only">Detalhes</span></th></tr></thead><tbody id="sensor-rows"></tbody></table><div id="sensor-empty" class="empty-state" hidden>Nenhum sensor corresponde a esses filtros.</div></div><div class="sensor-pagination"><span id="sensor-page-label"></span><div><button id="sensor-previous" class="button button-small button-secondary" type="button">Anterior</button><button id="sensor-next" class="button button-small button-secondary" type="button">Próximos</button></div></div></section>
+
+    <section id="confiabilidade" class="trust-section" aria-labelledby="trust-title"><div class="section-heading"><div><p class="eyebrow">CONFIANÇA COM CONTEXTO</p><h2 id="trust-title">O que sustenta esta leitura</h2><p>Integridade técnica, disponibilidade da medição e atualização são conferências diferentes.</p></div></div><div class="trust-grid"><article class="panel trust-card"><span class="trust-icon" aria-hidden="true">✓</span><h3>Integridade técnica</h3><strong id="technical-score">—</strong><p id="technical-caption">Aguardando controles da camada ouro.</p><button id="controls-open" type="button" class="text-button">Ver conferências <span aria-hidden="true">↗</span></button></article><article class="panel trust-card"><span class="trust-icon neutral" aria-hidden="true">◷</span><h3>Atualização de ponta a ponta</h3><strong class="trust-text" id="pipeline-mode">Processamento manual</strong><p id="pipeline-caption">O painel consulta o ouro automaticamente. Isso não demonstra sincronização instantânea das fontes.</p><button id="sources-open" type="button" class="text-button">Ver horários de processamento <span aria-hidden="true">↗</span></button></article><article class="panel trust-card"><span class="trust-icon amber" aria-hidden="true">≋</span><h3>Limites do que foi medido</h3><strong class="trust-text">Fato, proxy e lacuna</strong><p>Venda não é recebimento. Investimento não é CAC. Contato registrado não comprova retenção ou risco.</p><button id="limits-open" type="button" class="text-button">Ler os critérios de uso <span aria-hidden="true">↗</span></button></article></div></section>
+    <footer class="footer"><p><strong>THE VOID</strong><span>Painel de decisão · Dados ouro</span></p><span>Nekt · America/Sao_Paulo</span><button id="about-open" class="text-button" type="button">Sobre esta leitura</button></footer>
+  </main>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><header class="dialog-header"><span id="dialog-eyebrow" class="eyebrow">DETALHE DO SENSOR</span><button id="dialog-close" class="icon-button" type="button" aria-label="Fechar detalhes">×</button></header><div id="dialog-content"></div></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
