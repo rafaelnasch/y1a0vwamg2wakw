@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR" data-area="comercial">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="description" content="Análise comercial da The VOID: funis, etapas, coortes, perdas, atendimento e vendas com origem e populações explícitas.">
+  <title>The VOID · Comercial</title>
+  <link rel="preload" href="assets/nunito-sans-latin.woff2?v=39184f4d011106f5" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=d878583473a26ce0">
+  <link rel="stylesheet" href="analise.css?v=3a782f5ca2e85ad1">
+  <script src="config.js?v=ccf1ba7c773bac73"></script>
+  <script src="analise.js?v=f3482f7f876f047c" defer></script>
+</head>
+<body class="analysis-page">
+  <a class="skip-link" href="#principal">Ir para a análise</a>
+  <header class="topbar analysis-topbar">
+    <a class="wordmark" href="index.html" aria-label="The VOID, painel de decisão"><span class="brand-symbol" aria-hidden="true">V<span>↗</span></span><span>THE VOID<small>PAINEL DE DECISÃO</small></span></a>
+    <nav class="main-nav" aria-label="Áreas de análise"><a href="index.html">Sensores</a><a href="marketing.html">Marketing</a><a href="comercial.html" class="active" aria-current="page">Comercial</a></nav>
+    <span class="layer-label"><i aria-hidden="true"></i> Dados ouro</span>
+  </header>
+  <main id="principal" class="analysis-main">
+    <div id="analysis-alert" class="connection-alert" role="status" hidden></div>
+    <section class="analysis-hero" aria-labelledby="analysis-title">
+      <div><p class="eyebrow">COMERCIAL · JORNADA E RESULTADO</p><h1 id="analysis-title">Cada passagem.<br><em>Uma decisão mais clara.</em></h1><p class="analysis-intro">Entenda o estoque, os movimentos e os resultados registrados. Explore funis, etapas, perdas e atendimento, com populações e períodos explícitos.</p></div>
+      <aside class="analysis-reading"><span id="analysis-state" class="connection-status"><i aria-hidden="true"></i> Consultando dados</span><p id="analysis-updated">Aguardando a camada ouro…</p><button id="sources-button" type="button" class="text-button">Fontes e critérios <span aria-hidden="true">↗</span></button></aside>
+    </section>
+    <section id="analysis-command" class="analysis-command" aria-label="Atualização e navegação da análise">
+      <nav id="analysis-tabs" class="analysis-tabs" role="tablist" aria-label="Análises comerciais"></nav>
+      <div class="analysis-refresh"><button id="analysis-auto" class="auto-toggle" type="button" aria-pressed="true"><span class="toggle-track" aria-hidden="true"><span></span></span><span>Consulta automática<small>a cada minuto</small></span></button><button id="analysis-refresh" class="button button-secondary" type="button"><span aria-hidden="true">↻</span> Atualizar</button></div>
+    </section>
+    <div id="analysis-summary" class="analysis-summary"><div class="loading-block">As métricas aparecerão após a leitura validada da Nekt.</div></div>
+    <p id="summary-scope" class="analysis-scope"></p>
+    <section id="analysis-overview" role="tabpanel" aria-labelledby="tab-overview" aria-label="Leitura executiva"><div class="analysis-overview-grid"><article class="panel analysis-opportunities"><div class="panel-heading"><div><p class="eyebrow">EVIDÊNCIA EM AÇÃO</p><h2>O que merece atenção</h2></div><span id="analysis-actions-count" class="subtle-tag">— próximos passos</span></div><div id="analysis-actions" class="analysis-action-list"></div></article><aside class="analysis-context"><p class="eyebrow">LEIA CADA ETAPA SEPARADAMENTE</p><h2>Negócio ganho<br><em>não é recebimento.</em></h2><p>O CRM descreve a negociação. A base acadêmica registra a venda. A ligação entre os dois precisa preservar ambiguidades, situação da matrícula e o valor conhecido.</p><div id="coverage-summary" class="analysis-coverage"></div><button id="criteria-button" type="button" class="text-button">Entender esta leitura <span aria-hidden="true">↗</span></button></aside></div><div id="overview-datasets" class="overview-datasets"></div></section>
+    <section id="analysis-explorer" role="tabpanel" class="analysis-explorer" aria-labelledby="explorer-title" hidden>
+      <div class="analysis-section-heading"><div><p id="section-eyebrow" class="eyebrow">EXPLORAR OS DADOS</p><h2 id="explorer-title">Análise detalhada</h2><p id="explorer-description"></p></div><div class="analysis-heading-actions"><button id="section-definition" class="text-button" type="button">Como interpretar <span aria-hidden="true">↗</span></button><button id="export-csv" class="button button-secondary button-small" type="button">Exportar recorte <span aria-hidden="true">↓</span></button></div></div>
+      <div id="dataset-picker-wrap" class="dataset-picker-wrap" hidden><label for="dataset-picker">Conjunto de dados</label><select id="dataset-picker"></select></div>
+      <div id="section-notice" class="analysis-section-notice" hidden></div>
+      <div id="section-chart" class="analysis-chart panel" hidden></div>
+      <div class="analysis-filterbar"><label class="analysis-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Buscar neste conjunto</span><input id="table-search" type="search" placeholder="Buscar funil, etapa, origem…" autocomplete="off"></label><div class="analysis-period"><label for="period-select" class="sr-only">Período da análise</label><select id="period-select"><option value="all">Histórico disponível</option><option value="30d">Últimos 30 dias</option><option value="90d">Últimos 90 dias</option><option value="12m">Últimos 12 meses</option><option value="custom">Período personalizado</option></select><div id="custom-dates" class="custom-dates" hidden><label><span class="sr-only">Data inicial</span><input id="date-from" type="date"></label><span aria-hidden="true">a</span><label><span class="sr-only">Data final</span><input id="date-to" type="date"></label></div></div><button id="reset-filters" class="text-button" type="button" hidden>Limpar filtros</button></div>
+      <div id="dimension-filters" class="dimension-filters"></div><div class="analysis-table-meta"><span id="table-population">—</span><span id="table-grain"></span></div>
+      <div class="analysis-table-wrap"><table id="analysis-table" class="analysis-table"><thead id="analysis-table-head"></thead><tbody id="analysis-table-body"></tbody></table><div id="analysis-empty" class="analysis-empty" hidden></div></div>
+      <div class="analysis-pagination"><span id="pagination-label"></span><label class="page-size"><span>Linhas por página</span><select id="page-size"><option value="20">20</option><option value="50">50</option><option value="100">100</option></select></label><div><button id="page-prev" class="button button-secondary button-small" type="button">Anterior</button><button id="page-next" class="button button-secondary button-small" type="button">Próximas</button></div></div>
+      <p id="table-footnote" class="analysis-footnote"></p>
+    </section>
+    <footer class="footer analysis-footer"><p><strong>THE VOID</strong><span>Comercial · Dados ouro</span></p><a href="marketing.html">Explorar o marketing ↗</a><button id="about-analysis" class="text-button" type="button">Sobre os dados</button></footer>
+  </main>
+  <dialog id="analysis-dialog" class="detail-dialog analysis-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><header class="dialog-header"><span id="dialog-eyebrow" class="eyebrow">EVIDÊNCIA E CONTEXTO</span><button id="analysis-dialog-close" class="icon-button" type="button" aria-label="Fechar detalhes">×</button></header><div id="analysis-dialog-content"></div></div></dialog>
+  <div id="analysis-toast" class="toast" role="status" hidden></div>
+</body>
+</html>
