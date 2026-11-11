@@ -299,7 +299,10 @@
 
   async function fetchPayload(endpoint) {
     const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),22000);
-    try{const response=await fetch(endpoint,{cache:'no-store',signal:controller.signal,headers:{Accept:'application/json'}});if(!response.ok)throw new Error('read_failed');const data=await response.json();if(data.schema_version!=='void-ouro-dashboard-v1'||!Array.isArray(data.families)||data.families.length!==8||!data.coverage)throw new Error('invalid_payload');return data;}finally{clearTimeout(timeout);}
+    const requestUrl=new URL(endpoint,location.href);
+    // The static host may cache responses for ten minutes despite browser no-store.
+    if(requestUrl.pathname.endsWith('.json'))requestUrl.searchParams.set('_v',String(Math.floor(Date.now()/60000)));
+    try{const response=await fetch(requestUrl.href,{cache:'no-store',signal:controller.signal,headers:{Accept:'application/json'}});if(!response.ok)throw new Error('read_failed');const data=await response.json();if(data.schema_version!=='void-ouro-dashboard-v1'||!Array.isArray(data.families)||data.families.length!==8||!data.coverage)throw new Error('invalid_payload');return data;}finally{clearTimeout(timeout);}
   }
   async function refresh(manual=false) {
     if(state.busy)return;
